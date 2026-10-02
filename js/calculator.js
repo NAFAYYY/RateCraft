@@ -1,3 +1,4 @@
+
 /**
  * RateCraft - Freelance Pricing & Hourly Rate Calculator
  * 100% Client-Side Engine (Zero Server / Zero API Cost)
@@ -348,246 +349,246 @@
       });
     }
 
-  // Direct High-Resolution Rate Card PNG Downloader
-  function downloadRateCardImage() {
-    const card = document.getElementById('printable-rate-card');
-    if (!card) return;
+    // Direct High-Resolution Rate Card PNG Downloader
+    function downloadRateCardImage() {
+      const card = document.getElementById('printable-rate-card');
+      if (!card) return;
 
-    const scale = 2; // High-DPI Retina
-    const width = 840;
-    const height = 560;
+      const scale = 2; // High-DPI Retina
+      const width = 840;
+      const height = 560;
 
-    const canvas = document.createElement('canvas');
-    canvas.width = width * scale;
-    canvas.height = height * scale;
-    const ctx = canvas.getContext('2d');
-    ctx.scale(scale, scale);
+      const canvas = document.createElement('canvas');
+      canvas.width = width * scale;
+      canvas.height = height * scale;
+      const ctx = canvas.getContext('2d');
+      ctx.scale(scale, scale);
 
-    // Helper: Rounded Rectangle
-    function drawRoundRect(x, y, w, h, radius, fill, stroke, strokeColor) {
-      ctx.beginPath();
-      ctx.moveTo(x + radius, y);
-      ctx.lineTo(x + w - radius, y);
-      ctx.quadraticCurveTo(x + w, y, x + w, y + radius);
-      ctx.lineTo(x + w, y + h - radius);
-      ctx.quadraticCurveTo(x + w, y + h, x + w - radius, y + h);
-      ctx.lineTo(x + radius, y + h);
-      ctx.quadraticCurveTo(x, y + h, x, y + h - radius);
-      ctx.lineTo(x, y + radius);
-      ctx.quadraticCurveTo(x, y, x + radius, y);
-      ctx.closePath();
-      if (fill) ctx.fill();
-      if (stroke) {
-        ctx.strokeStyle = strokeColor || '#1e293b';
-        ctx.stroke();
-      }
-    }
-
-    // Outer Background - Obsidian Slate
-    const bgGrad = ctx.createLinearGradient(0, 0, width, height);
-    bgGrad.addColorStop(0, '#0a0f1d');
-    bgGrad.addColorStop(1, '#0f172a');
-    ctx.fillStyle = bgGrad;
-    drawRoundRect(0, 0, width, height, 20, true, true, '#1e293b');
-
-    // Subtle Emerald Ambient Glow at top right
-    const glowGrad = ctx.createRadialGradient(width - 60, 40, 10, width - 60, 40, 260);
-    glowGrad.addColorStop(0, 'rgba(16, 185, 129, 0.12)');
-    glowGrad.addColorStop(1, 'rgba(16, 185, 129, 0)');
-    ctx.fillStyle = glowGrad;
-    drawRoundRect(0, 0, width, height, 20, true, false);
-
-    // Brand Header Bar
-    // Emerald Dot
-    ctx.fillStyle = '#10b981';
-    ctx.beginPath();
-    ctx.arc(44, 46, 6, 0, Math.PI * 2);
-    ctx.fill();
-
-    // Brand Logo Name
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText('RateCraft', 60, 52);
-
-    // Badge Pill at top right
-    const badgeText = state.lang === 'es' ? 'TARIFARIO OFICIAL 2026' : 'OFFICIAL 2026 SCHEDULE';
-    ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    const badgeWidth = ctx.measureText(badgeText).width + 20;
-    ctx.fillStyle = '#1e293b';
-    drawRoundRect(width - 44 - badgeWidth, 34, badgeWidth, 26, 6, true, true, '#334155');
-    ctx.fillStyle = '#94a3b8';
-    ctx.textAlign = 'center';
-    ctx.fillText(badgeText, width - 44 - (badgeWidth / 2), 51);
-
-    // Divider Line
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(44, 74);
-    ctx.lineTo(width - 44, 74);
-    ctx.stroke();
-
-    // Title
-    const titleEl = card.querySelector('h3');
-    const title = titleEl ? titleEl.textContent.trim() : 'Professional Rate Card';
-    ctx.fillStyle = '#f8fafc';
-    ctx.font = 'bold 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.textAlign = 'left';
-    ctx.fillText(title, 44, 116);
-
-    // Subtitle
-    const subtitleEl = card.querySelector('.card-subtitle');
-    const subtitle = subtitleEl ? subtitleEl.textContent.trim() : 'Official Consulting & Commercial Rates • 2026';
-    ctx.fillStyle = '#94a3b8';
-    ctx.font = '500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.fillText(subtitle, 44, 140);
-
-    // Table Rows
-    const rows = card.querySelectorAll('.rate-card-table tr');
-    let startY = 175;
-    const rowHeight = 64;
-
-    rows.forEach((tr, idx) => {
-      const y = startY + (idx * rowHeight);
-      const labelEl = tr.querySelector('td:first-child');
-      const valEl = tr.querySelector('td.strong-val');
-
-      let label = '';
-      let subDesc = '';
-      if (labelEl) {
-        const labelSpan = labelEl.querySelector('.rate-label');
-        const descSpan = labelEl.querySelector('.rate-desc');
-        if (labelSpan) {
-          label = labelSpan.textContent.trim();
-        } else {
-          const clone = labelEl.cloneNode(true);
-          const d = clone.querySelector('.rate-desc');
-          if (d) d.remove();
-          label = clone.textContent.trim();
+      // Helper: Rounded Rectangle
+      function drawRoundRect(x, y, w, h, radius, fill, stroke, strokeColor) {
+        ctx.beginPath();
+        ctx.moveTo(x + radius, y);
+        ctx.lineTo(x + w - radius, y);
+        ctx.quadraticCurveTo(x + w, y, x + w, y + radius);
+        ctx.lineTo(x + w, y + h - radius);
+        ctx.quadraticCurveTo(x + w, y + h, x + w - radius, y + h);
+        ctx.lineTo(x + radius, y + h);
+        ctx.quadraticCurveTo(x, y + h, x, y + h - radius);
+        ctx.lineTo(x, y + radius);
+        ctx.quadraticCurveTo(x, y, x + radius, y);
+        ctx.closePath();
+        if (fill) ctx.fill();
+        if (stroke) {
+          ctx.strokeStyle = strokeColor || '#1e293b';
+          ctx.stroke();
         }
-        if (descSpan) subDesc = descSpan.textContent.trim();
-      }
-      const val = valEl ? valEl.textContent.trim() : '';
-
-      // Row Card Background
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
-      drawRoundRect(44, y, width - 88, 52, 10, true, true, 'rgba(255, 255, 255, 0.07)');
-
-      // Label
-      ctx.fillStyle = '#f1f5f9';
-      ctx.font = '600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-      ctx.textAlign = 'left';
-      ctx.fillText(label, 62, y + (subDesc ? 24 : 31));
-
-      // Optional Sub-description
-      if (subDesc) {
-        ctx.fillStyle = '#64748b';
-        ctx.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-        ctx.fillText(subDesc, 62, y + 40);
       }
 
-      // Value in Bright Emerald
+      // Outer Background - Obsidian Slate
+      const bgGrad = ctx.createLinearGradient(0, 0, width, height);
+      bgGrad.addColorStop(0, '#0a0f1d');
+      bgGrad.addColorStop(1, '#0f172a');
+      ctx.fillStyle = bgGrad;
+      drawRoundRect(0, 0, width, height, 20, true, true, '#1e293b');
+
+      // Subtle Emerald Ambient Glow at top right
+      const glowGrad = ctx.createRadialGradient(width - 60, 40, 10, width - 60, 40, 260);
+      glowGrad.addColorStop(0, 'rgba(16, 185, 129, 0.12)');
+      glowGrad.addColorStop(1, 'rgba(16, 185, 129, 0)');
+      ctx.fillStyle = glowGrad;
+      drawRoundRect(0, 0, width, height, 20, true, false);
+
+      // Brand Header Bar
+      // Emerald Dot
       ctx.fillStyle = '#10b981';
+      ctx.beginPath();
+      ctx.arc(44, 46, 6, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Brand Logo Name
+      ctx.fillStyle = '#ffffff';
       ctx.font = 'bold 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText('RateCraft', 60, 52);
+
+      // Badge Pill at top right
+      const badgeText = state.lang === 'es' ? 'TARIFARIO OFICIAL 2026' : 'OFFICIAL 2026 SCHEDULE';
+      ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      const badgeWidth = ctx.measureText(badgeText).width + 20;
+      ctx.fillStyle = '#1e293b';
+      drawRoundRect(width - 44 - badgeWidth, 34, badgeWidth, 26, 6, true, true, '#334155');
+      ctx.fillStyle = '#94a3b8';
+      ctx.textAlign = 'center';
+      ctx.fillText(badgeText, width - 44 - (badgeWidth / 2), 51);
+
+      // Divider Line
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(44, 74);
+      ctx.lineTo(width - 44, 74);
+      ctx.stroke();
+
+      // Title
+      const titleEl = card.querySelector('h3');
+      const title = titleEl ? titleEl.textContent.trim() : 'Professional Rate Card';
+      ctx.fillStyle = '#f8fafc';
+      ctx.font = 'bold 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText(title, 44, 116);
+
+      // Subtitle
+      const subtitleEl = card.querySelector('.card-subtitle');
+      const subtitle = subtitleEl ? subtitleEl.textContent.trim() : 'Official Consulting & Commercial Rates • 2026';
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '500 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      ctx.fillText(subtitle, 44, 140);
+
+      // Table Rows
+      const rows = card.querySelectorAll('.rate-card-table tr');
+      let startY = 175;
+      const rowHeight = 64;
+
+      rows.forEach((tr, idx) => {
+        const y = startY + (idx * rowHeight);
+        const labelEl = tr.querySelector('td:first-child');
+        const valEl = tr.querySelector('td.strong-val');
+
+        let label = '';
+        let subDesc = '';
+        if (labelEl) {
+          const labelSpan = labelEl.querySelector('.rate-label');
+          const descSpan = labelEl.querySelector('.rate-desc');
+          if (labelSpan) {
+            label = labelSpan.textContent.trim();
+          } else {
+            const clone = labelEl.cloneNode(true);
+            const d = clone.querySelector('.rate-desc');
+            if (d) d.remove();
+            label = clone.textContent.trim();
+          }
+          if (descSpan) subDesc = descSpan.textContent.trim();
+        }
+        const val = valEl ? valEl.textContent.trim() : '';
+
+        // Row Card Background
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+        drawRoundRect(44, y, width - 88, 52, 10, true, true, 'rgba(255, 255, 255, 0.07)');
+
+        // Label
+        ctx.fillStyle = '#f1f5f9';
+        ctx.font = '600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText(label, 62, y + (subDesc ? 24 : 31));
+
+        // Optional Sub-description
+        if (subDesc) {
+          ctx.fillStyle = '#64748b';
+          ctx.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+          ctx.fillText(subDesc, 62, y + 40);
+        }
+
+        // Value in Bright Emerald
+        ctx.fillStyle = '#10b981';
+        ctx.font = 'bold 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+        ctx.textAlign = 'right';
+        ctx.fillText(val, width - 64, y + 32);
+      });
+
+      // Bottom Divider
+      const footerY = height - 60;
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(44, footerY);
+      ctx.lineTo(width - 44, footerY);
+      ctx.stroke();
+
+      // Disclaimer & Meta Footer
+      ctx.fillStyle = '#64748b';
+      ctx.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+      ctx.textAlign = 'left';
+      const disclaimer = state.lang === 'es'
+        ? '* Tarifas oficiales para servicios directos. Proyectos cerrados presupuestados por alcance.'
+        : '* Standard commercial rates. Fixed deliverables & rush deadlines quoted separately.';
+      ctx.fillText(disclaimer, 44, footerY + 30);
+
       ctx.textAlign = 'right';
-      ctx.fillText(val, width - 64, y + 32);
-    });
+      ctx.fillStyle = '#94a3b8';
+      ctx.fillText('ratecraft.app • Ref: RC-2026-VAL', width - 44, footerY + 30);
 
-    // Bottom Divider
-    const footerY = height - 60;
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(44, footerY);
-    ctx.lineTo(width - 44, footerY);
-    ctx.stroke();
+      // Instant Direct Binary Blob Download
+      const roleCapitalized = currentRole
+        ? currentRole.charAt(0).toUpperCase() + currentRole.slice(1).toLowerCase()
+        : 'Freelance';
+      const filename = `RateCraft-${roleCapitalized}-RateCard-2026.png`;
 
-    // Disclaimer & Meta Footer
-    ctx.fillStyle = '#64748b';
-    ctx.font = '11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-    ctx.textAlign = 'left';
-    const disclaimer = state.lang === 'es'
-      ? '* Tarifas oficiales para servicios directos. Proyectos cerrados presupuestados por alcance.'
-      : '* Standard commercial rates. Fixed deliverables & rush deadlines quoted separately.';
-    ctx.fillText(disclaimer, 44, footerY + 30);
+      function triggerDownloadWithBlob(blob) {
+        const blobUrl = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.style.display = 'none';
+        link.href = blobUrl;
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        setTimeout(() => {
+          if (link.parentNode) link.parentNode.removeChild(link);
+          URL.revokeObjectURL(blobUrl);
+        }, 1000);
+        showToast(state.lang === 'es' ? '¡Tarjeta descargada con éxito!' : 'Rate card downloaded successfully!');
+      }
 
-    ctx.textAlign = 'right';
-    ctx.fillStyle = '#94a3b8';
-    ctx.fillText('ratecraft.app • Ref: RC-2026-VAL', width - 44, footerY + 30);
+      if (canvas.toBlob) {
+        canvas.toBlob((blob) => {
+          if (blob) {
+            triggerDownloadWithBlob(blob);
+          } else {
+            fallbackDataUriToBlob();
+          }
+        }, 'image/png');
+      } else {
+        fallbackDataUriToBlob();
+      }
 
-    // Instant Direct Binary Blob Download
-    const roleCapitalized = currentRole
-      ? currentRole.charAt(0).toUpperCase() + currentRole.slice(1).toLowerCase()
-      : 'Freelance';
-    const filename = `RateCraft-${roleCapitalized}-RateCard-2026.png`;
-
-    function triggerDownloadWithBlob(blob) {
-      const blobUrl = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.style.display = 'none';
-      link.href = blobUrl;
-      link.setAttribute('download', filename);
-      document.body.appendChild(link);
-      link.click();
-      setTimeout(() => {
-        if (link.parentNode) link.parentNode.removeChild(link);
-        URL.revokeObjectURL(blobUrl);
-      }, 1000);
-      showToast(state.lang === 'es' ? '¡Tarjeta descargada con éxito!' : 'Rate card downloaded successfully!');
-    }
-
-    if (canvas.toBlob) {
-      canvas.toBlob((blob) => {
-        if (blob) {
+      function fallbackDataUriToBlob() {
+        try {
+          const dataUrl = canvas.toDataURL('image/png');
+          const byteString = atob(dataUrl.split(',')[1]);
+          const ab = new ArrayBuffer(byteString.length);
+          const ia = new Uint8Array(ab);
+          for (let i = 0; i < byteString.length; i++) {
+            ia[i] = byteString.charCodeAt(i);
+          }
+          const blob = new Blob([ab], { type: 'image/png' });
           triggerDownloadWithBlob(blob);
-        } else {
-          fallbackDataUriToBlob();
+        } catch (e) {
+          console.error('Blob conversion failed', e);
         }
-      }, 'image/png');
-    } else {
-      fallbackDataUriToBlob();
-    }
-
-    function fallbackDataUriToBlob() {
-      try {
-        const dataUrl = canvas.toDataURL('image/png');
-        const byteString = atob(dataUrl.split(',')[1]);
-        const ab = new ArrayBuffer(byteString.length);
-        const ia = new Uint8Array(ab);
-        for (let i = 0; i < byteString.length; i++) {
-          ia[i] = byteString.charCodeAt(i);
-        }
-        const blob = new Blob([ab], { type: 'image/png' });
-        triggerDownloadWithBlob(blob);
-      } catch (e) {
-        console.error('Blob conversion failed', e);
       }
     }
-  }
 
-  // Rate Card Modal, Print & Direct Download
-  function setupRateCardEvents() {
-    const rateCardBtn = document.getElementById('btn-rate-card');
-    const rateCardModal = document.getElementById('modal-rate-card');
-    const closeRateCard = document.getElementById('close-rate-card');
-    const printCardBtn = document.getElementById('btn-print-card');
-    const downloadCardBtn = document.getElementById('btn-download-card');
+    // Rate Card Modal, Print & Direct Download
+    function setupRateCardEvents() {
+      const rateCardBtn = document.getElementById('btn-rate-card');
+      const rateCardModal = document.getElementById('modal-rate-card');
+      const closeRateCard = document.getElementById('close-rate-card');
+      const printCardBtn = document.getElementById('btn-print-card');
+      const downloadCardBtn = document.getElementById('btn-download-card');
 
-    if (rateCardBtn && rateCardModal) {
-      rateCardBtn.addEventListener('click', () => rateCardModal.classList.add('active'));
+      if (rateCardBtn && rateCardModal) {
+        rateCardBtn.addEventListener('click', () => rateCardModal.classList.add('active'));
+      }
+      if (closeRateCard && rateCardModal) {
+        closeRateCard.addEventListener('click', () => rateCardModal.classList.remove('active'));
+      }
+      if (printCardBtn) {
+        printCardBtn.addEventListener('click', () => window.print());
+      }
+      if (downloadCardBtn) {
+        downloadCardBtn.addEventListener('click', downloadRateCardImage);
+      }
     }
-    if (closeRateCard && rateCardModal) {
-      closeRateCard.addEventListener('click', () => rateCardModal.classList.remove('active'));
-    }
-    if (printCardBtn) {
-      printCardBtn.addEventListener('click', () => window.print());
-    }
-    if (downloadCardBtn) {
-      downloadCardBtn.addEventListener('click', downloadRateCardImage);
-    }
-  }
-  setupRateCardEvents();
+    setupRateCardEvents();
 
     // FAQ Accordion
     document.querySelectorAll('.faq-question').forEach((btn) => {
