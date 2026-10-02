@@ -185,9 +185,6 @@
     if (elements.rcWeekly) elements.rcWeekly.textContent = formatCurrency(weeklyRetainer) + wkSuffix;
     if (elements.rcMonthly) elements.rcMonthly.textContent = formatCurrency(monthlyRetainer) + moSuffix;
     if (elements.rcYearly) elements.rcYearly.textContent = formatCurrency(totalTargetRevenue) + (state.lang === 'es' ? ' / año' : ' / yr');
-
-    // Sync URL Hash for easy sharing
-    syncUrlHash();
   }
 
   // Sync Input Elements with State
@@ -222,8 +219,8 @@
     calculate();
   }
 
-  // URL Hash Sync for Bookmarking & Sharing
-  function syncUrlHash() {
+  // Generate clean shareable URL with parameters on demand
+  function getShareableUrl() {
     const params = new URLSearchParams({
       cur: state.currency,
       sal: state.salary,
@@ -234,7 +231,7 @@
       bil: state.billablePercent,
       prf: state.profitMargin
     });
-    window.history.replaceState(null, '', '#' + params.toString());
+    return window.location.origin + window.location.pathname + '#' + params.toString();
   }
 
   function loadFromUrlHash() {
@@ -251,6 +248,9 @@
       if (params.has('prf')) state.profitMargin = Number(params.get('prf'));
 
       if (elements.currencySelect) elements.currencySelect.value = state.currency;
+
+      // Clean address bar so the URL remains short and uncluttered
+      window.history.replaceState(null, '', window.location.pathname);
     } catch (e) {
       console.error('Failed to parse URL hash', e);
     }
@@ -320,7 +320,7 @@
     const shareBtn = document.getElementById('btn-share');
     if (shareBtn) {
       shareBtn.addEventListener('click', () => {
-        const url = window.location.href;
+        const url = getShareableUrl();
         navigator.clipboard.writeText(url).then(() => {
           showToast(state.lang === 'es' ? '¡Enlace de cálculo copiado!' : 'Calculation link copied to clipboard!');
         });
