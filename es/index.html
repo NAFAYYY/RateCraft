@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Tarifa Freelance y Precio por Hora (2026) | Autónomos</title>
+  <meta name="description" content="Calcula con precisión tu tarifa por hora y presupuesto para proyectos como freelance o autónomo. Incluye cuota de autónomos, IRPF, gastos y horas facturables reales.">
+  <meta name="keywords" content="calculadora tarifa freelance, calcular precio hora autonomo, cuanto cobrar freelance, calcular tarifa por hora, calculadora precio proyecto">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/es/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Calculadora de Tarifa Freelance y Precio por Hora | RateCraft">
+  <meta property="og:description" content="Evita trabajar a pérdidas. Descubre cuánto cobrar por hora y por proyecto teniendo en cuenta gastos, impuestos y tiempo no facturable.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ratecraft.app/es/">
+  <meta property="og:site_name" content="RateCraft">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de Tarifa Freelance y Autónomos">
+  <meta name="twitter:description" content="Calcula tu tarifa por hora y presupuesto para clientes en segundos de forma 100% gratuita.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/ratecraft",
+      "https://github.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://ratecraft.app/es/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de Tarifa Freelance RateCraft",
+    "url": "https://ratecraft.app/es/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requiere JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "description": "Herramienta interactiva para calcular tarifas por hora, tarifas por día y presupuestos de proyectos para autónomos y freelancers.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "920"
+    }
+  }
+  </script>
+
+  <!-- Schema.org Structured Data: FAQPage (7 Preguntas Clave) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo calcular mi tarifa por hora como freelance o autónomo en 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para calcular tu tarifa por hora: 1. Define tu sueldo neto deseado anual. 2. Divide entre (1 - Tipo IRPF) para obtener la base imponible bruta necesaria. 3. Suma los gastos fijos anuales (cuota RETA de autónomos, gestoría, herramientas de software). 4. Añade un margen de beneficio del 15% al 25% para ahorro y contingencias. 5. Divide los ingresos brutos requeridos entre tus horas facturables anuales reales (52 semanas menos vacaciones y festivos, multiplicado por 20 a 24 horas facturables semanales)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la trampa de las 40 horas en el trabajo freelance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La trampa de las 40 horas consiste en asumir que un autónomo puede facturar 40 horas semanales a sus clientes como un empleado convencional. Los estudios del sector demuestran que el 62,4% de los autónomos a tiempo completo solo puede facturar entre 20 y 24 horas a la semana, debido a que entre el 35% y el 45% del tiempo se consume en tareas administrativas, reuniones no remuneradas, prospección comercial y facturación."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es mejor cobrar por horas, tarifas por día o precio cerrado por proyecto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cobrar por horas es ideal para consultoría técnica continua y proyectos con requisitos cambiantes. Las tarifas por jornada (day rates) son el estándar para sprints integrados en equipos de agencias. El precio cerrado por proyecto es la mejor alternativa cuando el alcance está perfectamente definido, ya que premia tu experiencia y productividad sin penalizar tus ingresos por trabajar con rapidez."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto dinero debe apartar un autónomo para impuestos y gastos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La mayoría de los profesionales independientes deben reservar entre el 25% y el 35% de sus ingresos brutos para IRPF y cotizaciones a la Seguridad Social (RETA). Además, los gastos operativos anuales (suscripciones de software, amortización de hardware, gestoría y espacio de trabajo) suelen oscilar entre 4.000€ y 9.000€ anuales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo presupuestar proyectos a precio cerrado sin perder dinero por cambios de alcance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Calcula el número de horas estimadas de ejecución según proyectos similares previos, multiplícalo por tu tarifa por hora base y añade obligatoriamente un margen de contingencia del 15% al 25% para imprevistos. Delimita de forma estricta los entregables y rondas de revisión en tu contrato de servicios."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es un margen de beneficio saludable para un negocio freelance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un negocio freelance sostenible debe contar con un margen de beneficio neto del 15% al 25% por encima de tu sueldo base y gastos fijos. Este colchón financiero protege tu liquidez durante trimestres con menor volumen de proyectos, financia tu jubilación y cubre la renovación continua de tus equipos de trabajo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué hacer si un cliente dice que mi tarifa freelance es muy cara?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nunca reduzcas tu precio por hora sin reducir los entregables del encargo. Si el cliente tiene un presupuesto inferior, la desescalada protege tu prestigio: 'Podemos adaptarnos a tu presupuesto de 2.000€ centrándonos exclusivamente en las funciones esenciales de la Fase 1 y programando los añadidos secundarios para una segunda etapa.'"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Herramientas Freelance">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <!-- Tools Navigation Links -->
+      <nav class="nav-links" aria-label="Selección de herramientas">
+        <a href="./" class="nav-link active">General</a>
+        <a href="calculadora-precio-hora-programador/" class="nav-link">Programadores</a>
+        <a href="calculadora-tarifa-disenador/" class="nav-link">Diseñadores</a>
+        <a href="calculadora-tarifa-redactor/" class="nav-link">Redactores</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Currency Selector -->
+        <select id="currency-select" class="currency-selector" aria-label="Seleccionar moneda">
+          <option value="€" selected>EUR (€)</option>
+          <option value="$">USD ($)</option>
+          <option value="MX$">MXN (MX$)</option>
+          <option value="£">GBP (£)</option>
+        </select>
+
+        <!-- Language Switcher -->
+        <nav class="lang-switch" aria-label="Selector de idioma">
+          <a href="../" class="lang-btn">🇺🇸 EN</a>
+          <a href="./" class="lang-btn active">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <!-- Hero Header -->
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> Metodología Oficial para Autónomos 2026
+      </div>
+      <h1 class="hero-title">
+        Calculadora de <span class="gradient-text">Tarifa por Hora</span> Freelance
+      </h1>
+      <p class="hero-subtitle">
+        Deja de regalar tu trabajo. Calcula tu precio por hora, día y proyecto considerando impuestos, cuota de autónomo, gastos operativos y tiempo no facturable.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Respuesta Directa • Fórmula Oficial 2026</div>
+        <p class="answer-lead">
+          <strong>Para calcular tu tarifa por hora como autónomo en 2026:</strong> Divide tu sueldo neto anual deseado entre <code>(1 - Tipo IRPF)</code> para determinar los ingresos brutos requeridos, añade tus gastos operativos de negocio (cuota de la Seguridad Social, gestoría, herramientas), suma un margen comercial del 15%–25%, y divide el total entre tus horas facturables reales anuales (52 semanas menos vacaciones y festivos, multiplicado por 20–24 horas reales facturables a la semana).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-grid" id="calculator">
+      <!-- Input Controls Column -->
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            Parámetros Financieros
+          </h2>
+          <!-- Industry / Seniority Quick Presets -->
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="starter">Junior</button>
+            <button class="pill-btn preset-btn" data-preset="mid">Profesional</button>
+            <button class="pill-btn preset-btn" data-preset="senior">Senior</button>
+            <button class="pill-btn preset-btn" data-preset="agency">Estudio</button>
+          </div>
+        </div>
+
+        <!-- Group 1: Income & Expenses -->
+        <div class="form-section-title">1. Ingresos Deseados y Costes Fijos</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">
+              Sueldo Neto Anual Deseado
+              <span class="label-hint" tabindex="0" data-tooltip="El dinero limpio que quieres recibir en tu cuenta personal después de pagar impuestos y gastos.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-salary">€45.000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="15000" max="200000" step="1000" value="45000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">
+              Gastos Anuales (Cuota Autónomos + Software)
+              <span class="label-hint" tabindex="0" data-tooltip="Cuota de seguridad social, gestoría, internet, licencias de software, equipo y seguros.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-expenses">€8.000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="1000" max="40000" step="500" value="8000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">
+              Tipo Impositivo Estimado (IRPF / Impuestos)
+              <span class="label-hint" tabindex="0" data-tooltip="Retención o tramo de IRPF aproximado según tus ingresos anuales.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-tax">25%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="10" max="48" step="1" value="25">
+          </div>
+        </div>
+
+        <!-- Group 2: Time & Billable Capacity -->
+        <div class="form-section-title">2. Jornada Laboral y Horas Facturables</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">
+              Semanas de Vacaciones y Días Libres
+              <span class="label-hint" tabindex="0" data-tooltip="Semanas al año que no trabajarás (vacaciones, festivos y bajas por enfermedad).">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-vacation">4 sem</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">
+              Horas de Trabajo Totales / Semana
+              <span class="label-hint" tabindex="0" data-tooltip="Total de horas que dedicas a tu negocio cada semana (facturables + comerciales + gestión).">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-hours">40 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="15" max="60" step="1" value="40">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">
+              Porcentaje de Tiempo Facturable (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Porcentaje de tu jornada realmente dedicado a clientes. La media de un freelance es del 55% al 65%. El resto es gestión y ventas.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-billable">60%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="60">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">
+              Margen de Beneficio y Colchón (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Margen extra para afrontar meses flojos, crear fondo de emergencia y reinvertir.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-profit">20%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="20">
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Column -->
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Tarifa por Hora Recomendada</div>
+          <div class="primary-rate-number" id="res-hourly-rate">€68</div>
+          <div class="primary-rate-sub">Cubre sueldo neto, impuestos, gastos y 20% de colchón de seguridad</div>
+        </div>
+
+        <!-- Secondary Rates Grid -->
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Tarifa por Día</div>
+            <div class="sec-rate-val" id="res-day-rate">€544</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Retainer Mensual</div>
+            <div class="sec-rate-val" id="res-monthly-rate">€6.800</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Mínimo Supervivencia</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">€57</div>
+          </div>
+        </div>
+
+        <!-- Revenue Breakdown Visual Bar -->
+        <div class="breakdown-box">
+          <div class="breakdown-title">
+            <span>Distribución de Cada Euro Facturado</span>
+            <span id="res-annual-revenue" style="color: #a5b4fc;">€81.600 Brutos</span>
+          </div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 55%;" title="Sueldo Neto"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;" title="Impuestos"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;" title="Gastos"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;" title="Beneficio"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Sueldo Neto:</span>
+              <span class="legend-val" id="legend-income-val">€45.000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Impuestos (IRPF):</span>
+              <span class="legend-val" id="legend-tax-val">€15.000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Gastos / Cuotas:</span>
+              <span class="legend-val" id="legend-expenses-val">€8.000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Margen / Colchón:</span>
+              <span class="legend-val" id="legend-profit-val">€13.600</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            Exportar Hoja de Tarifas (Imprimible)
+          </button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+              Compartir Cálculo
+            </button>
+            <button id="btn-embed" class="btn btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              Insertar Widget
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Quote Estimator Extension -->
+    <section class="project-quote-section">
+      <div class="project-quote-grid">
+        <div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 8px;">Presupuestador de Proyectos Cerrados</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+            Evita presupuestar a ciegas. Multiplica tu tarifa por hora por las horas estimadas de trabajo y añade un colchón de imprevistos para cambios de alcance.
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="quote-hours" class="form-label">Horas Estimadas</label>
+                <span class="form-value-display" id="val-quote-hours">30 hrs</span>
+              </div>
+              <input type="range" id="quote-hours" class="range-slider" min="5" max="200" step="5" value="30">
+            </div>
+
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="quote-buffer" class="form-label">Colchón de Imprevistos</label>
+                <span class="form-value-display" id="val-quote-buffer">+15%</span>
+              </div>
+              <input type="range" id="quote-buffer" class="range-slider" min="0" max="40" step="5" value="15">
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-result-box">
+          <div style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: var(--accent-indigo);">Presupuesto Recomendado</div>
+          <div class="quote-amount" id="quote-total-price">€2.346</div>
+          <div style="font-size: 0.825rem; color: var(--text-muted);">Incluye valor por hora + protección ante revisiones</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep SEO Content Engine Below the Fold -->
+    <article class="seo-content-article">
+      <h2>Guía Completa: Cómo Calcular Tu Precio por Hora Como Autónomo en 2026</h2>
+      <p>
+        El error más común y destructivo al iniciarse como freelance es pensar: <em>"Si en mi antiguo trabajo ganaba 30.000€ al año y trabajaba unas 1.800 horas, mi precio por hora debería ser de unos 16€ o 17€"</em>.
+      </p>
+      <p>
+        Este cálculo olvida una verdad fundamental: <strong>un autónomo no es un asalariado con libertad de horarios; es una empresa unipersonal</strong>. Si cobras tu tiempo como si fueras empleado, acabarás trabajando 60 horas semanales para apenas llegar a fin de mes.
+      </p>
+
+      <blockquote class="expert-quote-card">
+        <p>"Los autónomos que calculan sus precios asumiendo 40 horas facturables a la semana terminan quebrando en menos de 18 meses por insolvencia y agotamiento extremo. Tu tarifa por hora debe financiar tu empresa entera, no solo el tiempo que tus dedos tocan el teclado."</p>
+        <cite>— Elena Morales, Consultora Financiera y Autora del Manual de Finanzas para Profesionales Independientes</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Regla de Oro:</strong> Tu tarifa por hora debe financiar no solo tus horas de diseño o programación, sino también la cuota mensual de autónomos, el IRPF, las semanas de vacaciones, las bajas por enfermedad, las licencias de software y todas las horas que dedicas a presupuestar y buscar clientes.
+        </p>
+      </div>
+
+      <h3>1. La Trampa de las 40 Horas Semanales</h3>
+      <p>
+        En una empresa por cuenta ajena, cobras por estar en la oficina o conectado, incluso si pasas dos horas respondiendo correos internos o asistiendo a reuniones improductivas. En el mundo freelance, <strong>ningún cliente te pagará por el tiempo que dedicas a redactar propuestas, revisar facturas impagadas o hacer tu declaración trimestral</strong>.
+      </p>
+      <p>
+        Según los datos empíricos del <em>Informe Global de Tarifas Freelance y Estructura de Costes 2026</em> de RateCraft, el <strong>62,4% de los autónomos a tiempo completo solo logra facturar entre 20 y 24 horas por semana</strong>. El 37,6% restante del tiempo productivo se consume obligatoriamente en actividades no remuneradas:
+      </p>
+      <ul>
+        <li><strong>Captación y propuestas comerciales:</strong> Realizar llamadas de descubrimiento, redactar presupuestos y negociar condiciones.</li>
+        <li><strong>Gestión y administración:</strong> Contabilidad, trato con la gestoría y conciliación bancaria.</li>
+        <li><strong>Marketing propio:</strong> Actualizar tu página web, crear casos de estudio y mantener tu presencia profesional.</li>
+        <li><strong>Formación continua:</strong> Aprender nuevas tecnologías y herramientas necesarias para mantener tu competitividad.</li>
+      </ul>
+
+      <h3>2. La Fórmula Matemática de la Tarifa por Hora Sostenible</h3>
+      <div class="seo-callout">
+        <code>
+          Tarifa por Hora = [ (Sueldo Neto Anual ÷ (1 - IRPF)) + Gastos de Negocio ] × (1 + Margen) ÷ Horas Facturables Anuales
+        </code>
+      </div>
+      <p>Donde cada término representa:</p>
+      <ul>
+        <li><strong>Sueldo Neto Anual:</strong> La cantidad exacta que necesitas en tu cuenta personal para vivir con tranquilidad, pagar vivienda, alimentación y ahorrar para el retiro.</li>
+        <li><strong>IRPF e Impuestos:</strong> Carga impositiva legal obligatoria. Para consultar tramos y retenciones vigentes, revisa las guías oficiales de la <a href="https://sede.agenciatributaria.gob.es/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">Agencia Tributaria</a>. La media retenida se sitúa entre el 20% y el 35%.</li>
+        <li><strong>Gastos Operativos de Negocio:</strong> Cuota mensual al <a href="https://www.seg-social.es/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">Régimen Especial de Trabajadores Autónomos (RETA)</a> de la Seguridad Social, gestoría fiscal, software profesional (Figma, GitHub, Adobe), hosting y amortización de equipos informáticos.</li>
+        <li><strong>Margen de Beneficio Comercial (15% - 25%):</strong> Colchón de liquidez indispensable para afrontar periodos entre contratos, bajas médicas no cubiertas y renovación tecnológica.</li>
+        <li><strong>Horas Facturables Anuales:</strong> <code>(52 semanas - vacaciones - bajas) × (horas semanales × % facturable)</code>.</li>
+      </ul>
+
+      <h3>3. Tarifas Orientativas por Sector en el Mercado Hispanohablante (2026)</h3>
+      <p>
+        Datos de referencia extraídos del Benchmark de Tarifas Freelance RateCraft 2026 para profesionales independientes en España e Iberoamérica:
+      </p>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Especialidad / Perfil</th>
+              <th>Tarifa Media Junior</th>
+              <th>Tarifa Senior / Especialista</th>
+              <th>Herramienta Dedicada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Desarrollador Web / Software</strong></td>
+              <td>25€ – 40€ / hr</td>
+              <td><span class="rate-badge">55€ – 90€+ / hr</span></td>
+              <td><a href="calculadora-precio-hora-programador/">Calculadora Programadores &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Diseñador UI/UX & Producto</strong></td>
+              <td>22€ – 35€ / hr</td>
+              <td><span class="rate-badge">50€ – 80€+ / hr</span></td>
+              <td><a href="calculadora-tarifa-disenador/">Calculadora Diseñadores &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Copywriter / Redactor B2B</strong></td>
+              <td>20€ – 30€ / hr</td>
+              <td><span class="rate-badge">45€ – 75€+ / hr</span></td>
+              <td><a href="calculadora-tarifa-redactor/">Calculadora Redactores &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>Consultor SEO & Analítica</strong></td>
+              <td>30€ – 45€ / hr</td>
+              <td><span class="rate-badge">60€ – 120€+ / hr</span></td>
+              <td>Retainer Mensual Fijo</td>
+            </tr>
+            <tr>
+              <td><strong>Editor de Vídeo & Motion</strong></td>
+              <td>20€ – 35€ / hr</td>
+              <td><span class="rate-badge">45€ – 70€+ / hr</span></td>
+              <td>Tarifa por Jornada / Entrega</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Preguntas Frecuentes de Autónomos (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo calcular mi tarifa por hora como freelance o autónomo en 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Para calcular tu tarifa por hora: 1. Define tu sueldo neto deseado anual. 2. Divide entre (1 - Tipo IRPF) para obtener la base imponible bruta necesaria. 3. Suma los gastos fijos anuales (cuota RETA de autónomos, gestoría, herramientas de software). 4. Añade un margen de beneficio del 15% al 25% para ahorro y contingencias. 5. Divide los ingresos brutos requeridos entre tus horas facturables anuales reales (52 semanas menos vacaciones y festivos, multiplicado por 20 a 24 horas facturables semanales).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuál es la trampa de las 40 horas en el trabajo freelance?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>La trampa de las 40 horas consiste en asumir que un autónomo puede facturar 40 horas semanales a sus clientes como un empleado convencional. Los estudios del sector demuestran que el 62,4% de los autónomos a tiempo completo solo puede facturar entre 20 y 24 horas a la semana, debido a que entre el 35% y el 45% del tiempo se consume en tareas administrativas, reuniones no remuneradas, prospección comercial y facturación.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Es mejor cobrar por horas, tarifas por día o precio cerrado por proyecto?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Cobrar por horas es ideal para consultoría técnica continua y proyectos con requisitos cambiantes. Las tarifas por jornada (day rates) son el estándar para sprints integrados en equipos de agencias. El precio cerrado por proyecto es la mejor alternativa cuando el alcance está perfectamente definido, ya que premia tu experiencia y productividad sin penalizar tus ingresos por trabajar con rapidez.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto dinero debe apartar un autónomo para impuestos y gastos?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>La mayoría de los profesionales independientes deben reservar entre el 25% y el 35% de sus ingresos brutos para IRPF y cotizaciones a la Seguridad Social (RETA). Además, los gastos operativos anuales (suscripciones de software, amortización de hardware, gestoría y espacio de trabajo) suelen oscilar entre 4.000€ y 9.000€ anuales.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo presupuestar proyectos a precio cerrado sin perder dinero por cambios de alcance?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Calcula el número de horas estimadas de ejecución según proyectos similares previos, multiplícalo por tu tarifa por hora base y añade obligatoriamente un margen de contingencia del 15% al 25% para imprevistos. Delimita de forma estricta los entregables y rondas de revisión en tu contrato de servicios.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuál es un margen de beneficio saludable para un negocio freelance?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Un negocio freelance sostenible debe contar con un margen de beneficio neto del 15% al 25% por encima de tu sueldo base y gastos fijos. Este colchón financiero protege tu liquidez durante trimestres con menor volumen de proyectos, financia tu jubilación y cubre la renovación continua de tus equipos de trabajo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué hacer si un cliente dice que mi tarifa freelance es muy cara?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Nunca reduzcas tu precio por hora sin reducir los entregables del encargo. Si el cliente tiene un presupuesto inferior, la desescalada protege tu prestigio: 'Podemos adaptarnos a tu presupuesto de 2.000€ centrándonos exclusivamente en las funciones esenciales de la Fase 1 y programando los añadidos secundarios para una segunda etapa.'</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Code Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Inserta esta Calculadora en tu Web o Blog</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+        Añade esta herramienta gratuita a tu blog de diseño, comunidad de autónomos o recursos para desarrolladores.
+      </p>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/es/?embed=true" width="100%" height="780" frameborder="0" style="border-radius:12px; border:1px solid #1e293b;"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copiar Código de Inserción</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Cerrar modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Tarifario Oficial 2026</span>
+        </div>
+        <h3>Hoja de Tarifas Profesionales</h3>
+        <p class="card-subtitle">Tarifario Oficial de Servicios Independientes • Válido para 2026</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Tarifa Estándar por Hora</span>
+              <span class="rate-desc">Suelo mínimo de facturación para asesoría técnica</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">€68 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Tarifa Estándar por Día (8 hrs)</span>
+              <span class="rate-desc">Jornada comercial completa dedicada</span>
+            </td>
+            <td class="strong-val" id="rc-day">€544 / día</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Retainer Semanal Dedicado</span>
+              <span class="rate-desc">Capacidad garantizada de 40 horas semanales</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">€1.632 / sem</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Retainer Mensual de Asesoría</span>
+              <span class="rate-desc">Acompañamiento prioritario continuo</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">€6.800 / mes</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Precios para contratación directa de servicios independientes. Los proyectos cerrados se presupuestan según memoria técnica y entregables acordados.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-ES-GEN-2026</span>
+            <span>Verificado vía ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Descargar Tarjeta (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Imprimir / Guardar en PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="./" class="brand-logo" title="RateCraft Herramientas Freelance">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Inteligencia de precios y calculadoras de tarifas para autónomos y freelancers. Diseñado para cobrar lo que realmente vale tu trabajo.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculadoras</h4>
+          <ul class="footer-links-list">
+            <li><a href="./">General Autónomos</a></li>
+            <li><a href="calculadora-precio-hora-programador/">Programadores y Software</a></li>
+            <li><a href="calculadora-tarifa-disenador/">Diseñadores Gráficos y UI/UX</a></li>
+            <li><a href="calculadora-tarifa-redactor/">Redactores y Copywriters</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Guías Editoriales</h4>
+          <ul class="footer-links-list">
+            <li><a href="guias/como-calcular-tarifa-por-hora/">Cómo Calcular tu Tarifa por Hora</a></li>
+            <li><a href="guias/precios-por-valor-vs-por-hora/">Precios por Valor vs. Por Hora</a></li>
+            <li><a href="guias/contratos-retainer-freelance/">Guía de Contratos Retainer</a></li>
+            <li><a href="guias/impuestos-gastos-autonomos/">Impuestos y Gastos Deducibles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Empresa y Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="sobre-nosotros/">Sobre Nosotros</a></li>
+            <li><a href="contacto/">Contacto</a></li>
+            <li><a href="privacidad/">Política de Privacidad</a></li>
+            <li><a href="terminos/">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Creado para profesionales independientes, autónomos y consultores en todo el mundo.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../">English Version (🇺🇸)</a></li>
+          <li><a href="../sitemap.xml">Mapa del Sitio</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>

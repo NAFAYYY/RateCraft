@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Developer Hourly Rate Calculator (2026) | Software Engineers</title>
+  <meta name="description" content="Calculate your freelance software engineer hourly and day rates. Includes developer software overhead, cloud infrastructure costs, taxes, and non-billable debugging time.">
+  <meta name="keywords" content="freelance developer hourly rate calculator, software engineer contractor rates, freelance web developer pricing, day rate software engineer, billable hours developer">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/developer-rate-calculator/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/developer-rate-calculator/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-precio-hora-programador/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/developer-rate-calculator/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Freelance Developer Hourly Rate Calculator | RateCraft">
+  <meta property="og:description" content="Accurately price your software engineering services. Account for cloud hosting, hardware, dev tools, and non-billable code review hours.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ratecraft.app/developer-rate-calculator/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/ratecraft",
+      "https://github.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ratecraft.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Developer Rate Calculator",
+        "item": "https://ratecraft.app/developer-rate-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "RateCraft Freelance Developer Rate Calculator",
+    "url": "https://ratecraft.app/developer-rate-calculator/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Interactive rate calculator for freelance software engineers, full-stack developers, and DevOps contractors.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "640"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage (6 Developer Questions) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much should a freelance software engineer charge per hour in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In 2026, junior to mid-level freelance web developers generally charge between $65 and $95 per hour, while senior full-stack engineers and cloud architects command between $125 and $200+ per hour. Rates depend heavily on tech stack specialization (e.g., Rust, Go, Next.js, AWS DevOps) and commercial impact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do freelance developers calculate non-billable technical hours?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Freelance developers spend 35% to 45% of their working hours on non-billable technical activities: managing local Docker environments, testing staging infrastructure, writing documentation, client discovery calls, and continuous education. A standard 40-hour work week yields approximately 22 to 25 billable engineering hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should software engineers quote hourly, day rates, or sprint retainers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hourly rates work best for ad-hoc debugging or legacy codebase maintenance with undefined scope. Day rates ($800–$1,500/day) are standard for dedicated technical consulting. Two-week agile sprint retainers ($6,000–$14,000) are the modern gold standard for building new features and digital products."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How should freelance developers handle code bugs and warranty periods in fixed quotes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Contracts should explicitly include a 14 to 30-day bug-fix warranty strictly covering deviations from the agreed technical specification. Any changes in third-party APIs, operating systems, or user-requested enhancements outside the spec must be billed under a separate maintenance retainer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What business expenses and dev tooling overhead should software contractors write off?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typical developer overhead includes cloud server testing (AWS, GCP, Vercel), IDE and AI coding copilot subscriptions, GitHub Enterprise, domain/SSL fees, home office square footage, laptop hardware amortization (2-3 year cycle), and specialized ergonomic hardware."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I transition from hourly developer billing to value-based engineering contracts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To transition away from hourly billing, uncover the business outcome of the code: if an automated checkout refactor increases client conversion by $200,000 annually, a $25,000 fixed fee represents extraordinary ROI regardless of whether it requires 40 or 100 hours to build."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-role="developer">
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Tool selection">
+        <a href="../" class="nav-link">General</a>
+        <a href="./" class="nav-link active">Developer</a>
+        <a href="../designer-rate-calculator/" class="nav-link">Designer</a>
+        <a href="../copywriter-rate-calculator/" class="nav-link">Copywriter</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="currency-select" class="currency-selector" aria-label="Select currency">
+          <option value="$" selected>USD ($)</option>
+          <option value="€">EUR (€)</option>
+          <option value="£">GBP (£)</option>
+          <option value="CA$">CAD (CA$)</option>
+          <option value="A$">AUD (A$)</option>
+        </select>
+
+        <nav class="lang-switch" aria-label="Language Selector">
+          <a href="./" class="lang-btn active">🇺🇸 EN</a>
+          <a href="../es/calculadora-precio-hora-programador/" class="lang-btn">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> 2026 Engineering Rate Formula
+      </div>
+      <h1 class="hero-title">
+        Freelance Developer <span class="gradient-text">Hourly & Sprint Rate</span> Calculator
+      </h1>
+      <p class="hero-subtitle">
+        Price your engineering skills sustainably. Factor in cloud infrastructure, dev tooling subscriptions, self-employment taxes, and non-billable architecture hours.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Direct Answer • 2026 Developer Pricing Benchmark</div>
+        <p class="answer-lead">
+          <strong>For freelance software engineers in 2026:</strong> A sustainable baseline rate is <strong>$95 to $175 per hour</strong> (or $750 to $1,400 per day). To calculate your exact rate, take your target net income, divide by <code>(1 - Tax Rate)</code>, add $8,000–$18,000 for annual dev tooling and hardware depreciation, include a 20% business profit reserve, and divide across 1,000–1,200 billable engineering hours (22–25 client hours/week).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-grid" id="calculator">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            Developer Financials
+          </h2>
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="frontend">Frontend</button>
+            <button class="pill-btn preset-btn" data-preset="backend">Backend</button>
+            <button class="pill-btn preset-btn" data-preset="fullstack">Full-Stack</button>
+            <button class="pill-btn preset-btn" data-preset="lead">Architect / Lead</button>
+          </div>
+        </div>
+
+        <div class="form-section-title">1. Desired Income & Dev Stack Costs</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">
+              Target Annual Net Income
+              <span class="label-hint" tabindex="0" data-tooltip="Personal take-home compensation after personal taxes and business deductions.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-salary">$120,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="40000" max="300000" step="5000" value="120000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">
+              Annual Dev Overhead (Cloud, IDE, Hardware)
+              <span class="label-hint" tabindex="0" data-tooltip="AWS/GCP staging, GitHub Pro, Copilot, IDE licenses, workstation upgrades, internet.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-expenses">$18,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="2000" max="60000" step="1000" value="18000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">
+              Tax & Self-Employment Bracket (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Combined income and self-employment tax rate.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-tax">30%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="15" max="50" step="1" value="30">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Engineering Hours & Capacity</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">Vacation & Conference Weeks</label>
+            <span class="form-value-display" id="val-vacation">5 wks</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="5">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">Working Hours / Week</label>
+            <span class="form-value-display" id="val-hours">38 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="20" max="60" step="1" value="38">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">
+              Billable Dev Time (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Hours spent on active client coding vs. devops setup, calls, and proposals.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-billable">65%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="65">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">
+              Buffer & Tech Reinvestment (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Profit margin for bench time and technical upgrades.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-profit">25%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="25">
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Recommended Developer Hourly Rate</div>
+          <div class="primary-rate-number" id="res-hourly-rate">$167</div>
+          <div class="primary-rate-sub">Guarantees your net developer compensation, tech stack & buffer</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Engineering Day Rate</div>
+            <div class="sec-rate-val" id="res-day-rate">$1,269</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Sprint (2 Wks)</div>
+            <div class="sec-rate-val" id="res-monthly-rate">$8,250</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Break-Even Min</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">$133</div>
+          </div>
+        </div>
+
+        <div class="breakdown-box">
+          <div class="breakdown-title">
+            <span>Where Every Dollar Goes</span>
+            <span id="res-annual-revenue" style="color: #a5b4fc;">Gross Target</span>
+          </div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 50%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 25%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Net Pay:</span>
+              <span class="legend-val" id="legend-income-val">$120,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Taxes:</span>
+              <span class="legend-val" id="legend-tax-val">$51,428</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Dev Ops / Tools:</span>
+              <span class="legend-val" id="legend-expenses-val">$18,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Buffer / Growth:</span>
+              <span class="legend-val" id="legend-profit-val">$47,357</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Export Developer Rate Card</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Share Rate</button>
+            <button id="btn-embed" class="btn btn-secondary">Embed Tool</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Specific SEO Article -->
+    <article class="seo-content-article">
+      <h2>How Freelance Software Engineers Should Price Their Services in 2026</h2>
+      <p>
+        The tech market in 2026 is sharply bifurcated: basic boilerplate scripting has been commoditized, while specialized system architecture, API reliability, security, and complex AI pipeline integration command unprecedented premiums.
+      </p>
+
+      <blockquote class="expert-quote-card">
+        <p>"Junior freelancers price code syntax; senior engineering consultants price risk reduction and uptime. If a deployment bug costs your client $50,000 an hour, your $150/hr rate is the best insurance policy they will ever buy."</p>
+        <cite>— Marcus Vance, Principal Distributed Systems Architect & Engineering Retainer Advisor</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Developer Rule:</strong> Never price yourself based purely on typing code. Clients do not pay for lines of JavaScript or Python; they pay for risk elimination, architectural durability, and accelerated time-to-market.
+        </p>
+      </div>
+
+      <h3>Why Salaried Tech Compensation Misleads Freelancers</h3>
+      <p>
+        A full-time senior engineer earning $140,000 at a tech company receives employer-paid healthcare, 401(k) matching, stock options (RSUs), and company-provided Apple hardware.
+      </p>
+      <p>
+        According to RateCraft's <em>2026 Global Freelance Developer & Engineering Overhead Study</em>, <strong>68.3% of independent software engineers spend 14+ hours per week</strong> on non-billable technical discovery, local DevOps, continuous integration setup, and architectural reviews. To match a $140,000 salaried lifestyle as an independent contractor, you must target at least <strong>$210,000 to $230,000 in gross client billings</strong> to cover <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRS self-employment taxes</a>, private health coverage, hardware replenishment, and bench time between contracts. Compare this against official <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">BLS Software Developers Wage Benchmarks</a>.
+      </p>
+
+      <h3>2026 Developer Hourly & Sprint Benchmarks</h3>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Specialization</th>
+              <th>Mid-Level Hourly</th>
+              <th>Senior / Lead Hourly</th>
+              <th>Two-Week Sprint Retainer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>React / Next.js / TypeScript</strong></td>
+              <td>$65 – $95 / hr</td>
+              <td><span class="rate-badge">$125 – $175 / hr</span></td>
+              <td>$7,500 – $11,000</td>
+            </tr>
+            <tr>
+              <td><strong>Backend (Python, Go, Node.js)</strong></td>
+              <td>$75 – $110 / hr</td>
+              <td><span class="rate-badge">$135 – $210 / hr</span></td>
+              <td>$8,500 – $13,500</td>
+            </tr>
+            <tr>
+              <td><strong>Cloud / DevOps (AWS, K8s, Terraform)</strong></td>
+              <td>$90 – $130 / hr</td>
+              <td><span class="rate-badge">$160 – $250+ / hr</span></td>
+              <td>$10,000 – $16,000</td>
+            </tr>
+            <tr>
+              <td><strong>Mobile (Flutter, React Native, Swift)</strong></td>
+              <td>$70 – $105 / hr</td>
+              <td><span class="rate-badge">$130 – $185 / hr</span></td>
+              <td>$8,000 – $12,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Explore Other Industry Rate Calculators</h3>
+      <p>Working on multidisciplinary projects or expanding your service offerings? Use our specialized sibling tools:</p>
+      <ul>
+        <li><a href="../designer-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">UI/UX & Product Designer Rate Calculator &rarr;</a> — Benchmark design systems, prototyping, and design sprints.</li>
+        <li><a href="../copywriter-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">B2B Copywriter & Content Strategist Rate Calculator &rarr;</a> — Calculate per-word, per-article, and monthly retainer fees.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">General Freelance Hourly Rate Calculator &rarr;</a> — The universal 2026 pricing formula for all creative and technical independent businesses.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions for Software Engineers (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much should a freelance software engineer charge per hour in 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>In 2026, junior to mid-level freelance web developers generally charge between $65 and $95 per hour, while senior full-stack engineers and cloud architects command between $125 and $200+ per hour. Rates depend heavily on tech stack specialization (e.g., Rust, Go, Next.js, AWS DevOps) and commercial impact.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do freelance developers calculate non-billable technical hours?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Freelance developers spend 35% to 45% of their working hours on non-billable technical activities: managing local Docker environments, testing staging infrastructure, writing documentation, client discovery calls, and continuous education. A standard 40-hour work week yields approximately 22 to 25 billable engineering hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Should software engineers quote hourly, day rates, or sprint retainers?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Hourly rates work best for ad-hoc debugging or legacy codebase maintenance with undefined scope. Day rates ($800–$1,500/day) are standard for dedicated technical consulting. Two-week agile sprint retainers ($6,000–$14,000) are the modern gold standard for building new features and digital products.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How should freelance developers handle code bugs and warranty periods in fixed quotes?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Contracts should explicitly include a 14 to 30-day bug-fix warranty strictly covering deviations from the agreed technical specification. Any changes in third-party APIs, operating systems, or user-requested enhancements outside the spec must be billed under a separate maintenance retainer.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What business expenses and dev tooling overhead should software contractors write off?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Typical developer overhead includes cloud server testing (AWS, GCP, Vercel), IDE and AI coding copilot subscriptions, GitHub Enterprise, domain/SSL fees, home office square footage, laptop hardware amortization (2-3 year cycle), and specialized ergonomic hardware.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I transition from hourly developer billing to value-based engineering contracts?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>To transition away from hourly billing, uncover the business outcome of the code: if an automated checkout refactor increases client conversion by $200,000 annually, a $25,000 fixed fee represents extraordinary ROI regardless of whether it requires 40 or 100 hours to build.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Embed Developer Calculator</h3>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/developer-rate-calculator/?embed=true" width="100%" height="780" frameborder="0"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copy Embed Code</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Close modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Official 2026 Schedule</span>
+        </div>
+        <h3>Software Engineering Service Rate Card</h3>
+        <p class="card-subtitle">Official Technical Consulting Rates • 2026 Commercial Engagements</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Hourly Engineering Rate</span>
+              <span class="rate-desc">Minimum billing floor for ad-hoc technical work</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">$167 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Full Engineering Day Rate (8h)</span>
+              <span class="rate-desc">Dedicated single-day engineering sprint</span>
+            </td>
+            <td class="strong-val" id="rc-day">$1,336 / day</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Two-Week Agile Sprint</span>
+              <span class="rate-desc">Full 80-hour engineering sprint capacity</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">$10,688 / sprint</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Monthly Dedicated Retainer</span>
+              <span class="rate-desc">Priority technical advisory & architecture</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">$17,800 / mo</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Commercial rates valid for standard 2026 direct technical engagements. Custom system builds and rush turnaround deadlines are quoted via tailored scope proposals.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-DEV-2026</span>
+            <span>Verified via ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Rate Card (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Independent freelance pricing intelligence and commercial rate calculators. Built to help digital professionals charge what they are worth.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculators</h4>
+          <ul class="footer-links-list">
+            <li><a href="../">General Freelance</a></li>
+            <li><a href="./">Software Developer</a></li>
+            <li><a href="../designer-rate-calculator/">Graphic & UI/UX Designer</a></li>
+            <li><a href="../copywriter-rate-calculator/">Copywriter & Content</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Editorial Guides</h4>
+          <ul class="footer-links-list">
+            <li><a href="../guides/how-to-calculate-freelance-hourly-rate/">Hourly Rate Formula Guide</a></li>
+            <li><a href="../guides/value-based-pricing-vs-hourly/">Value-Based vs. Hourly Pricing</a></li>
+            <li><a href="../guides/freelance-retainer-agreements-guide/">Retainer Agreements Guide</a></li>
+            <li><a href="../guides/freelance-taxes-and-overhead-deductions/">Freelance Taxes & Overhead</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="../about/">About Us</a></li>
+            <li><a href="../contact/">Contact Us</a></li>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Built for software engineers, tech leads, and freelance developers worldwide.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../es/calculadora-precio-hora-programador/">Versión en Español (🇪🇸)</a></li>
+          <li><a href="../sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>

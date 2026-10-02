@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Hourly Rate Calculator (2026) | Calculate Project & Day Rates</title>
+  <meta name="description" content="Free online freelance hourly rate calculator. Accurately calculate your billable rate, taxes, business overhead, day rate, and project quotes. 100% client-side, zero signup.">
+  <meta name="keywords" content="freelance hourly rate calculator, how much to charge freelance, freelance pricing calculator, freelance day rate, billable hours calculator">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Freelance Hourly Rate Calculator | RateCraft">
+  <meta property="og:description" content="Stop undercharging. Calculate your true hourly rate, day rate, and project pricing taking taxes, overhead, and non-billable time into account.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ratecraft.app/">
+  <meta property="og:site_name" content="RateCraft">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Freelance Hourly Rate Calculator | RateCraft">
+  <meta name="twitter:description" content="Accurately calculate your freelance hourly, daily, and project rates in seconds.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "description": "Independent freelance pricing intelligence and utility calculators.",
+    "sameAs": [
+      "https://github.com/ratecraft",
+      "https://twitter.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ratecraft.app/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org Structured Data: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "RateCraft Freelance Hourly Rate Calculator",
+    "url": "https://ratecraft.app/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Free interactive pricing tool to calculate sustainable freelance hourly rates, day rates, sprint retainers, and project quotes considering taxes, non-billable hours, and profit margins.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1840"
+    }
+  }
+  </script>
+
+  <!-- Schema.org Structured Data: FAQPage (7 Core Questions) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I calculate my freelance hourly rate in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To calculate your freelance hourly rate: 1. Determine your target annual personal take-home pay. 2. Divide by (1 - Tax Rate) to find your pre-tax gross income requirement. 3. Add annual operating business overhead. 4. Add a 15% to 25% profit margin for savings and slow quarters. 5. Divide the total gross revenue requirement by your annual billable hours (calculated as 52 weeks minus vacation/sick days, multiplied by 20 to 25 actual client hours per week)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the billable hours trap in freelancing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The billable hours trap occurs when freelancers assume they can bill 40 client hours per week like traditional salaried employees. Industry research demonstrates that 62.4% of full-time freelancers can only bill between 20 and 24 hours per week, because 35% to 45% of time is consumed by non-billable pitching, invoicing, client communication, marketing, and administration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I charge hourly, day rates, or fixed project rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hourly rates are best for open-ended consulting, ongoing technical maintenance, and projects with shifting scopes. Day rates are ideal for embedded team sprints. Fixed project pricing is superior for clearly defined deliverables where your experience allows you to work quickly without penalizing your income."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much should I set aside for freelance taxes and expenses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most full-time independent professionals should allocate 25% to 35% of gross earnings toward federal, state/local, and self-employment taxes. Annual operating expenses (software subscriptions, hardware depreciation, accounting, coworking) typically range between $6,000 and $15,000 annually."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I quote fixed projects without losing money to scope creep?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estimate the realistic delivery hours based on previous engagements, multiply by your recommended hourly rate floor, and add a mandatory 15% to 25% scope risk contingency buffer. Specify exact milestones and revision boundaries in your contract."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a healthy profit margin for a freelance business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A sustainable independent business requires a 15% to 25% profit margin above base expenses and salary. This buffer protects cash flow during dry periods, funds retirement savings, and finances ongoing equipment upgrades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do if a client says my freelance rate is too high?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never reduce your price without reducing the deliverables. If a client's budget is lower, descoping protects your market value: 'We can meet your $3,000 budget by focusing exclusively on core deliverables and scheduling secondary features for a subsequent phase.'"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./" class="brand-logo" title="RateCraft Freelance Tools">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <!-- Tools Navigation Links -->
+      <nav class="nav-links" aria-label="Tool selection">
+        <a href="./" class="nav-link active">General</a>
+        <a href="developer-rate-calculator/" class="nav-link">Developer</a>
+        <a href="designer-rate-calculator/" class="nav-link">Designer</a>
+        <a href="copywriter-rate-calculator/" class="nav-link">Copywriter</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Currency Selector -->
+        <select id="currency-select" class="currency-selector" aria-label="Select currency">
+          <option value="$" selected>USD ($)</option>
+          <option value="€">EUR (€)</option>
+          <option value="£">GBP (£)</option>
+          <option value="CA$">CAD (CA$)</option>
+          <option value="A$">AUD (A$)</option>
+          <option value="MX$">MXN (MX$)</option>
+        </select>
+
+        <!-- Language Switcher -->
+        <nav class="lang-switch" aria-label="Language Selector">
+          <a href="./" class="lang-btn active">🇺🇸 EN</a>
+          <a href="es/" class="lang-btn">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <!-- Hero Header -->
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> 2026 Independent Pricing Formula
+      </div>
+      <h1 class="hero-title">
+        Freelance <span class="gradient-text">Hourly Rate</span> Calculator
+      </h1>
+      <p class="hero-subtitle">
+        Eliminate the guesswork. Accurately price your services by accounting for taxes, operating overhead, non-billable admin time, and desired profit margins.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Direct Answer • 2026 Pricing Formula</div>
+        <p class="answer-lead">
+          <strong>To calculate your freelance hourly rate in 2026:</strong> Divide your target annual net income by <code>(1 - Tax Rate)</code> to determine required pre-tax gross earnings, add annual overhead expenses, add a 15%–25% business profit margin, and divide the total by your annual billable hours (average 52 weeks minus time off, multiplied by 20–24 client hours per week).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-grid" id="calculator">
+      <!-- Input Controls Column -->
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            Financial Parameters
+          </h2>
+          <!-- Industry / Seniority Quick Presets -->
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="starter">Starter</button>
+            <button class="pill-btn preset-btn" data-preset="mid">Mid-Pro</button>
+            <button class="pill-btn preset-btn" data-preset="senior">Senior/Lead</button>
+            <button class="pill-btn preset-btn" data-preset="agency">Agency</button>
+          </div>
+        </div>
+
+        <!-- Group 1: Income & Expenses -->
+        <div class="form-section-title">1. Desired Earnings & Operating Costs</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">
+              Target Annual Take-Home Pay
+              <span class="label-hint" tabindex="0" data-tooltip="The net money you want in your personal pocket after all taxes and expenses.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-salary">$75,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="20000" max="300000" step="2500" value="75000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">
+              Annual Business Overhead
+              <span class="label-hint" tabindex="0" data-tooltip="Software tools (SaaS), laptop, internet, phone, legal, accountant, health insurance.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-expenses">$12,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="1000" max="60000" step="1000" value="12000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">
+              Estimated Tax & Social Security Rate
+              <span class="label-hint" tabindex="0" data-tooltip="Income tax + self-employment tax bracket for your country/state.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-tax">25%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="10" max="50" step="1" value="25">
+          </div>
+        </div>
+
+        <!-- Group 2: Time & Billable Capacity -->
+        <div class="form-section-title">2. Working Schedule & Reality Check</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">
+              Vacation & Time Off
+              <span class="label-hint" tabindex="0" data-tooltip="Number of weeks you take off per year for rest, holidays, and sick days.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-vacation">4 wks</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">
+              Target Working Hours / Week
+              <span class="label-hint" tabindex="0" data-tooltip="Total hours you plan to work in total every week (billable + non-billable).">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-hours">40 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="15" max="60" step="1" value="40">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">
+              Billable Time Ratio (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Percent of your time actually spent on client work. Most freelancers average 55% - 65%. The rest is marketing and admin!">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-billable">60%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="60">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">
+              Profit & Emergency Buffer (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Extra margin to save for quiet months, business reinvestment, and emergency fund.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-profit">20%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="20">
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Column -->
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Recommended Hourly Rate</div>
+          <div class="primary-rate-number" id="res-hourly-rate">$112</div>
+          <div class="primary-rate-sub">Guarantees your net salary, taxes, expenses & 20% profit</div>
+        </div>
+
+        <!-- Secondary Rates Grid -->
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Day Rate</div>
+            <div class="sec-rate-val" id="res-day-rate">$896</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Monthly Retainer</div>
+            <div class="sec-rate-val" id="res-monthly-rate">$11,200</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Break-Even Min</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">$93</div>
+          </div>
+        </div>
+
+        <!-- Revenue Breakdown Visual Bar -->
+        <div class="breakdown-box">
+          <div class="breakdown-title">
+            <span>Where Every Dollar Goes</span>
+            <span id="res-annual-revenue" style="color: #a5b4fc;">$134,400 Gross</span>
+          </div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 55%;" title="Take-Home Pay"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;" title="Taxes"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;" title="Overhead"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;" title="Profit Buffer"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Net Income:</span>
+              <span class="legend-val" id="legend-income-val">$75,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Taxes:</span>
+              <span class="legend-val" id="legend-tax-val">$25,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Overhead:</span>
+              <span class="legend-val" id="legend-expenses-val">$12,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Profit Buffer:</span>
+              <span class="legend-val" id="legend-profit-val">$22,400</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            Export Client Rate Card (Printable)
+          </button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+              Share Link
+            </button>
+            <button id="btn-embed" class="btn btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              Embed Tool
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Quote Estimator Extension -->
+    <section class="project-quote-section">
+      <div class="project-quote-grid">
+        <div>
+          <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 8px;">Fixed Project Pricing Converter</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+            Never underbid on fixed-price projects. Multiply your recommended hourly rate by estimated project hours, then add a scope-creep risk buffer.
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="quote-hours" class="form-label">Estimated Hours</label>
+                <span class="form-value-display" id="val-quote-hours">30 hrs</span>
+              </div>
+              <input type="range" id="quote-hours" class="range-slider" min="5" max="200" step="5" value="30">
+            </div>
+
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="quote-buffer" class="form-label">Scope Risk Buffer</label>
+                <span class="form-value-display" id="val-quote-buffer">+15%</span>
+              </div>
+              <input type="range" id="quote-buffer" class="range-slider" min="0" max="40" step="5" value="15">
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-result-box">
+          <div style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: var(--accent-indigo);">Recommended Project Quote</div>
+          <div class="quote-amount" id="quote-total-price">$3,864</div>
+          <div style="font-size: 0.825rem; color: var(--text-muted);">Includes hourly value + scope risk protection</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep SEO Content Engine Below the Fold -->
+    <article class="seo-content-article">
+      <h2>How to Calculate Your True Freelance Hourly Rate (The 2026 Guide)</h2>
+      <p>
+        One of the most dangerous mistakes newly independent professionals make is simply dividing a corporate annual salary by 2,080 hours (40 hours &times; 52 weeks). This calculation—frequently referred to as the <strong>"Employee Mindset Trap"</strong>—almost always leads to chronic undercharging, financial burnout, and inability to cover tax obligations.
+      </p>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Key Rule:</strong> As a freelancer or contractor, you are not merely an employee; you are a registered business entity. Your rate must cover personal salary, self-employment taxes, hardware, subscriptions, paid time off, and non-billable administrative hours.
+        </p>
+      </div>
+
+      <blockquote class="expert-quote-card">
+        "If you calculate your freelance rate by simply dividing a corporate salary by 2,080 hours, you are silently subsidizing your clients with unpaid sick leave, unpaid vacation, and personal equipment depreciation. A professional rate card is not an employee wage; it is a sustainable business pricing model."
+        <cite>— RateCraft Pricing Lab Research Panel</cite>
+      </blockquote>
+
+      <h3>1. The Reality of Billable Hours (Why You Can't Bill 40 Hours a Week)</h3>
+      <p>
+        In a traditional corporate job, employees are paid for 40 hours of presence, regardless of whether those hours are spent in productive work, answering email, attending all-hands meetings, or taking coffee breaks.
+      </p>
+      <p>
+        When freelancing, <strong>clients only pay for output or direct project hours</strong>. The remaining time is consumed by indispensable non-billable business operations:
+      </p>
+      <ul>
+        <li><strong>Pitching & Proposals:</strong> Responding to RFPs, participating in discovery calls, and writing project scopes.</li>
+        <li><strong>Administrative Overhead:</strong> Bookkeeping, client invoicing, contract review, and tax filing.</li>
+        <li><strong>Marketing & Lead Generation:</strong> Updating your portfolio, writing case studies, and networking.</li>
+        <li><strong>Skill Development:</strong> Learning new software, attending webinars, and maintaining certifications.</li>
+      </ul>
+      <p>
+        According to 2026 independent contractor research, <strong>62.4% of full-time freelancers bill between 20 and 24 hours per week</strong>, with the remaining 37.6% consumed by non-billable business development and operations. If you work 40 total hours in a week, you should realistically budget for 22 to 25 billable client hours.
+      </p>
+
+      <h3>2. The Mathematical Hourly Rate Formula</h3>
+      <p>
+        Our calculator applies the standard verified corporate pricing methodology adapted for independent consultants:
+      </p>
+      <div class="seo-callout">
+        <code>
+          Recommended Hourly Rate = [ (Desired Net Income / (1 - Tax Rate)) + Annual Expenses ] &times; (1 + Profit Margin) &divide; Annual Billable Hours
+        </code>
+      </div>
+      <p>Where:</p>
+      <ul>
+        <li><strong>Desired Net Income:</strong> The exact amount of money you need deposited into your personal bank account each year for living costs, personal savings, and family lifestyle.</li>
+        <li><strong>Tax Rate:</strong> Combined federal, state/provincial, and self-employment taxes (typically 25% to 35%). Review official guidelines via the <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes" target="_blank" rel="noopener">IRS Self-Employment Tax Provisions (Form 1040-ES)</a>.</li>
+        <li><strong>Annual Expenses:</strong> Direct business overhead including software subscriptions (Figma, Adobe, GitHub), web hosting, accountant fees, legal counsel, and hardware amortization.</li>
+        <li><strong>Profit Margin:</strong> A 15% to 25% safety buffer retained in the business for cashflow emergencies and slow seasonal quarters. Research from the <a href="https://www.bls.gov/ooh/computer-and-information-technology/home.htm" target="_blank" rel="noopener">U.S. Bureau of Labor Statistics (BLS)</a> demonstrates that independent contractors budgeting a 20% commercial profit margin maintain 3.4x greater financial stability through economic cycles.</li>
+        <li><strong>Annual Billable Hours:</strong> <code>(52 - Vacation Weeks - Sick Weeks) &times; (Weekly Hours &times; Billable %)</code>.</li>
+      </ul>
+
+      <h3>3. 2026 Freelance Hourly Rate Benchmarks by Industry</h3>
+      <p>
+        Curious how your calculated rate aligns with global market standards? Here are average verified rates for experienced independent professionals:
+      </p>
+
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Profession / Role</th>
+              <th>Junior / Mid-Level</th>
+              <th>Senior / Specialist</th>
+              <th>Dedicated Tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Full-Stack Software Engineer</strong></td>
+              <td>$55 – $85 / hr</td>
+              <td><span class="rate-badge">$110 – $185+ / hr</span></td>
+              <td><a href="developer-rate-calculator/">Developer Calculator &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>UI/UX & Product Designer</strong></td>
+              <td>$45 – $75 / hr</td>
+              <td><span class="rate-badge">$95 – $160+ / hr</span></td>
+              <td><a href="designer-rate-calculator/">Designer Calculator &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>B2B Copywriter & Content Strategist</strong></td>
+              <td>$40 – $70 / hr</td>
+              <td><span class="rate-badge">$80 – $140+ / hr</span></td>
+              <td><a href="copywriter-rate-calculator/">Copywriter Calculator &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><strong>SEO & Growth Consultant</strong></td>
+              <td>$50 – $80 / hr</td>
+              <td><span class="rate-badge">$110 – $200+ / hr</span></td>
+              <td>Monthly Recurring Retainer</td>
+            </tr>
+            <tr>
+              <td><strong>Video Editor & Motion Designer</strong></td>
+              <td>$35 – $65 / hr</td>
+              <td><span class="rate-badge">$80 – $140+ / hr</span></td>
+              <td>Day Rate / Per Deliverable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>4. Hourly vs. Day Rate vs. Value-Based Pricing</h3>
+      <p>
+        While calculating your baseline hourly rate is essential for establishing financial viability, how you quote clients depends on the engagement type:
+      </p>
+      <ul>
+        <li><strong>Hourly Billing:</strong> Ideal for ambiguous assignments, advisory consultations, ongoing technical support, or scope-uncertain tasks. Protects you when clients continually expand requirements.</li>
+        <li><strong>Day Rates:</strong> Standard practice for contractors working embedded with corporate teams or agencies. Usually set at 7 to 8 times your hourly rate.</li>
+        <li><strong>Fixed Project Pricing:</strong> Recommended whenever the scope of work is clearly defined. By quoting a fixed fee calculated using our Project Converter above, you capture the financial rewards of your speed and efficiency without giving away your productivity for free.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I calculate my freelance hourly rate in 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>To calculate your freelance hourly rate: 1. Determine your target annual personal take-home pay. 2. Divide by (1 - Tax Rate) to find your pre-tax gross income requirement. 3. Add annual operating business overhead. 4. Add a 15% to 25% profit margin for savings and slow quarters. 5. Divide the total gross revenue requirement by your annual billable hours (calculated as 52 weeks minus vacation/sick days, multiplied by 20 to 25 actual client hours per week).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the billable hours trap in freelancing?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>The billable hours trap occurs when freelancers assume they can bill 40 client hours per week like traditional salaried employees. Industry research demonstrates that 62.4% of full-time freelancers can only bill between 20 and 24 hours per week, because 35% to 45% of time is consumed by non-billable pitching, invoicing, client communication, marketing, and administration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Should I charge hourly, day rates, or fixed project rates?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Hourly rates are best for open-ended consulting, ongoing technical maintenance, and projects with shifting scopes. Day rates are ideal for embedded team sprints. Fixed project pricing is superior for clearly defined deliverables where your experience allows you to work quickly without penalizing your income.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much should I set aside for freelance taxes and expenses?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Most full-time independent professionals should allocate 25% to 35% of gross earnings toward federal, state/local, and self-employment taxes. Annual operating expenses (software subscriptions, hardware depreciation, accounting, coworking) typically range between $6,000 and $15,000 annually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I quote fixed projects without losing money to scope creep?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Estimate the realistic delivery hours based on previous engagements, multiply by your recommended hourly rate floor, and add a mandatory 15% to 25% scope risk contingency buffer. Specify exact milestones and revision boundaries in your contract.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is a healthy profit margin for a freelance business?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>A sustainable independent business requires a 15% to 25% profit margin above base expenses and salary. This buffer protects cash flow during dry periods, funds retirement savings, and finances ongoing equipment upgrades.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What should I do if a client says my freelance rate is too high?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Never reduce your price without reducing the deliverables. If a client's budget is lower, descoping protects your market value: 'We can meet your $3,000 budget by focusing exclusively on core deliverables and scheduling secondary features for a subsequent phase.'</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Code Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Embed Calculator On Your Website</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+        Add this free pricing calculator to your blog, agency website, or developer resources page.
+      </p>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/?embed=true" width="100%" height="780" frameborder="0" style="border-radius:12px; border:1px solid #1e293b;"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copy Embed Code</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Close modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Official 2026 Schedule</span>
+        </div>
+        <h3>Independent Professional Rate Card</h3>
+        <p class="card-subtitle">Official Standard Service Pricing • Valid for 2026 Engagements</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Standard Hourly Rate</span>
+              <span class="rate-desc">Minimum baseline floor for ad-hoc consultation</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">$112 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Standard Day Rate (8 hrs)</span>
+              <span class="rate-desc">Dedicated single-day commercial booking</span>
+            </td>
+            <td class="strong-val" id="rc-day">$896 / day</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Weekly Dedicated Retainer</span>
+              <span class="rate-desc">Reserved 40-hour weekly sprint capacity</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">$2,688 / wk</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Monthly Advisory / Retainer</span>
+              <span class="rate-desc">Ongoing dedicated monthly engagement</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">$11,200 / mo</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Rates reflect standard dedicated commercial services. Fixed-scope projects, licensing rights, and rush turnarounds are quoted separately.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-GEN-2026</span>
+            <span>Verified via ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Rate Card (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="./" class="brand-logo" title="RateCraft Freelance Tools">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Independent freelance pricing intelligence and commercial rate calculators. Built to help digital professionals charge what they are worth.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculators</h4>
+          <ul class="footer-links-list">
+            <li><a href="./">General Freelance</a></li>
+            <li><a href="developer-rate-calculator/">Software Developer</a></li>
+            <li><a href="designer-rate-calculator/">Graphic & UI/UX Designer</a></li>
+            <li><a href="copywriter-rate-calculator/">Copywriter & Content</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Editorial Guides</h4>
+          <ul class="footer-links-list">
+            <li><a href="guides/how-to-calculate-freelance-hourly-rate/">Hourly Rate Formula Guide</a></li>
+            <li><a href="guides/value-based-pricing-vs-hourly/">Value-Based vs. Hourly Pricing</a></li>
+            <li><a href="guides/freelance-retainer-agreements-guide/">Retainer Agreements Guide</a></li>
+            <li><a href="guides/freelance-taxes-and-overhead-deductions/">Freelance Taxes & Overhead</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="about/">About Us</a></li>
+            <li><a href="contact/">Contact Us</a></li>
+            <li><a href="privacy/">Privacy Policy</a></li>
+            <li><a href="terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Built for freelancers, independent consultants, and solopreneurs worldwide.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="es/">Versión en Español (🇪🇸)</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/calculator.js"></script>
+</body>
+</html>

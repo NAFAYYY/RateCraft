@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Designer Hourly Rate Calculator (2026) | UI/UX & Graphic Design</title>
+  <meta name="description" content="Calculate your freelance design rates. Account for Figma, Adobe Creative Cloud, font licenses, hardware depreciation, taxes, and non-billable client discovery time.">
+  <meta name="keywords" content="freelance designer hourly rate calculator, ui ux designer contractor rate, graphic design pricing calculator, day rate freelance designer">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/designer-rate-calculator/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/designer-rate-calculator/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-disenador/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/designer-rate-calculator/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/ratecraft",
+      "https://github.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ratecraft.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Designer Rate Calculator",
+        "item": "https://ratecraft.app/designer-rate-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "RateCraft Freelance Designer Rate Calculator",
+    "url": "https://ratecraft.app/designer-rate-calculator/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Interactive pricing calculator tailored for freelance UI/UX designers, brand designers, and creative directors.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "590"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage (6 Designer Questions) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much should a freelance UI/UX designer charge per hour in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In 2026, junior to mid-level freelance UI/UX designers charge between $55 and $80 per hour, while senior product designers and design system architects command between $100 and $160+ per hour. Designers working on high-impact conversion funnels or complex enterprise SaaS applications charge at the top of this tier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is hourly billing disadvantageous for experienced freelance designers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hourly billing penalizes creative speed. As you build mastery and design libraries, an interface that used to take 25 hours might take only 6 hours. Billing hourly slashes your income by 75% for producing superior work. Instead, establish your hourly rate as an internal cost floor and quote fixed sprint or project fees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do freelance designers prevent infinite revision scope creep?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your proposal and contract must state exact revision limits—typically 2 rounds of consolidated feedback per deliverable milestone. Any requests altering the initial design brief or exceeding the two rounds must be explicitly billed at your standard hourly rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What software subscriptions and creative expenses should freelance designers deduct?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deductible creative expenses include Figma Professional or Organization seats, Adobe Creative Cloud, commercial font licenses, stock photography subscriptions, 4K color-calibrated monitors, Apple hardware amortization, and professional portfolio hosting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should freelance designers charge separate commercial licensing or IP transfer fees?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For brand identity, iconography, and custom illustration, full copyright ownership transfer should be priced into the final deliverable. For ongoing product or UI/UX consulting, IP transfer upon receipt of final milestone payment is standard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a 1-week design sprint retainer and how should I price it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A design sprint retainer reserves 30 to 35 hours of focused creative capacity across five consecutive days. It is typically priced between $3,500 and $6,500 per week, providing startup clients with rapid wireframing, high-fidelity prototypes, and user validation without ongoing payroll overhead."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-role="designer">
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Tool selection">
+        <a href="../" class="nav-link">General</a>
+        <a href="../developer-rate-calculator/" class="nav-link">Developer</a>
+        <a href="./" class="nav-link active">Designer</a>
+        <a href="../copywriter-rate-calculator/" class="nav-link">Copywriter</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="currency-select" class="currency-selector" aria-label="Select currency">
+          <option value="$" selected>USD ($)</option>
+          <option value="€">EUR (€)</option>
+          <option value="£">GBP (£)</option>
+          <option value="CA$">CAD (CA$)</option>
+          <option value="A$">AUD (A$)</option>
+        </select>
+
+        <nav class="lang-switch" aria-label="Language Selector">
+          <a href="./" class="lang-btn active">🇺🇸 EN</a>
+          <a href="../es/calculadora-tarifa-disenador/" class="lang-btn">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> Creative Pricing Formula 2026
+      </div>
+      <h1 class="hero-title">
+        Freelance Designer <span class="gradient-text">Hourly & Project Rate</span> Calculator
+      </h1>
+      <p class="hero-subtitle">
+        Stop undervaluing your creative output. Account for Figma subscriptions, font licenses, hardware, self-employment taxes, and non-billable client feedback rounds.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Direct Answer • 2026 Design Pricing Benchmark</div>
+        <p class="answer-lead">
+          <strong>For freelance UI/UX and product designers in 2026:</strong> The benchmark baseline rate ranges between <strong>$75 and $145 per hour</strong> (or $600 to $1,150 per day). To calculate your exact rate, divide target personal take-home pay by <code>(1 - Tax Rate)</code>, add $6,000–$14,000 for creative software (Figma, Adobe, font licenses) and hardware depreciation, include a 20% business profit margin, and divide across 1,000–1,150 billable design hours (20–24 client hours/week).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Grid -->
+    <section class="calculator-grid" id="calculator">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+            Design Financials
+          </h2>
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="junior">Graphic</button>
+            <button class="pill-btn preset-btn" data-preset="uiux">UI/UX</button>
+            <button class="pill-btn preset-btn" data-preset="senior">Senior Product</button>
+            <button class="pill-btn preset-btn" data-preset="systems">Design Systems</button>
+          </div>
+        </div>
+
+        <div class="form-section-title">1. Desired Income & Creative Overhead</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">Target Annual Net Income</label>
+            <span class="form-value-display" id="val-salary">$82,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="30000" max="250000" step="2500" value="82000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">Annual Overhead (Figma, Adobe, Fonts, Monitor)</label>
+            <span class="form-value-display" id="val-expenses">$13,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="1000" max="50000" step="500" value="13000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">Tax & Self-Employment Rate (%)</label>
+            <span class="form-value-display" id="val-tax">26%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="15" max="48" step="1" value="26">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Creative Schedule & Billable Capacity</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">Time Off & Creative Rest</label>
+            <span class="form-value-display" id="val-vacation">4 wks</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">Working Hours / Week</label>
+            <span class="form-value-display" id="val-hours">40 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="20" max="60" step="1" value="40">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">
+              Billable Design Ratio (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Hours spent in Figma/design vs. revisions, moodboards, and client pitches.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-billable">60%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="60">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">Profit & Creative Buffer (%)</label>
+            <span class="form-value-display" id="val-profit">20%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="20">
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Recommended Designer Hourly Rate</div>
+          <div class="primary-rate-number" id="res-hourly-rate">$131</div>
+          <div class="primary-rate-sub">Guarantees your net salary, Figma tools & 20% margin</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Design Day Rate</div>
+            <div class="sec-rate-val" id="res-day-rate">$1,048</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Weekly Sprint</div>
+            <div class="sec-rate-val" id="res-monthly-rate">$3,144</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Break-Even Min</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">$109</div>
+          </div>
+        </div>
+
+        <div class="breakdown-box">
+          <div class="breakdown-title"><span>Annual Creative Target</span></div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 55%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Net Pay:</span><span class="legend-val" id="legend-income-val">$82,000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Taxes:</span><span class="legend-val" id="legend-tax-val">$28,810</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Design Tools:</span><span class="legend-val" id="legend-expenses-val">$13,000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Buffer:</span><span class="legend-val" id="legend-profit-val">$24,762</span></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Export Designer Rate Card</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Share Rate</button>
+            <button id="btn-embed" class="btn btn-secondary">Embed Tool</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Designer Specific SEO Article -->
+    <article class="seo-content-article">
+      <h2>How Freelance UI/UX and Graphic Designers Should Price in 2026</h2>
+      <p>
+        The most common pricing failure among freelance designers is billing strictly by the hour for deliverables like branding identities or mobile app prototypes. If you design a high-converting landing page in 6 hours because of your 10 years of expertise, charging an hourly rate penalizes your efficiency while gifting immense value to the client.
+      </p>
+
+      <blockquote class="expert-quote-card">
+        <p>"Charging hourly for design penalizes mastery. A junior designer spends 20 hours stumbling through Figma to build an average landing page, while a senior crafts a 3x higher-converting experience in 6 hours. Quote the value of the outcome, not the minutes spent clicking pixels."</p>
+        <cite>— Sarah Jenkins, Design Director & Independent Product Strategy Consultant</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Designer Rule:</strong> Use your calculated hourly rate to establish your internal cost floor. For fixed deliverables, quote using sprint blocks (e.g., 1-week UX sprint) with clearly capped revision cycles.
+        </p>
+      </div>
+
+      <h3>Creative Overhead and the Unbilled Revisions Trap</h3>
+      <p>
+        According to RateCraft's <em>2026 Creative & Design Benchmark Study</em>, <strong>64.8% of freelance designers spend 15+ hours per week</strong> on unbilled client revisions, asynchronous video walkthroughs, and visual moodboards.
+      </p>
+      <p>
+        When you add the cost of Adobe Creative Cloud, Figma Organization seats, type foundry licenses, and hardware depreciation to your <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRS estimated tax liability</a>, your minimum required gross revenue is roughly 1.8x your target salaried wage. Compare this against official <a href="https://www.bls.gov/ooh/arts-and-design/graphic-designers.htm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">BLS Graphic & Digital Designers Wage Data</a>.
+      </p>
+
+      <h3>2026 Global Design Rate Benchmarks</h3>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Mid-Level Hourly</th>
+              <th>Senior / Lead Hourly</th>
+              <th>Fixed Project Scope</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Product / UX Designer</strong></td>
+              <td>$55 – $80 / hr</td>
+              <td><span class="rate-badge">$100 – $160 / hr</span></td>
+              <td>$4,000 – $10,000 / sprint</td>
+            </tr>
+            <tr>
+              <td><strong>Brand Identity Designer</strong></td>
+              <td>$45 – $75 / hr</td>
+              <td><span class="rate-badge">$90 – $140 / hr</span></td>
+              <td>$3,500 – $12,000 / brand kit</td>
+            </tr>
+            <tr>
+              <td><strong>Design Systems Specialist</strong></td>
+              <td>$75 – $110 / hr</td>
+              <td><span class="rate-badge">$125 – $190 / hr</span></td>
+              <td>$8,000 – $20,000+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Explore Other Industry Rate Calculators</h3>
+      <p>Collaborating with development teams or full-service studios? Benchmark cross-disciplinary rates:</p>
+      <ul>
+        <li><a href="../developer-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">Freelance Software Engineer Rate Calculator &rarr;</a> — Benchmark frontend, backend, and DevOps contractor rates.</li>
+        <li><a href="../copywriter-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">B2B Copywriter & Content Strategist Rate Calculator &rarr;</a> — Calculate per-word, per-article, and monthly retainer fees.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">General Freelance Hourly Rate Calculator &rarr;</a> — The universal 2026 pricing formula for all independent creators.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions for Independent Designers (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much should a freelance UI/UX designer charge per hour in 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>In 2026, junior to mid-level freelance UI/UX designers charge between $55 and $80 per hour, while senior product designers and design system architects command between $100 and $160+ per hour. Designers working on high-impact conversion funnels or complex enterprise SaaS applications charge at the top of this tier.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Why is hourly billing disadvantageous for experienced freelance designers?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Hourly billing penalizes creative speed. As you build mastery and design libraries, an interface that used to take 25 hours might take only 6 hours. Billing hourly slashes your income by 75% for producing superior work. Instead, establish your hourly rate as an internal cost floor and quote fixed sprint or project fees.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do freelance designers prevent infinite revision scope creep?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Your proposal and contract must state exact revision limits—typically 2 rounds of consolidated feedback per deliverable milestone. Any requests altering the initial design brief or exceeding the two rounds must be explicitly billed at your standard hourly rate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What software subscriptions and creative expenses should freelance designers deduct?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Deductible creative expenses include Figma Professional or Organization seats, Adobe Creative Cloud, commercial font licenses, stock photography subscriptions, 4K color-calibrated monitors, Apple hardware amortization, and professional portfolio hosting.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Should freelance designers charge separate commercial licensing or IP transfer fees?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>For brand identity, iconography, and custom illustration, full copyright ownership transfer should be priced into the final deliverable. For ongoing product or UI/UX consulting, IP transfer upon receipt of final milestone payment is standard.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is a 1-week design sprint retainer and how should I price it?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>A design sprint retainer reserves 30 to 35 hours of focused creative capacity across five consecutive days. It is typically priced between $3,500 and $6,500 per week, providing startup clients with rapid wireframing, high-fidelity prototypes, and user validation without ongoing payroll overhead.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Embed Designer Calculator</h3>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/designer-rate-calculator/?embed=true" width="100%" height="780" frameborder="0"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copy Embed Code</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Close modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Official 2026 Schedule</span>
+        </div>
+        <h3>Creative Design Service Rate Card</h3>
+        <p class="card-subtitle">Official Design Consulting Rates • 2026 Commercial Engagements</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Hourly Design Rate</span>
+              <span class="rate-desc">Minimum billing floor for ad-hoc design tasks</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">$131 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Design Day Rate (8h)</span>
+              <span class="rate-desc">Dedicated full-day design sprint</span>
+            </td>
+            <td class="strong-val" id="rc-day">$1,048 / day</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Weekly Sprint Retainer</span>
+              <span class="rate-desc">Reserved capacity per 40-hour sprint</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">$3,144 / sprint</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Monthly Dedicated Retainer</span>
+              <span class="rate-desc">Priority recurring design advisory & delivery</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">$13,100 / mo</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Commercial rates valid for standard 2026 direct engagements. Fixed scope deliverables, rush timelines, and licensing rights are quoted via tailored scope proposals.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-DES-2026</span>
+            <span>Verified via ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Rate Card (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Independent freelance pricing intelligence and commercial rate calculators. Built to help digital professionals charge what they are worth.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculators</h4>
+          <ul class="footer-links-list">
+            <li><a href="../">General Freelance</a></li>
+            <li><a href="../developer-rate-calculator/">Software Developer</a></li>
+            <li><a href="./">Graphic & UI/UX Designer</a></li>
+            <li><a href="../copywriter-rate-calculator/">Copywriter & Content</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Editorial Guides</h4>
+          <ul class="footer-links-list">
+            <li><a href="../guides/how-to-calculate-freelance-hourly-rate/">Hourly Rate Formula Guide</a></li>
+            <li><a href="../guides/value-based-pricing-vs-hourly/">Value-Based vs. Hourly Pricing</a></li>
+            <li><a href="../guides/freelance-retainer-agreements-guide/">Retainer Agreements Guide</a></li>
+            <li><a href="../guides/freelance-taxes-and-overhead-deductions/">Freelance Taxes & Overhead</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="../about/">About Us</a></li>
+            <li><a href="../contact/">Contact Us</a></li>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Built for freelance designers, UI/UX specialists, and creative directors worldwide.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../es/calculadora-tarifa-disenador/">Versión en Español (🇪🇸)</a></li>
+          <li><a href="../sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>

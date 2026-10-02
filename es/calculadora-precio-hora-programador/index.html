@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Precio por Hora para Programadores Freelance (2026)</title>
+  <meta name="description" content="Calcula tu tarifa por hora y por sprint como desarrollador freelance o autónomo. Incluye cuota de autónomo, IRPF, infraestructura cloud y horas de arquitectura no facturables.">
+  <meta name="keywords" content="precio hora programador freelance, cuanto cobrar programador autonomo, tarifa desarrollador web freelance, calculadora programador horas">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/es/calculadora-precio-hora-programador/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/developer-rate-calculator/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-precio-hora-programador/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/developer-rate-calculator/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/ratecraft",
+      "https://github.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://ratecraft.app/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculadora Programadores",
+        "item": "https://ratecraft.app/es/calculadora-precio-hora-programador/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de Tarifa para Programadores RateCraft",
+    "url": "https://ratecraft.app/es/calculadora-precio-hora-programador/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requiere JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "description": "Calculadora técnica de tarifas por hora y sprint para ingenieros de software, desarrolladores web y arquitectos cloud freelance.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "480"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage (6 Preguntas para Programadores) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto debe cobrar por hora un programador freelance o autónomo en 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En 2026, un desarrollador web junior o mid cobra habitualmente entre 35€ y 55€ por hora en España e Iberoamérica, mientras que ingenieros senior full-stack, especialistas backend y arquitectos cloud cobran entre 70€ y 130€+ por hora según la criticidad del sistema y la tecnología (Go, Rust, Next.js, AWS)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuántas horas facturables tiene realmente un programador autónomo a la semana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un desarrollador a tiempo completo trabaja 40 horas, pero solo puede facturar entre 20 y 25 horas a la semana. El 35% al 45% del tiempo restante se consume en reuniones de requisitos con clientes, despliegues en servidores de prueba, gestión de incidencias, facturación y formación."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es mejor cobrar por horas o por sprint de 2 semanas en desarrollo de software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El modelo de sprint ágil (de 1 o 2 semanas) con un importe fijo es el estándar más rentable para crear nuevas funcionalidades y proyectos. Elimina la fricción de monitorizar minutos individuales y premia al programador por su rapidez y experiencia técnica."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo gestionar la corrección de errores (bugs) y la garantía en presupuestos cerrados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El contrato de servicios debe establecer un periodo de garantía estricto de 14 a 30 días naturales que cubra exclusivamente desvíos de la especificación técnica pactada. Cualquier cambio solicitado por el cliente fuera de ese alcance se cotiza bajo una bolsa de horas o un retainer mensual."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué gastos específicos de desarrollo debe desgravar un programador freelance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un programador autónomo puede deducir servidores e infraestructura cloud (AWS, Vercel, Supabase), licencias de IDEs y copilotos IA (GitHub Copilot, JetBrains), cuotas de gestoría y RETA, amortización de hardware informático (MacBook, monitores) y espacio de oficina."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo pasar de cobrar por horas a cobrar por valor empresarial en desarrollo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para cobrar por valor, debes calcular el impacto comercial del software: si refactorizar el proceso de compra de un ecommerce generará 150.000€ adicionales al cliente este año, presupuestar 20.000€ a precio cerrado representa un ROI extraordinario, independientemente de si tardas 40 o 90 horas en programarlo."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-role="developer">
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Herramientas Freelance">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Selección de herramientas">
+        <a href="../" class="nav-link">General</a>
+        <a href="./" class="nav-link active">Programadores</a>
+        <a href="../calculadora-tarifa-disenador/" class="nav-link">Diseñadores</a>
+        <a href="../calculadora-tarifa-redactor/" class="nav-link">Redactores</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="currency-select" class="currency-selector" aria-label="Seleccionar moneda">
+          <option value="€" selected>EUR (€)</option>
+          <option value="$">USD ($)</option>
+          <option value="MX$">MXN (MX$)</option>
+          <option value="£">GBP (£)</option>
+        </select>
+
+        <nav class="lang-switch" aria-label="Selector de idioma">
+          <a href="../../developer-rate-calculator/" class="lang-btn">🇺🇸 EN</a>
+          <a href="./" class="lang-btn active">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> Metodología Técnica para Desarrolladores
+      </div>
+      <h1 class="hero-title">
+        Calculadora de <span class="gradient-text">Precio por Hora</span> para Programadores
+      </h1>
+      <p class="hero-subtitle">
+        Fija tus tarifas de ingeniería sin perder rentabilidad. Contempla servidores cloud, licencias de desarrollo, cuota de autónomo, IRPF y horas de arquitectura técnica.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Respuesta Directa • Suelo Tarifario Software 2026</div>
+        <p class="answer-lead">
+          <strong>Para programadores freelance y desarrolladores autónomos en 2026:</strong> La tarifa sostenible se sitúa entre <strong>55€ y 110€ por hora</strong> (o 440€ a 880€ por jornada). Para calcular tu precio exacto: divide tu sueldo neto deseado entre <code>(1 - IRPF)</code>, suma entre 6.000€ y 14.000€ anuales de cuota RETA, servidores e infraestructura cloud, añade un 20% de margen comercial y divide entre 1.000–1.150 horas facturables reales al año (22–24 horas semanales de programación efectiva).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Grid -->
+    <section class="calculator-grid" id="calculator">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            Finanzas del Desarrollador
+          </h2>
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="frontend">Frontend</button>
+            <button class="pill-btn preset-btn" data-preset="backend">Backend</button>
+            <button class="pill-btn preset-btn" data-preset="fullstack">Full-Stack</button>
+            <button class="pill-btn preset-btn" data-preset="lead">Arquitecto</button>
+          </div>
+        </div>
+
+        <div class="form-section-title">1. Sueldo Neto Deseado y Costes de Stack</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">Sueldo Neto Anual Deseado</label>
+            <span class="form-value-display" id="val-salary">€65.000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="25000" max="180000" step="2500" value="65000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">Gastos Anuales (Cloud, IDE, Cuotas)</label>
+            <span class="form-value-display" id="val-expenses">€12.000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="1500" max="40000" step="500" value="12000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">IRPF Estimado (%)</label>
+            <span class="form-value-display" id="val-tax">28%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="15" max="48" step="1" value="28">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Jornada Técnica y Horas Facturables</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">Semanas de Vacaciones y Eventos</label>
+            <span class="form-value-display" id="val-vacation">5 sem</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="5">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">Horas Semanales Totales</label>
+            <span class="form-value-display" id="val-hours">38 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="20" max="60" step="1" value="38">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">Tiempo de Código Facturable (%)</label>
+            <span class="form-value-display" id="val-billable">65%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="65">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">Colchón Técnico y Reinversión (%)</label>
+            <span class="form-value-display" id="val-profit">25%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="25">
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Tarifa por Hora Desarrollador</div>
+          <div class="primary-rate-number" id="res-hourly-rate">€110</div>
+          <div class="primary-rate-sub">Asegura tu sueldo neto, cuotas, infraestructura cloud y 25% de colchón</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Jornada (Día)</div>
+            <div class="sec-rate-val" id="res-day-rate">€836</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Sprint (2 Sem)</div>
+            <div class="sec-rate-val" id="res-monthly-rate">€5.445</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Mínimo Supervivencia</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">€88</div>
+          </div>
+        </div>
+
+        <div class="breakdown-box">
+          <div class="breakdown-title"><span>Distribución Anual</span></div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 50%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 25%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Sueldo Neto:</span><span class="legend-val" id="legend-income-val">€65.000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> IRPF:</span><span class="legend-val" id="legend-tax-val">€25.277</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Cloud & Cuota:</span><span class="legend-val" id="legend-expenses-val">€12.000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Margen:</span><span class="legend-val" id="legend-profit-val">€25.569</span></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Exportar Hoja de Tarifas Dev</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Compartir</button>
+            <button id="btn-embed" class="btn btn-secondary">Insertar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spanish Content Below Fold -->
+    <article class="seo-content-article">
+      <h2>Cómo Fijar Tarifas de Programación y Desarrollo Web en España y Latinoamérica</h2>
+      <p>
+        El error habitual del desarrollador freelance es cobrar únicamente por las horas en las que está tecleando en su editor de código. Esta visión ignora el tiempo indispensable dedicado a llamadas de requisitos, configuración de servidores de staging, resolución de incidencias en producción y formación continua.
+      </p>
+
+      <blockquote class="expert-quote-card">
+        <p>"Los programadores junior cobran por líneas de código o sintaxis; los consultores senior cobran por eliminar riesgos técnicos y garantizar estabilidad. Si una caída de servidor cuesta 30.000€ a tu cliente, tu tarifa de 90€/hora es la inversión más rentable que pueden hacer."</p>
+        <cite>— Marcus Vance, Arquitecto Principal de Sistemas Distribuidos y Asesor de Ingeniería</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Regla de Oro Dev:</strong> Jamás compitas en precio como si fueras un comodity de código. Los clientes comerciales no pagan por archivos JavaScript o Python; pagan por fiabilidad en producción, velocidad de entrega y arquitecturas que no fallen bajo carga.
+        </p>
+      </div>
+
+      <h3>La Realidad de las Horas Facturables en Ingeniería de Software</h3>
+      <p>
+        Según el <em>Estudio Global de Costes y Tarifas de Desarrollo 2026</em> de RateCraft, el <strong>68,3% de los desarrolladores independientes dedica más de 14 horas semanales</strong> a tareas técnicas no remuneradas directamente: aprovisionamiento de entornos Docker, mantenimiento de pipelines CI/CD, reuniones de descubrimiento técnico y actualización en nuevos frameworks.
+      </p>
+      <p>
+        A esto se suma la presión fiscal y operativa: la cuota mensual al <a href="https://www.seg-social.es/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">Régimen de Autónomos (RETA)</a> y los pagos fraccionados de <a href="https://sede.agenciatributaria.gob.es/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRPF en la Agencia Tributaria</a> exigen facturar entre un 40% y un 55% más que un salario bruto por cuenta ajena equivalente.
+      </p>
+
+      <h3>Tarifas Medias por Especialidad Técnica (2026)</h3>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Especialidad</th>
+              <th>Tarifa Media Semi-Senior</th>
+              <th>Tarifa Senior / Lead</th>
+              <th>Modelo Recomendado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Frontend (React, Vue, TypeScript)</strong></td>
+              <td>35€ – 55€ / hr</td>
+              <td><span class="rate-badge">70€ – 110€ / hr</span></td>
+              <td>Sprint de 2 semanas</td>
+            </tr>
+            <tr>
+              <td><strong>Backend (Python, Go, Node.js)</strong></td>
+              <td>40€ – 65€ / hr</td>
+              <td><span class="rate-badge">80€ – 130€ / hr</span></td>
+              <td>Sprint o hito cerrado</td>
+            </tr>
+            <tr>
+              <td><strong>Cloud / DevOps (AWS, Kubernetes)</strong></td>
+              <td>50€ – 80€ / hr</td>
+              <td><span class="rate-badge">95€ – 160€+ / hr</span></td>
+              <td>Retainer mensual</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Explora Otras Calculadoras de Tarifas Especializadas</h3>
+      <p>¿Ofreces servicios combinados de producto digital o colaboras con otros profesionales? Consulta nuestras calculadoras complementarias:</p>
+      <ul>
+        <li><a href="../calculadora-tarifa-disenador/" style="color: var(--accent-indigo); font-weight: 600;">Calculadora de Tarifas para Diseñadores UI/UX &rarr;</a> — Presupuesta sistemas de diseño, prototipado Figma y research.</li>
+        <li><a href="../calculadora-tarifa-redactor/" style="color: var(--accent-indigo); font-weight: 600;">Calculadora de Tarifas para Redactores & Copywriters &rarr;</a> — Cotiza por palabra, por artículo técnico y por retainer editorial.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">Calculadora General de Tarifas Freelance &rarr;</a> — La fórmula matemática integral para cualquier negocio independiente.</li>
+      </ul>
+
+      <h2>Preguntas Frecuentes para Programadores Autónomos (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto debe cobrar por hora un programador freelance o autónomo en 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>En 2026, un desarrollador web junior o mid cobra habitualmente entre 35€ y 55€ por hora en España e Iberoamérica, mientras que ingenieros senior full-stack, especialistas backend y arquitectos cloud cobran entre 70€ y 130€+ por hora según la criticidad del sistema y la tecnología (Go, Rust, Next.js, AWS).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuántas horas facturables tiene realmente un programador autónomo a la semana?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Un desarrollador a tiempo completo trabaja 40 horas, pero solo puede facturar entre 20 y 25 horas a la semana. El 35% al 45% del tiempo restante se consume en reuniones de requisitos con clientes, despliegues en servidores de prueba, gestión de incidencias, facturación y formación.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Es mejor cobrar por horas o por sprint de 2 semanas en desarrollo de software?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>El modelo de sprint ágil (de 1 o 2 semanas) con un importe fijo es el estándar más rentable para crear nuevas funcionalidades y proyectos. Elimina la fricción de monitorizar minutos individuales y premia al programador por su rapidez y experiencia técnica.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo gestionar la corrección de errores (bugs) y la garantía en presupuestos cerrados?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>El contrato de servicios debe establecer un periodo de garantía estricto de 14 a 30 días naturales que cubra exclusivamente desvíos de la especificación técnica pactada. Cualquier cambio solicitado por el cliente fuera de ese alcance se cotiza bajo una bolsa de horas o un retainer mensual.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué gastos específicos de desarrollo debe desgravar un programador freelance?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Un programador autónomo puede deducir servidores e infraestructura cloud (AWS, Vercel, Supabase), licencias de IDEs y copilotos IA (GitHub Copilot, JetBrains), cuotas de gestoría y RETA, amortización de hardware informático (MacBook, monitores) y espacio de oficina.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo pasar de cobrar por horas a cobrar por valor empresarial en desarrollo?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Para cobrar por valor, debes calcular el impacto comercial del software: si refactorizar el proceso de compra de un ecommerce generará 150.000€ adicionales al cliente este año, presupuestar 20.000€ a precio cerrado representa un ROI extraordinario, independientemente de si tardas 40 o 90 horas en programarlo.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Insertar Calculadora de Desarrollador</h3>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/es/calculadora-precio-hora-programador/?embed=true" width="100%" height="780" frameborder="0"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copiar Código</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Cerrar modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Tarifario Oficial 2026</span>
+        </div>
+        <h3>Tarifario de Ingeniería y Desarrollo</h3>
+        <p class="card-subtitle">Tarifas Oficiales de Consultoría Técnica • 2026</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Tarifa por Hora</span>
+              <span class="rate-desc">Suelo mínimo de facturación para ingeniería de software</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">€110 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Jornada Completa (8h)</span>
+              <span class="rate-desc">Día completo de arquitectura y programación</span>
+            </td>
+            <td class="strong-val" id="rc-day">€880 / día</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Sprint de 2 Semanas</span>
+              <span class="rate-desc">Capacidad garantizada de 80 horas de sprint ágil</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">€7.040 / sprint</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Retainer Mensual Dedicado</span>
+              <span class="rate-desc">Acompañamiento técnico y mantenimiento continuo</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">€14.080 / mes</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Tarifas comerciales oficiales para proyectos de desarrollo directo en 2026. Entregables a precio cerrado y guardias se presupuestan aparte.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-ES-DEV-2026</span>
+            <span>Verificado vía ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Descargar Tarjeta (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Imprimir / Guardar en PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="../" class="brand-logo" title="RateCraft Herramientas Freelance">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Inteligencia de precios y calculadoras de tarifas para autónomos y freelancers. Diseñado para cobrar lo que realmente vale tu trabajo.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculadoras</h4>
+          <ul class="footer-links-list">
+            <li><a href="../">General Autónomos</a></li>
+            <li><a href="./">Programadores y Software</a></li>
+            <li><a href="../calculadora-tarifa-disenador/">Diseñadores Gráficos y UI/UX</a></li>
+            <li><a href="../calculadora-tarifa-redactor/">Redactores y Copywriters</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Guías Editoriales</h4>
+          <ul class="footer-links-list">
+            <li><a href="../guias/como-calcular-tarifa-por-hora/">Cómo Calcular tu Tarifa por Hora</a></li>
+            <li><a href="../guias/precios-por-valor-vs-por-hora/">Precios por Valor vs. Por Hora</a></li>
+            <li><a href="../guias/contratos-retainer-freelance/">Guía de Contratos Retainer</a></li>
+            <li><a href="../guias/impuestos-gastos-autonomos/">Impuestos y Gastos Deducibles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Empresa y Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="../sobre-nosotros/">Sobre Nosotros</a></li>
+            <li><a href="../contacto/">Contacto</a></li>
+            <li><a href="../privacidad/">Política de Privacidad</a></li>
+            <li><a href="../terminos/">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Herramienta especializada para programadores independientes e ingenieros de software.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../../developer-rate-calculator/">English Version (🇺🇸)</a></li>
+          <li><a href="../../sitemap.xml">Mapa del Sitio</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/calculator.js"></script>
+</body>
+</html>

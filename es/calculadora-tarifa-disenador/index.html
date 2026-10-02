@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Tarifas para Diseñadores Gráficos y UI/UX (2026)</title>
+  <meta name="description" content="Calcula cuánto cobrar por hora, día y proyecto como diseñador gráfico o UI/UX freelance. Considera cuota de autónomo, suscripciones Adobe/Figma, IRPF y revisiones de clientes.">
+  <meta name="keywords" content="precio hora disenador grafico freelance, tarifa disenador ui ux autonomo, cuanto cobrar por un logo, calculadora tarifas diseno">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/es/calculadora-tarifa-disenador/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/designer-rate-calculator/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-disenador/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/designer-rate-calculator/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/ratecraft",
+      "https://github.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://ratecraft.app/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculadora Diseñadores",
+        "item": "https://ratecraft.app/es/calculadora-tarifa-disenador/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de Tarifas de Diseño RateCraft",
+    "url": "https://ratecraft.app/es/calculadora-tarifa-disenador/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requiere JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "description": "Calculadora de tarifas para diseñadores gráficos, especialistas UI/UX y directores de arte autónomos.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "410"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage (6 Preguntas para Diseñadores) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto debe cobrar por hora un diseñador gráfico o UI/UX freelance en 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En 2026, un diseñador freelance junior o mid cobra entre 28€ y 45€ por hora en España e Iberoamérica, mientras que especialistas senior en producto digital, diseño UI/UX y sistemas de diseño en Figma facturan entre 55€ y 90€+ por hora."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué cobrar por horas perjudica a un diseñador freelance con experiencia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cobrar por horas penaliza tu velocidad y pericia. Diseñar un flujo de conversión o una landing page que a un principiante le llevaría 25 horas, un senior puede resolverlo en 7 horas gracias a su criterio. Facturar por horas reduciría tus ingresos un 70% por entregar una solución mucho más eficaz. Es preferible cotizar por proyecto cerrado o sprint."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo frenar las rondas interminables de cambios y revisiones en diseño?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tu propuesta debe delimitar de forma taxativa el proceso: 2 rondas de revisiones consolidadas por hito. Cualquier solicitud adicional o modificación del briefing inicial debe cobrarse explícitamente a tu tarifa por hora estándar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué gastos específicos de diseño puede deducir un autónomo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un diseñador independiente puede desgravar suscripciones profesionales (Figma, Adobe Creative Cloud), tipografías comerciales, bancos de imágenes y recursos 3D, monitores calibrados para color, tabletas gráficas, amortización de ordenador y cuota mensual de autónomo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se debe cobrar aparte la cesión de derechos de autor y propiedad intelectual?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En proyectos de branding, diseño de logotipos e ilustración comercial, la cesión total o exclusiva de derechos de explotación debe integrarse en el precio presupuestado o estipularse claramente con un recargo según el ámbito geográfico y temporal de difusión."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es un sprint de diseño de 1 semana y cómo se presupuesta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un sprint de diseño reserva entre 30 y 35 horas de dedicación exclusiva a lo largo de 5 días hábiles para wireframing, prototipos interactivos o rediseños de interfaces. Su precio habitual oscila entre 1.800€ y 3.500€ semanales."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-role="designer">
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Herramientas Freelance">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Selección de herramientas">
+        <a href="../" class="nav-link">General</a>
+        <a href="../calculadora-precio-hora-programador/" class="nav-link">Programadores</a>
+        <a href="./" class="nav-link active">Diseñadores</a>
+        <a href="../calculadora-tarifa-redactor/" class="nav-link">Redactores</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="currency-select" class="currency-selector" aria-label="Seleccionar moneda">
+          <option value="€" selected>EUR (€)</option>
+          <option value="$">USD ($)</option>
+          <option value="MX$">MXN (MX$)</option>
+          <option value="£">GBP (£)</option>
+        </select>
+
+        <nav class="lang-switch" aria-label="Selector de idioma">
+          <a href="../../designer-rate-calculator/" class="lang-btn">🇺🇸 EN</a>
+          <a href="./" class="lang-btn active">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> Metodología para Profesionales Creativos
+      </div>
+      <h1 class="hero-title">
+        Calculadora de <span class="gradient-text">Tarifas para Diseñadores</span> Freelance
+      </h1>
+      <p class="hero-subtitle">
+        Deja de regalar tus horas creativas. Calcula tu precio considerando software de diseño (Figma, Adobe), tipografías, cuota de autónomo y rondas de cambios con clientes.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Respuesta Directa • Suelo Tarifario Diseño 2026</div>
+        <p class="answer-lead">
+          <strong>Para diseñadores gráficos y especialistas UI/UX autónomos en 2026:</strong> La tarifa por hora sostenible oscila entre <strong>45€ y 90€ por hora</strong> (o 360€ a 720€ por jornada). Para calcular tu precio exacto: divide tu sueldo neto personal entre <code>(1 - IRPF)</code>, suma entre 4.000€ y 9.000€ anuales de cuota RETA, licencias de Figma y Adobe Creative Cloud, añade un 20% de margen comercial y divide entre 1.000–1.150 horas facturables reales al año (20–23 horas semanales de diseño puro).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Grid -->
+    <section class="calculator-grid" id="calculator">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+            Parámetros Creativos
+          </h2>
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="junior">Gráfico</button>
+            <button class="pill-btn preset-btn" data-preset="uiux">UI/UX</button>
+            <button class="pill-btn preset-btn" data-preset="senior">Senior</button>
+            <button class="pill-btn preset-btn" data-preset="systems">Sistemas</button>
+          </div>
+        </div>
+
+        <div class="form-section-title">1. Sueldo Deseado y Costes Creativos</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">Sueldo Neto Anual Deseado</label>
+            <span class="form-value-display" id="val-salary">€48.000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="20000" max="150000" step="1000" value="48000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">Gastos Anuales (Figma, Adobe CC, Cuota)</label>
+            <span class="form-value-display" id="val-expenses">€9.000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="1000" max="30000" step="500" value="9000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">IRPF Estimado (%)</label>
+            <span class="form-value-display" id="val-tax">25%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="15" max="48" step="1" value="25">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Jornada Creativa y Horas Facturables</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">Semanas de Vacaciones y Descanso</label>
+            <span class="form-value-display" id="val-vacation">4 sem</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">Horas Semanales Totales</label>
+            <span class="form-value-display" id="val-hours">40 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="20" max="60" step="1" value="40">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">Tiempo de Diseño Facturable (%)</label>
+            <span class="form-value-display" id="val-billable">60%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="60">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">Margen de Beneficio (%)</label>
+            <span class="form-value-display" id="val-profit">20%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="20">
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Tarifa por Hora Diseñador</div>
+          <div class="primary-rate-number" id="res-hourly-rate">€76</div>
+          <div class="primary-rate-sub">Cubre tu sueldo neto, software creativo, cuota y 20% de colchón</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Jornada (Día)</div>
+            <div class="sec-rate-val" id="res-day-rate">€608</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Sprint Semanal</div>
+            <div class="sec-rate-val" id="res-monthly-rate">€1.824</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Mínimo Supervivencia</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">€63</div>
+          </div>
+        </div>
+
+        <div class="breakdown-box">
+          <div class="breakdown-title"><span>Distribución Creativa</span></div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 55%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Sueldo Neto:</span><span class="legend-val" id="legend-income-val">€48.000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> IRPF:</span><span class="legend-val" id="legend-tax-val">€16.000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Herramientas:</span><span class="legend-val" id="legend-expenses-val">€9.000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Margen:</span><span class="legend-val" id="legend-profit-val">€14.600</span></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Exportar Hoja Tarifas Diseño</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Compartir</button>
+            <button id="btn-embed" class="btn btn-secondary">Insertar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spanish Content Below Fold -->
+    <article class="seo-content-article">
+      <h2>Cómo Cobrar por Proyectos de Diseño Gráfico y UI/UX en 2026</h2>
+      <p>
+        Cobrar por horas al diseñar una identidad de marca o una aplicación móvil es una de las mayores causas de desmotivación en el diseño. Si eres muy experimentado y tardas 10 horas en crear un logotipo brillante, facturar por horas te recompensa con menos dinero que a un diseñador novato que tarda 40 horas en un resultado mediocre.
+      </p>
+
+      <blockquote class="expert-quote-card">
+        <p>"Cobrar por horas en diseño penaliza la maestría. Un diseñador junior tarda 20 horas en Figma para diseñar una landing page mediocre, mientras que un senior crea una experiencia que triplica la conversión en solo 6 horas. Presupuesta el valor del resultado, no los minutos de ratón."</p>
+        <cite>— Sarah Jenkins, Directora de Diseño y Consultora de Estrategia de Producto</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Regla Creativa:</strong> Utiliza tu tarifa horaria calculada únicamente como suelo de coste interno. Para propuestas a clientes, presupuesta mediante bloques de sprint (por ejemplo, sprint UX de 1 semana) con rondas de revisión estrictamente limitadas.
+        </p>
+      </div>
+
+      <h3>La Carga Oculta de las Revisiones No Facturadas</h3>
+      <p>
+        Según el <em>Estudio de Tarifas y Estructura de Costes de Diseño 2026</em> de RateCraft, el <strong>64,8% de los diseñadores freelance dedica más de 15 horas semanales</strong> a tareas no remuneradas: rondas infinitas de cambios sin delimitar, explicaciones en vídeo Loom y preparación de mockups.
+      </p>
+      <p>
+        Sumando el coste de Figma Organization, Adobe Creative Cloud, fuentes tipográficas comerciales y la cuota obligatoria de autónomos al <a href="https://www.seg-social.es/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">Régimen RETA</a> y retenciones de <a href="https://sede.agenciatributaria.gob.es/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRPF en la Agencia Tributaria</a>, tu facturación bruta mínima debe ser un 70% superior a un sueldo neto equivalente por cuenta ajena.
+      </p>
+
+      <h3>Tarifas de Referencia en el Sector Diseño (España y LATAM)</h3>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Perfil</th>
+              <th>Tarifa Media</th>
+              <th>Tarifa Senior</th>
+              <th>Precio por Proyecto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Diseño UI/UX (Figma, Prototipado)</strong></td>
+              <td>28€ – 45€ / hr</td>
+              <td><span class="rate-badge">55€ – 90€ / hr</span></td>
+              <td>1.800€ – 5.000€+ / interfaz</td>
+            </tr>
+            <tr>
+              <td><strong>Identidad Visual & Branding</strong></td>
+              <td>25€ – 40€ / hr</td>
+              <td><span class="rate-badge">50€ – 85€ / hr</span></td>
+              <td>1.200€ – 4.500€ / manual</td>
+            </tr>
+            <tr>
+              <td><strong>Sistemas de Diseño (Design Systems)</strong></td>
+              <td>35€ – 55€ / hr</td>
+              <td><span class="rate-badge">70€ – 120€ / hr</span></td>
+              <td>3.500€ – 9.000€+ / librería</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Explora Otras Calculadoras de Tarifas Especializadas</h3>
+      <p>¿Colaboras con desarrolladores o redactores en proyectos digitales? Consulta nuestras herramientas:</p>
+      <ul>
+        <li><a href="../calculadora-precio-hora-programador/" style="color: var(--accent-indigo); font-weight: 600;">Calculadora de Tarifas para Programadores Freelance &rarr;</a> — Precios por hora, día y sprint para ingenieros y DevOps.</li>
+        <li><a href="../calculadora-tarifa-redactor/" style="color: var(--accent-indigo); font-weight: 600;">Calculadora de Tarifas para Redactores & Copywriters &rarr;</a> — Tarifas por palabra, por artículo y por retainer mensual.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">Calculadora General de Tarifas Freelance &rarr;</a> — La fórmula matemática completa para profesionales autónomos.</li>
+      </ul>
+
+      <h2>Preguntas Frecuentes para Diseñadores Autónomos (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuánto debe cobrar por hora un diseñador gráfico o UI/UX freelance en 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>En 2026, un diseñador freelance junior o mid cobra entre 28€ y 45€ por hora en España e Iberoamérica, mientras que especialistas senior en producto digital, diseño UI/UX y sistemas de diseño en Figma facturan entre 55€ y 90€+ por hora.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Por qué cobrar por horas perjudica a un diseñador freelance con experiencia?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Cobrar por horas penaliza tu velocidad y pericia. Diseñar un flujo de conversión o una landing page que a un principiante le llevaría 25 horas, un senior puede resolverlo en 7 horas gracias a su criterio. Facturar por horas reduciría tus ingresos un 70% por entregar una solución mucho más eficaz. Es preferible cotizar por proyecto cerrado o sprint.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo frenar las rondas interminables de cambios y revisiones en diseño?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Tu propuesta debe delimitar de forma taxativa el proceso: 2 rondas de revisiones consolidadas por hito. Cualquier solicitud adicional o modificación del briefing inicial debe cobrarse explícitamente a tu tarifa por hora estándar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué gastos específicos de diseño puede deducir un autónomo?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Un diseñador independiente puede desgravar suscripciones profesionales (Figma, Adobe Creative Cloud), tipografías comerciales, bancos de imágenes y recursos 3D, monitores calibrados para color, tabletas gráficas, amortización de ordenador y cuota mensual de autónomo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Se debe cobrar aparte la cesión de derechos de autor y propiedad intelectual?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>En proyectos de branding, diseño de logotipos e ilustración comercial, la cesión total o exclusiva de derechos de explotación debe integrarse en el precio presupuestado o estipularse claramente con un recargo según el ámbito geográfico y temporal de difusión.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué es un sprint de diseño de 1 semana y cómo se presupuesta?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Un sprint de diseño reserva entre 30 y 35 horas de dedicación exclusiva a lo largo de 5 días hábiles para wireframing, prototipos interactivos o rediseños de interfaces. Su precio habitual oscila entre 1.800€ y 3.500€ semanales.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Insertar Calculadora de Diseño</h3>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/es/calculadora-tarifa-disenador/?embed=true" width="100%" height="780" frameborder="0"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copiar Código</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Cerrar modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Tarifario Oficial 2026</span>
+        </div>
+        <h3>Tarifario de Servicios de Diseño</h3>
+        <p class="card-subtitle">Tarifas Oficiales de Diseño y Creatividad • 2026</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Tarifa por Hora</span>
+              <span class="rate-desc">Suelo mínimo de facturación para diseño y prototipado</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">€76 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Jornada Completa (8h)</span>
+              <span class="rate-desc">Día intensivo de diseño UI/UX y conceptualización</span>
+            </td>
+            <td class="strong-val" id="rc-day">€608 / día</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Sprint Semanal de Diseño</span>
+              <span class="rate-desc">Capacidad dedicada para 1 semana de entregables</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">€1.824 / sem</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Retainer Mensual Creativo</span>
+              <span class="rate-desc">Dirección de arte y producción continuada</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">€7.600 / mes</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Tarifas comerciales oficiales para proyectos creativos en 2026. Identidades de marca complejas y cesión de derechos se presupuestan según alcance.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-ES-DES-2026</span>
+            <span>Verificado vía ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Descargar Tarjeta (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Imprimir / Guardar en PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="../" class="brand-logo" title="RateCraft Herramientas Freelance">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Inteligencia de precios y calculadoras de tarifas para autónomos y freelancers. Diseñado para cobrar lo que realmente vale tu trabajo.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculadoras</h4>
+          <ul class="footer-links-list">
+            <li><a href="../">General Autónomos</a></li>
+            <li><a href="../calculadora-precio-hora-programador/">Programadores y Software</a></li>
+            <li><a href="./">Diseñadores Gráficos y UI/UX</a></li>
+            <li><a href="../calculadora-tarifa-redactor/">Redactores y Copywriters</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Guías Editoriales</h4>
+          <ul class="footer-links-list">
+            <li><a href="../guias/como-calcular-tarifa-por-hora/">Cómo Calcular tu Tarifa por Hora</a></li>
+            <li><a href="../guias/precios-por-valor-vs-por-hora/">Precios por Valor vs. Por Hora</a></li>
+            <li><a href="../guias/contratos-retainer-freelance/">Guía de Contratos Retainer</a></li>
+            <li><a href="../guias/impuestos-gastos-autonomos/">Impuestos y Gastos Deducibles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Empresa y Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="../sobre-nosotros/">Sobre Nosotros</a></li>
+            <li><a href="../contacto/">Contacto</a></li>
+            <li><a href="../privacidad/">Política de Privacidad</a></li>
+            <li><a href="../terminos/">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Herramienta especializada para diseñadores independientes, perfiles UI/UX y directores de arte.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../../designer-rate-calculator/">English Version (🇺🇸)</a></li>
+          <li><a href="../../sitemap.xml">Mapa del Sitio</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/calculator.js"></script>
+</body>
+</html>

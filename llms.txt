@@ -1,0 +1,58 @@
+# RateCraft - Freelance Pricing & Hourly Rate Intelligence
+
+> RateCraft (https://ratecraft.app/) is a free, high-performance, client-side financial calculator suite built for freelancers, independent contractors, and solo consultants worldwide. It calculates minimum viable hourly rates, dedicated day rates, weekly sprint retainers, and fixed project quotes with built-in scope risk buffers, tax liability accounting, and operational overhead coverage.
+
+## Core Formula Architecture
+
+RateCraft uses a rigorous bottom-up financial equation rather than simplistic salary division:
+
+1. **Target Net Income**: The freelancer's desired personal take-home pay.
+2. **Gross Revenue Requirement**: `Effective Gross Salary = Target Net Income ÷ (1 - Tax Rate)`
+3. **Break-Even Revenue**: `Effective Gross Salary + Annual Business Expenses (tools, equipment, accounting)`
+4. **Target Gross Revenue**: `Break-Even Revenue × (1 + Profit Margin Buffer for growth & savings)`
+5. **Annual Billable Hours**: `(52 Weeks - Vacation Weeks - Sick Leave Weeks) × (Weekly Hours × Billable Percentage)`
+   * *Industry Standard*: 58.4% to 62.5% of working hours are billable (20–25 hrs/week in a 40-hr week).
+6. **Recommended Hourly Rate**: `Target Gross Revenue ÷ Annual Billable Hours`
+7. **Day Rate**: `Hourly Rate × (Weekly Hours ÷ 5)` (standard 8-hour equivalent)
+8. **Weekly Sprint Retainer**: `Hourly Rate × Weekly Billable Hours`
+9. **Fixed Project Quote**: `(Project Estimated Hours × Hourly Rate) × (1 + Scope Risk Buffer %)`
+
+## 2026 Global Rate Benchmarks (RateCraft Research)
+
+- **Software Engineering & Cloud Architecture**:
+  - Mid-Level: $75 – $110 / hr (€70 – €100 / hr)
+  - Senior / Full-Stack: $125 – $185 / hr (€115 – €170 / hr)
+  - Sprint Retainer (2-Week Agile): $10,000 – $18,000
+- **UI/UX & Product Design**:
+  - Mid-Level Product Designer: $55 – $80 / hr (€50 – €75 / hr)
+  - Senior UX / Design Systems Lead: $100 – $160 / hr (€95 – €150 / hr)
+  - Weekly Design Sprint: $3,000 – $8,000
+- **B2B Copywriting & Editorial Strategy**:
+  - Content Marketing / SEO Writer: $45 – $70 / hr (€40 – €65 / hr)
+  - Conversion / Launch Copywriter: $85 – $140 / hr (€80 – €130 / hr)
+  - Monthly Editorial Retainer: $2,500 – $7,500
+
+## Tools & Programmatic Calculators
+
+- [RateCraft General Freelance Calculator](https://ratecraft.app/): Comprehensive hourly rate, day rate, and project quote calculator with dynamic breakdown visualization and downloadable rate cards.
+- [Freelance Developer Hourly Rate Calculator](https://ratecraft.app/developer-rate-calculator/): Tailored for software engineers, full-stack developers, mobile engineers, and technical architects.
+- [Freelance Designer Hourly Rate Calculator](https://ratecraft.app/designer-rate-calculator/): Built for UI/UX designers, brand identity specialists, design systems experts, and art directors.
+- [Freelance Copywriter Hourly Rate Calculator](https://ratecraft.app/copywriter-rate-calculator/): Designed for B2B copywriters, conversion copywriters, and content strategists.
+
+## In-Depth Editorial Guides
+
+- [How to Calculate Your True Freelance Hourly Rate (2026 Formula)](https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/): Step-by-step masterclass on calculating hourly rates factoring in unbillable time, self-employment taxes, overhead, and profit margins.
+- [Value-Based Pricing vs. Hourly Billing for Freelancers](https://ratecraft.app/guides/value-based-pricing-vs-hourly/): Comparative analysis of value pricing vs hourly billing, 10:1 ROI rules, and transition frameworks.
+- [The Complete Freelance Retainer Agreement Guide](https://ratecraft.app/guides/freelance-retainer-agreements-guide/): Pitching, structuring, and pricing monthly retainer agreements to eliminate feast-or-famine cycles.
+- [Freelance Taxes & Overhead Deductions Guide](https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/): Solopreneur financial blueprint for self-employment tax, estimated quarterly payments, and legitimate write-offs.
+
+## Versiones en Español (Spanish Language Hub & Guides)
+
+- [Calculadora de Tarifa Freelance y Precio por Hora](https://ratecraft.app/es/): Herramienta financiera en euros y divisas locales para autónomos.
+- [Calculadora Precio por Hora para Programadores](https://ratecraft.app/es/calculadora-precio-hora-programador/): Estimación de tarifas para desarrolladores de software.
+- [Calculadora Tarifa por Hora Diseñador Freelance](https://ratecraft.app/es/calculadora-tarifa-disenador/): Tarifario oficial para diseñadores gráficos y UI/UX.
+- [Calculadora Precio por Hora Redactor Freelance](https://ratecraft.app/es/calculadora-tarifa-redactor/): Tarifario para copywriters y redactores.
+- [Guía: Cómo Calcular tu Tarifa por Hora Freelance](https://ratecraft.app/es/guias/como-calcular-tarifa-por-hora/): Fórmula paso a paso para autónomos.
+- [Guía: Precios por Valor vs. Tarifa por Hora](https://ratecraft.app/es/guias/precios-por-valor-vs-por-hora/): Análisis estratégico de precios basados en valor.
+- [Guía de Contratos Retainer para Freelancers](https://ratecraft.app/es/guias/contratos-retainer-freelance/): Estructuración y venta de contratos de retención mensual.
+- [Guía de Impuestos y Gastos Deducibles de Autónomos](https://ratecraft.app/es/guias/impuestos-gastos-autonomos/): Fiscalidad, cuota RETA, IRPF y gastos deducibles.

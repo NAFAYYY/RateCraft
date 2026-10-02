@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ==================== 1. CALCULATOR HUBS & TOOLS ==================== -->
+  <!-- General Calculator -->
+  <url>
+    <loc>https://ratecraft.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Developer Calculator -->
+  <url>
+    <loc>https://ratecraft.app/developer-rate-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/developer-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-precio-hora-programador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/developer-rate-calculator/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/calculadora-precio-hora-programador/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/developer-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-precio-hora-programador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/developer-rate-calculator/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Designer Calculator -->
+  <url>
+    <loc>https://ratecraft.app/designer-rate-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/designer-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-disenador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/designer-rate-calculator/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/calculadora-tarifa-disenador/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/designer-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-disenador/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/designer-rate-calculator/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Copywriter Calculator -->
+  <url>
+    <loc>https://ratecraft.app/copywriter-rate-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/copywriter-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-redactor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/copywriter-rate-calculator/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/calculadora-tarifa-redactor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/copywriter-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-redactor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/copywriter-rate-calculator/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================== 2. EDITORIAL GUIDES ==================== -->
+  <!-- Guides Hub -->
+  <url>
+    <loc>https://ratecraft.app/guides/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/guias/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <!-- Guide 1: Hourly Rate Calculation Formula -->
+  <url>
+    <loc>https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/como-calcular-tarifa-por-hora/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/guias/como-calcular-tarifa-por-hora/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/como-calcular-tarifa-por-hora/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Guide 2: Value-Based vs Hourly Pricing -->
+  <url>
+    <loc>https://ratecraft.app/guides/value-based-pricing-vs-hourly/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/value-based-pricing-vs-hourly/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/precios-por-valor-vs-por-hora/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/value-based-pricing-vs-hourly/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/guias/precios-por-valor-vs-por-hora/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/value-based-pricing-vs-hourly/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/precios-por-valor-vs-por-hora/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/value-based-pricing-vs-hourly/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Guide 3: Retainer Agreements -->
+  <url>
+    <loc>https://ratecraft.app/guides/freelance-retainer-agreements-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/freelance-retainer-agreements-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/contratos-retainer-freelance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/freelance-retainer-agreements-guide/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/guias/contratos-retainer-freelance/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/freelance-retainer-agreements-guide/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/contratos-retainer-freelance/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/freelance-retainer-agreements-guide/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Guide 4: Taxes & Overhead Deductions -->
+  <url>
+    <loc>https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/impuestos-gastos-autonomos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/guias/impuestos-gastos-autonomos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/guias/impuestos-gastos-autonomos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- ==================== 3. COMPANY, TRUST & LEGAL ==================== -->
+  <!-- About Us -->
+  <url>
+    <loc>https://ratecraft.app/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/sobre-nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/about/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/sobre-nosotros/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/about/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/sobre-nosotros/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/about/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Us -->
+  <url>
+    <loc>https://ratecraft.app/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/contact/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/contacto/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/contact/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://ratecraft.app/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/privacy/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/privacidad/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/privacy/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://ratecraft.app/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/terms/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ratecraft.app/es/terminos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/terminos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/terms/"/>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

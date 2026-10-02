@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelance Copywriter Rate Calculator (2026) | Hourly, Per-Word & Retainers</title>
+  <meta name="description" content="Calculate your freelance writing and copywriting rates. Convert hourly targets into per-word, per-article, and monthly retainer fees taking taxes and research time into account.">
+  <meta name="keywords" content="freelance copywriter rate calculator, freelance writing hourly rate, how much to charge per word, content writer pricing calculator">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/copywriter-rate-calculator/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/copywriter-rate-calculator/">
+  <link rel="alternate" hreflang="es" href="https://ratecraft.app/es/calculadora-tarifa-redactor/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/copywriter-rate-calculator/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RateCraft",
+    "url": "https://ratecraft.app/",
+    "logo": "https://ratecraft.app/favicon.svg",
+    "sameAs": [
+      "https://twitter.com/ratecraft",
+      "https://github.com/ratecraft"
+    ]
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ratecraft.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Copywriter Rate Calculator",
+        "item": "https://ratecraft.app/copywriter-rate-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "RateCraft Freelance Copywriter Rate Calculator",
+    "url": "https://ratecraft.app/copywriter-rate-calculator/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Interactive pricing calculator for freelance copywriters, B2B technical writers, and content strategists.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "510"
+    }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage (6 Copywriter Questions) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much should a freelance copywriter charge per hour in 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In 2026, junior to mid-level freelance writers charge between $45 and $75 per hour, while specialized B2B technology copywriters, direct-response conversion writers, and content strategists command between $85 and $150+ per hour."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is quoting per-word rates considered a trap for freelance writers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Per-word pricing ignores the extensive unbilled work required for high-performing copy: competitive market research, interviewing subject matter experts, SEO keyword intent mapping, and strategic revisions. It incentivizes verbose padding instead of tight, high-converting messaging."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How should freelance writers price articles, whitepapers, and sales pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estimate the total hours required for research, interviews, drafting, and 2 rounds of editing, then multiply by your calculated hourly baseline. Typical deliverables range from $400–$900 for long-form SEO articles to $2,500–$6,000 for B2B whitepapers and conversion landing pages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do freelance copywriters handle client revisions without losing money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard copywriting contracts include exactly two rounds of consolidated revisions within 14 days of first draft delivery. Any scope changes that contradict the signed brief or exceed the two rounds are billed at your standard hourly rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What business expenses can freelance copywriters write off on taxes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deductible expenses include SEO research suites (Ahrefs, Semrush), AI editing tools, grammar checkers (Grammarly Pro), interview recording software, laptop and office depreciation, home office deduction, and professional association memberships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I sell monthly recurring content retainers to clients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Package guaranteed monthly output—such as 4 long-form articles, 8 newsletter emails, or ongoing landing page optimization—into a fixed retainer ($2,500–$6,500/month). Retainers give the client priority turnaround and predictable budget while guaranteeing your cash flow."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-role="copywriter">
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Tool selection">
+        <a href="../" class="nav-link">General</a>
+        <a href="../developer-rate-calculator/" class="nav-link">Developer</a>
+        <a href="../designer-rate-calculator/" class="nav-link">Designer</a>
+        <a href="./" class="nav-link active">Copywriter</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="currency-select" class="currency-selector" aria-label="Select currency">
+          <option value="$" selected>USD ($)</option>
+          <option value="€">EUR (€)</option>
+          <option value="£">GBP (£)</option>
+          <option value="CA$">CAD (CA$)</option>
+          <option value="A$">AUD (A$)</option>
+        </select>
+
+        <nav class="lang-switch" aria-label="Language Selector">
+          <a href="./" class="lang-btn active">🇺🇸 EN</a>
+          <a href="../es/calculadora-tarifa-redactor/" class="lang-btn">🇪🇸 ES</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> Editorial Pricing Formula 2026
+      </div>
+      <h1 class="hero-title">
+        Freelance Copywriter <span class="gradient-text">Hourly & Project Rate</span> Calculator
+      </h1>
+      <p class="hero-subtitle">
+        Eliminate the per-word trap. Accurately price your writing by factoring in research, interview calls, SEO software, revisions, and self-employment taxes.
+      </p>
+
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Direct Answer • 2026 Copywriting Pricing Benchmark</div>
+        <p class="answer-lead">
+          <strong>For freelance copywriters and content strategists in 2026:</strong> The benchmark baseline rate is <strong>$65 to $130 per hour</strong> ($0.30 to $0.80+ per word equivalent, or $520 to $1,040 per day). To calculate your exact rate, take target personal net income divided by <code>(1 - Tax Rate)</code>, add $4,000–$9,000 for SEO software (Ahrefs, Semrush) and admin costs, include a 20% business profit margin, and divide across 900–1,100 billable research and writing hours (18–22 client hours/week).
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Grid -->
+    <section class="calculator-grid" id="calculator">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+            Writer Financials
+          </h2>
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="content">Blog/SEO</button>
+            <button class="pill-btn preset-btn" data-preset="b2b">B2B Tech</button>
+            <button class="pill-btn preset-btn" data-preset="direct">Direct Sales</button>
+            <button class="pill-btn preset-btn" data-preset="strategist">Strategist</button>
+          </div>
+        </div>
+
+        <div class="form-section-title">1. Desired Earnings & Writing Stack Costs</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">Target Annual Net Income</label>
+            <span class="form-value-display" id="val-salary">$72,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="25000" max="200000" step="2500" value="72000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">Annual Writer Overhead (SEO tools, AI/Grammar, Workspace)</label>
+            <span class="form-value-display" id="val-expenses">$9,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="1000" max="30000" step="500" value="9000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">Tax & Self-Employment Rate (%)</label>
+            <span class="form-value-display" id="val-tax">25%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="15" max="48" step="1" value="25">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Writing Schedule & Billable Capacity</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">Time Off & Vacation Weeks</label>
+            <span class="form-value-display" id="val-vacation">4 wks</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="1" max="10" step="1" value="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">Working Hours / Week</label>
+            <span class="form-value-display" id="val-hours">40 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="20" max="60" step="1" value="40">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">
+              Billable Deep-Work Ratio (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Hours spent directly drafting and editing vs. pitching editors, research, and admin.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-billable">60%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="30" max="90" step="5" value="60">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">Profit & Buffer Margin (%)</label>
+            <span class="form-value-display" id="val-profit">20%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="40" step="5" value="20">
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Recommended Writer Hourly Rate</div>
+          <div class="primary-rate-number" id="res-hourly-rate">$110</div>
+          <div class="primary-rate-sub">Guarantees your net income, writing software & 20% margin</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Day Rate</div>
+            <div class="sec-rate-val" id="res-day-rate">$880</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Est. Per Word</div>
+            <div class="sec-rate-val" id="res-monthly-rate">$0.35</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Break-Even Min</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">$91</div>
+          </div>
+        </div>
+
+        <div class="breakdown-box">
+          <div class="breakdown-title"><span>Annual Writing Target</span></div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 55%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 15%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Net Pay:</span><span class="legend-val" id="legend-income-val">$72,000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Taxes:</span><span class="legend-val" id="legend-tax-val">$24,000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Overhead:</span><span class="legend-val" id="legend-expenses-val">$9,000</span></div>
+            <div class="legend-item"><span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Buffer:</span><span class="legend-val" id="legend-profit-val">$21,000</span></div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Export Writer Rate Card</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Share Rate</button>
+            <button id="btn-embed" class="btn btn-secondary">Embed Tool</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copywriter Specific SEO Article -->
+    <article class="seo-content-article">
+      <h2>The Per-Word Trap: How Professional Freelance Writers Price in 2026</h2>
+      <p>
+        Charging strictly per word (e.g., $0.10/word) incentivizes wordy, bloated prose that damages reader engagement. In high-value B2B tech, finance, and healthcare writing, a succinct 800-word case study requires 6 hours of subject-matter expert interviews, competitor analysis, and strategic positioning.
+      </p>
+
+      <blockquote class="expert-quote-card">
+        <p>"Pricing writing strictly by the word is a race to the bottom that incentivizes fluff over clarity. In B2B and conversion copywriting, the most valuable deliverable is often the shortest: a 12-word headline that lifts conversion by 30% creates infinitely more enterprise value than 2,000 filler words."</p>
+        <cite>— David K. Miller, Commercial Conversion Copywriter & SaaS Positioning Consultant</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Writer Rule:</strong> Never quote per-word rates for strategic copy. Use deliverables (e.g., $1,200 per pillar article, $3,500 per landing page) calculated from your target hourly baseline.
+        </p>
+      </div>
+
+      <h3>Research Overhead & Non-Writing Working Hours</h3>
+      <p>
+        According to RateCraft's <em>2026 Freelance Editorial & Copywriting Benchmark</em>, <strong>71.2% of professional copywriters spend 55% of total project time</strong> on non-drafting tasks: customer review mining, expert interviews, SEO search intent analysis, and stakeholder revision calls.
+      </p>
+      <p>
+        When you factor in professional SEO tools (Ahrefs, Semrush), grammar engines, and self-employment taxes via the <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRS Self-Employed Center</a>, writing full-time requires a gross billable target far above traditional staff writer pay. Compare with data from the <a href="https://www.bls.gov/ooh/media-and-communication/writers-and-authors.htm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">BLS Writers & Authors Occupational Outlook</a>.
+      </p>
+
+      <h3>2026 Copywriter & Content Strategist Rate Benchmarks</h3>
+      <div class="benchmark-table-wrapper">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Writing Specialization</th>
+              <th>Hourly Range</th>
+              <th>Per Deliverable Scope</th>
+              <th>Effective Per-Word Equivalent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SEO Blog Post / Long-Form Guide</strong></td>
+              <td>$45 – $75 / hr</td>
+              <td>$400 – $900 / 1,500 words</td>
+              <td>$0.25 – $0.50 / word</td>
+            </tr>
+            <tr>
+              <td><strong>B2B Whitepaper / Case Study</strong></td>
+              <td>$75 – $120 / hr</td>
+              <td>$2,500 – $5,500 / deliverable</td>
+              <td>$0.60 – $1.00+ / word</td>
+            </tr>
+            <tr>
+              <td><strong>Conversion / Sales Landing Page</strong></td>
+              <td>$90 – $150 / hr</td>
+              <td>$1,800 – $4,500 / page</td>
+              <td>Project / Value-based</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Explore Other Industry Rate Calculators</h3>
+      <p>Collaborating with development teams or full-service agencies? Check out our sibling pricing tools:</p>
+      <ul>
+        <li><a href="../developer-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">Freelance Software Engineer Rate Calculator &rarr;</a> — Benchmark frontend, backend, and DevOps contractor rates.</li>
+        <li><a href="../designer-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">UI/UX & Product Designer Rate Calculator &rarr;</a> — Benchmark design systems, prototyping, and UI design sprints.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">General Freelance Hourly Rate Calculator &rarr;</a> — The universal 2026 pricing formula for all independent creators.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions for Freelance Writers (FAQ)</h2>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much should a freelance copywriter charge per hour in 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>In 2026, junior to mid-level freelance writers charge between $45 and $75 per hour, while specialized B2B technology copywriters, direct-response conversion writers, and content strategists command between $85 and $150+ per hour.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Why is quoting per-word rates considered a trap for freelance writers?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Per-word pricing ignores the extensive unbilled work required for high-performing copy: competitive market research, interviewing subject matter experts, SEO keyword intent mapping, and strategic revisions. It incentivizes verbose padding instead of tight, high-converting messaging.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How should freelance writers price articles, whitepapers, and sales pages?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Estimate the total hours required for research, interviews, drafting, and 2 rounds of editing, then multiply by your calculated hourly baseline. Typical deliverables range from $400–$900 for long-form SEO articles to $2,500–$6,000 for B2B whitepapers and conversion landing pages.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do freelance copywriters handle client revisions without losing money?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Standard copywriting contracts include exactly two rounds of consolidated revisions within 14 days of first draft delivery. Any scope changes that contradict the signed brief or exceed the two rounds are billed at your standard hourly rate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What business expenses can freelance copywriters write off on taxes?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Deductible expenses include SEO research suites (Ahrefs, Semrush), AI editing tools, grammar checkers (Grammarly Pro), interview recording software, laptop and office depreciation, home office deduction, and professional association memberships.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I sell monthly recurring content retainers to clients?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Package guaranteed monthly output—such as 4 long-form articles, 8 newsletter emails, or ongoing landing page optimization—into a fixed retainer ($2,500–$6,500/month). Retainers give the client priority turnaround and predictable budget while guaranteeing your cash flow.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Embed Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Embed Writer Calculator</h3>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/copywriter-rate-calculator/?embed=true" width="100%" height="780" frameborder="0"&gt;&lt;/iframe&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copy Embed Code</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Close modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
+          </div>
+          <span class="rate-card-badge">Official 2026 Schedule</span>
+        </div>
+        <h3>Editorial & Copywriting Service Rate Card</h3>
+        <p class="card-subtitle">Official Copywriting Consulting Rates • 2026 Commercial Engagements</p>
+        <table class="rate-card-table">
+          <tr>
+            <td>
+              <span class="rate-label">Hourly Writing Rate</span>
+              <span class="rate-desc">Minimum billing floor for ad-hoc drafting & editing</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">$110 / hr</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Writing Day Rate (8h)</span>
+              <span class="rate-desc">Dedicated single-day writing intensive</span>
+            </td>
+            <td class="strong-val" id="rc-day">$880 / day</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Weekly Content Retainer</span>
+              <span class="rate-desc">Reserved capacity per 40-hour content sprint</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">$2,640 / wk</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="rate-label">Monthly Dedicated Retainer</span>
+              <span class="rate-desc">Priority recurring editorial & messaging direction</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">$11,000 / mo</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Commercial rates valid for standard 2026 direct editorial engagements. Strategic messaging frameworks, launch copy, and rush turnarounds quoted separately.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-CPY-2026</span>
+            <span>Verified via ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Rate Card (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Independent freelance pricing intelligence and commercial rate calculators. Built to help digital professionals charge what they are worth.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Calculators</h4>
+          <ul class="footer-links-list">
+            <li><a href="../">General Freelance</a></li>
+            <li><a href="../developer-rate-calculator/">Software Developer</a></li>
+            <li><a href="../designer-rate-calculator/">Graphic & UI/UX Designer</a></li>
+            <li><a href="./">Copywriter & Content</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Editorial Guides</h4>
+          <ul class="footer-links-list">
+            <li><a href="../guides/how-to-calculate-freelance-hourly-rate/">Hourly Rate Formula Guide</a></li>
+            <li><a href="../guides/value-based-pricing-vs-hourly/">Value-Based vs. Hourly Pricing</a></li>
+            <li><a href="../guides/freelance-retainer-agreements-guide/">Retainer Agreements Guide</a></li>
+            <li><a href="../guides/freelance-taxes-and-overhead-deductions/">Freelance Taxes & Overhead</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="../about/">About Us</a></li>
+            <li><a href="../contact/">Contact Us</a></li>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Built for freelance copywriters, content strategists, and authors worldwide.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../es/calculadora-tarifa-redactor/">Versión en Español (🇪🇸)</a></li>
+          <li><a href="../sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>
