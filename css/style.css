@@ -28,10 +28,10 @@
   --border-emerald: rgba(16, 185, 129, 0.35);
   --border-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 
-  /* Typography */
+  /* Typography - Optimized for WCAG AAA contrast */
   --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-muted: #cbd5e1;
+  --text-dim: #94a3b8;
 
   --radius-xs: 5px;
   --radius-sm: 8px;
@@ -702,7 +702,6 @@ header.site-header {
 
 .bar-segment {
   height: 100%;
-  transition: width 0.3s ease;
 }
 
 .bar-income { background: var(--accent-emerald); }
@@ -835,6 +834,14 @@ header.site-header {
   padding: 18px;
   text-align: center;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.quote-result-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #a5b4fc;
+  letter-spacing: 0.04em;
 }
 
 .quote-amount {
