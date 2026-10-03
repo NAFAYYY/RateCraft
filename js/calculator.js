@@ -50,7 +50,7 @@
     hoursPerWeek: defaultForRole.hoursPerWeek,
     billablePercent: defaultForRole.billablePercent,
     profitMargin: defaultForRole.profitMargin,
-    projectHours: 40,
+    projectHours: 30,
     projectBuffer: 15
   };
 
@@ -117,7 +117,7 @@
   function calculate() {
     // 1. Time Calculations
     const totalWeeksInYear = 52;
-    const workingWeeks = Math.max(1, totalWeeksInYear - state.vacationWeeks - (state.sickDays / 5));
+    const workingWeeks = Math.max(1, totalWeeksInYear - state.vacationWeeks);
     const weeklyBillableHours = state.hoursPerWeek * (state.billablePercent / 100);
     const annualBillableHours = Math.max(10, Math.round(workingWeeks * weeklyBillableHours));
 
