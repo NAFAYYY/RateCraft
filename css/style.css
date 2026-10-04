@@ -205,21 +205,48 @@ ins.adsbygoogle {
   border-color: var(--border-medium);
 }
 
-.currency-selector {
-  background: var(--bg-secondary);
+.currency-selector,
+.currency-select,
+select#currency-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--bg-secondary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 12px;
   border: 1px solid var(--border-subtle);
   color: var(--text-main);
-  padding: 6px 10px;
+  padding: 6px 28px 6px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   outline: none;
   transition: var(--transition);
+  font-family: inherit;
 }
 
-.currency-selector:hover, .currency-selector:focus {
+.currency-selector:hover,
+.currency-select:hover,
+select#currency-select:hover {
   border-color: var(--accent-indigo);
+  background-color: #172033;
+}
+
+.currency-selector:focus,
+.currency-select:focus,
+select#currency-select:focus {
+  border-color: var(--accent-indigo);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
+}
+
+.currency-selector option,
+.currency-select option,
+select#currency-select option {
+  background-color: #0f172a;
+  color: #f8fafc;
 }
 
 @media (max-width: 820px) {
@@ -1570,9 +1597,12 @@ ins.adsbygoogle {
     padding: 6px 2px;
     font-size: 0.72rem;
   }
-  .currency-selector {
-    padding: 4px 7px;
+  .currency-selector,
+  .currency-select,
+  select#currency-select {
+    padding: 4px 22px 4px 8px;
     font-size: 0.76rem;
+    background-position: right 6px center;
   }
   .lang-btn {
     padding: 4px 7px;
@@ -1688,9 +1718,12 @@ ins.adsbygoogle {
   .header-actions {
     gap: 5px;
   }
-  .currency-selector {
-    padding: 4px 5px;
+  .currency-selector,
+  .currency-select,
+  select#currency-select {
+    padding: 4px 18px 4px 6px;
     font-size: 0.72rem;
+    background-position: right 5px center;
   }
   .lang-btn {
     padding: 3px 5px;
