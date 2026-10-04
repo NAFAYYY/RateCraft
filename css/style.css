@@ -70,11 +70,23 @@ header.site-header {
   position: sticky;
   top: 0;
   z-index: 100;
+  min-height: 58px;
+  box-sizing: border-box;
   background: rgba(9, 13, 22, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
   padding: 12px 24px;
+}
+
+/* AdSense Layout Stabilization (Prevents dynamic Auto-Ad layout jumping) */
+ins.adsbygoogle {
+  display: block;
+}
+.google-auto-placed {
+  margin: 16px auto !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
 }
 
 .header-container {
