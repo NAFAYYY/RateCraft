@@ -40,10 +40,56 @@
       inside: { salary: 75000, expenses: 4000, taxRate: 35, vacationWeeks: 5, sickDays: 8, hoursPerWeek: 40, billablePercent: 65, profitMargin: 15 },
       outside: { salary: 95000, expenses: 12000, taxRate: 22, vacationWeeks: 6, sickDays: 10, hoursPerWeek: 40, billablePercent: 60, profitMargin: 25 },
       consultant: { salary: 130000, expenses: 16000, taxRate: 28, vacationWeeks: 6, sickDays: 10, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
+    },
+    va: {
+      admin: { salary: 38000, expenses: 4500, taxRate: 20, vacationWeeks: 3, sickDays: 7, hoursPerWeek: 40, billablePercent: 60, profitMargin: 15 },
+      executive: { salary: 58000, expenses: 6500, taxRate: 22, vacationWeeks: 4, sickDays: 8, hoursPerWeek: 40, billablePercent: 60, profitMargin: 20 },
+      technical: { salary: 78000, expenses: 9500, taxRate: 25, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 38, billablePercent: 65, profitMargin: 25 },
+      specialist: { salary: 105000, expenses: 14000, taxRate: 28, vacationWeeks: 5, sickDays: 12, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
+    },
+    video: {
+      social: { salary: 52000, expenses: 8500, taxRate: 22, vacationWeeks: 3, sickDays: 7, hoursPerWeek: 40, billablePercent: 55, profitMargin: 15 },
+      commercial: { salary: 85000, expenses: 15000, taxRate: 26, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 38, billablePercent: 60, profitMargin: 20 },
+      colorist: { salary: 115000, expenses: 22000, taxRate: 29, vacationWeeks: 5, sickDays: 10, hoursPerWeek: 35, billablePercent: 60, profitMargin: 25 },
+      director: { salary: 155000, expenses: 32000, taxRate: 32, vacationWeeks: 6, sickDays: 12, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
+    },
+    consultant: {
+      advisory: { salary: 115000, expenses: 16000, taxRate: 28, vacationWeeks: 5, sickDays: 8, hoursPerWeek: 38, billablePercent: 50, profitMargin: 25 },
+      management: { salary: 160000, expenses: 24000, taxRate: 32, vacationWeeks: 6, sickDays: 10, hoursPerWeek: 35, billablePercent: 55, profitMargin: 30 },
+      technical: { salary: 195000, expenses: 28000, taxRate: 34, vacationWeeks: 6, sickDays: 10, hoursPerWeek: 35, billablePercent: 55, profitMargin: 30 },
+      partner: { salary: 265000, expenses: 42000, taxRate: 36, vacationWeeks: 7, sickDays: 12, hoursPerWeek: 32, billablePercent: 60, profitMargin: 35 }
+    },
+    smm: {
+      freelance: { salary: 48000, expenses: 6500, taxRate: 20, vacationWeeks: 3, sickDays: 8, hoursPerWeek: 40, billablePercent: 60, profitMargin: 15 },
+      strategist: { salary: 75000, expenses: 11000, taxRate: 25, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 38, billablePercent: 60, profitMargin: 20 },
+      content_lead: { salary: 102000, expenses: 16000, taxRate: 28, vacationWeeks: 5, sickDays: 10, hoursPerWeek: 35, billablePercent: 65, profitMargin: 25 },
+      agency: { salary: 140000, expenses: 24000, taxRate: 30, vacationWeeks: 6, sickDays: 12, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
+    },
+    canada: {
+      contractor: { salary: 85000, expenses: 11000, taxRate: 28, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 40, billablePercent: 60, profitMargin: 20 },
+      developer: { salary: 115000, expenses: 15000, taxRate: 30, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 40, billablePercent: 65, profitMargin: 20 },
+      consultant: { salary: 145000, expenses: 19000, taxRate: 33, vacationWeeks: 5, sickDays: 12, hoursPerWeek: 37, billablePercent: 60, profitMargin: 25 },
+      incorporated: { salary: 185000, expenses: 26000, taxRate: 27, vacationWeeks: 6, sickDays: 12, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
+    },
+    australia: {
+      contractor: { salary: 98000, expenses: 12500, taxRate: 29, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 38, billablePercent: 60, profitMargin: 20 },
+      developer: { salary: 130000, expenses: 16000, taxRate: 32, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 38, billablePercent: 65, profitMargin: 20 },
+      consultant: { salary: 165000, expenses: 21000, taxRate: 35, vacationWeeks: 5, sickDays: 12, hoursPerWeek: 35, billablePercent: 60, profitMargin: 25 },
+      pty_ltd: { salary: 210000, expenses: 29000, taxRate: 30, vacationWeeks: 6, sickDays: 12, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
     }
   };
 
-  const defaultForRole = rolePresets[currentRole] ? (rolePresets[currentRole].contractor || rolePresets[currentRole].fullstack || rolePresets[currentRole].uiux || rolePresets[currentRole].b2b || rolePresets[currentRole].mid) : rolePresets.general.mid;
+  const defaultForRole = rolePresets[currentRole] ? (
+    rolePresets[currentRole].executive ||
+    rolePresets[currentRole].commercial ||
+    rolePresets[currentRole].management ||
+    rolePresets[currentRole].contractor ||
+    rolePresets[currentRole].fullstack ||
+    rolePresets[currentRole].uiux ||
+    rolePresets[currentRole].b2b ||
+    rolePresets[currentRole].strategist ||
+    rolePresets[currentRole].mid
+  ) : rolePresets.general.mid;
 
   const state = {
     currency: document.body.dataset.currency || (document.documentElement.lang === 'es' ? '€' : '$'),

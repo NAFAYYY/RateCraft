@@ -2,5 +2,9 @@
 .git/**
 .wrangler/
 .wrangler/**
+.agents/
+.agents/**
+ratecraft.app-audit/
+ratecraft.app-audit/**
 README.md
 wrangler.jsonc

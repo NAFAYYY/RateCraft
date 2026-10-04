@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Consultant Day Rate Calculator (2026) | Daily & Retainer</title>
+  <meta name="description" content="Calculate freelance consultant day rates and advisory retainers. Accounts for business development unbillable hours, E&amp;O insurance, travel, and profit.">
+  <meta name="keywords" content="consultant day rate calculator, freelance consultant hourly rate, management consultant day rate, advisory retainer calculator, how to calculate consulting day rate">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="canonical" href="https://ratecraft.app/consultant-day-rate-calculator/">
+  <link rel="alternate" hreflang="en" href="https://ratecraft.app/consultant-day-rate-calculator/">
+  <link rel="alternate" hreflang="x-default" href="https://ratecraft.app/consultant-day-rate-calculator/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Consultant Day Rate Calculator (2026) | Daily & Retainer">
+  <meta property="og:description" content="Calculate freelance consultant day rates and advisory retainers. Accounts for business development unbillable hours, E&amp;O insurance, travel, and profit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ratecraft.app/consultant-day-rate-calculator/">
+  <meta property="og:image" content="https://ratecraft.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="RateCraft">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consultant Day Rate Calculator (2026) | Daily & Retainer">
+  <meta name="twitter:description" content="Calculate freelance consultant day rates and advisory retainers. Accounts for business development unbillable hours, E&amp;O insurance, travel, and profit.">
+  <meta name="twitter:image" content="https://ratecraft.app/og-image.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Schema.org WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Consultant Day Rate & Advisory Retainer Calculator",
+    "url": "https://ratecraft.app/consultant-day-rate-calculator/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Calculate commercial day rates, half-day fees, and monthly advisory retainers for independent strategy, management, and technical consultants.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "RateCraft",
+      "url": "https://ratecraft.app/"
+    }
+  }
+  </script>
+
+  <!-- Schema.org BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ratecraft.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Consultant Day Rate Calculator",
+        "item": "https://ratecraft.app/consultant-day-rate-calculator/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the standard formula to calculate a consultant day rate from a salary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The classic consulting rule-of-thumb is: Target Annual Base Salary divided by 100 to 120 billable days. For example, a $150,000 corporate equivalent salary translates to a day rate of $1,250 to $1,500 per day. This accounts for unbillable business development, corporate overhead, taxes, and bench time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do consultants bill by the day rather than by the hour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consulting work involves strategic cognitive context, executive stakeholder alignment, and unscheduled advisory problem-solving. Hourly billing commoditizes strategic advice and encourages micromanagement, whereas day rates and weekly advisory sprints anchor pricing to business outcomes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many days per year does an independent consultant actually bill?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A full-time independent consultant realistically bills between 100 and 130 days annually (around 10 to 12 days per month). The remaining 100+ business days are required for sales pipeline development, thought leadership, client pitches, administrative bookkeeping, and rest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What expenses must an independent consultant deduct from gross revenue?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key business deductions include Errors & Omissions (E&O) professional liability insurance, legal entity maintenance, CPA and bookkeeping services, client travel and lodging, research database subscriptions (Gartner, Statista), and home office overhead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do advisory retainers work for senior consultants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An advisory retainer provides ongoing executive access (e.g., bi-weekly strategic steering calls, asynchronous Slack/email feedback, document reviews). Typical retainers range from $3,500 to $10,000+ per month per client, offering predictable revenue without requiring continuous on-site presence."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Speculation Rules API for instant navigation -->
+  <script type="speculationrules">
+  {
+    "prefetch": [
+      {
+        "source": "list",
+        "urls": [
+          "../",
+          "../developer-rate-calculator/",
+          "../designer-rate-calculator/",
+          "../copywriter-rate-calculator/",
+          "../uk-freelance-day-rate-calculator/",
+          "../guides/"
+        ],
+        "eagerness": "moderate"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2523102948371054"
+     crossorigin="anonymous"></script>
+</head>
+<body data-role="consultant">
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+
+      <!-- Tools Navigation Links -->
+      <nav class="nav-links" aria-label="Tool selection">
+        <a href="../" class="nav-link">General</a>
+        <a href="../developer-rate-calculator/" class="nav-link">Developer</a>
+        <a href="../designer-rate-calculator/" class="nav-link">Designer</a>
+        <a href="../copywriter-rate-calculator/" class="nav-link">Copywriter</a>
+        <a href="./" class="nav-link active">Consultant</a>
+        <a href="../uk-freelance-day-rate-calculator/" class="nav-link">UK Day Rate</a>
+      </nav>
+
+      <div class="header-actions">
+        <select class="currency-select" id="currency-select" aria-label="Currency selection">
+          <option value="$">USD ($)</option>
+          <option value="£">GBP (£)</option>
+          <option value="€">EUR (€)</option>
+          <option value="C$">CAD (C$)</option>
+          <option value="A$">AUD (A$)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="hero-section">
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> 2026 Management & Strategy Benchmark
+      </div>
+      <h1 class="hero-title">
+        Consultant <span class="gradient-text">Day Rate & Retainer</span> Calculator
+      </h1>
+      <p class="hero-subtitle">
+        Calculate your professional consulting day rate, half-day fee, and monthly advisory retainer. Factors in unbillable proposal time, E&amp;O liability insurance, corporate taxes, and pipeline bench risk.
+      </p>
+
+      <!-- Direct Answer Card (GEO / AI Overviews Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Direct Answer • 2026 Consultant Rate Benchmarks</div>
+        <p class="answer-lead">
+          <strong>For independent consultants in 2026:</strong> Standard day rates range from <strong>$1,200 to $2,200 per day</strong> for management, operations, and technical advisors, reaching <strong>$2,500 to $4,000+ per day</strong> for principal partners and enterprise transformation leads. The proven formula for calculating a consultant day rate is: divide your target equivalent full-time executive salary by 100 to 120 billable days. Because business development, sales pitching, and proposal creation consume 40% to 50% of your calendar, your day rate must fund the entire year within 100–120 delivery days.
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-grid" id="calculator">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Advisory Financial Model
+          </h2>
+          <div class="preset-pills">
+            <button class="pill-btn preset-btn" data-preset="advisory">Strategy Advisor</button>
+            <button class="pill-btn preset-btn" data-preset="management">Management Consult</button>
+            <button class="pill-btn preset-btn" data-preset="technical">Tech Architecture</button>
+            <button class="pill-btn preset-btn" data-preset="partner">Principal Partner</button>
+          </div>
+        </div>
+
+        <div class="form-section-title">1. Desired Executive Income & Overhead</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-salary" class="form-label">
+              Target Annual Net Income
+              <span class="label-hint" tabindex="0" data-tooltip="Net executive take-home earnings after business expenses and taxes.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-salary">$160,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-salary" class="range-slider" min="60000" max="450000" step="5000" value="160000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-expenses" class="form-label">
+              Annual Practice Overhead
+              <span class="label-hint" tabindex="0" data-tooltip="Errors & Omissions (E&O) insurance, corporate legal retainers, CPA fees, executive travel, client meals, data research.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-expenses">$24,000</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-expenses" class="range-slider" min="5000" max="80000" step="1000" value="24000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-tax" class="form-label">
+              Estimated Effective Tax Rate (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Corporate pass-through tax, self-employment, federal and state marginal brackets.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-tax">32%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-tax" class="range-slider" min="15" max="48" step="1" value="32">
+          </div>
+        </div>
+
+        <div class="form-section-title">2. Billable Capacity & Bench Time</div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-vacation" class="form-label">
+              Annual Non-Working Weeks
+              <span class="label-hint" tabindex="0" data-tooltip="Executive holiday, executive retreat, and personal sabbatical weeks per year.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-vacation">6 weeks</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-vacation" class="range-slider" min="2" max="12" step="1" value="6">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-hours" class="form-label">
+              Total Professional Hours per Week
+              <span class="label-hint" tabindex="0" data-tooltip="Total weekly hours allocated to consulting delivery and practice management.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-hours">35 hrs</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-hours" class="range-slider" min="20" max="60" step="1" value="35">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-billable" class="form-label">
+              Billable Client Ratio (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Directly invoiced client delivery vs. business development, sales calls, RFP proposals, and thought leadership.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-billable">55%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-billable" class="range-slider" min="25" max="80" step="5" value="55">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label-row">
+            <label for="input-profit" class="form-label">
+              Practice Profit Reserve (%)
+              <span class="label-hint" tabindex="0" data-tooltip="Firm capital accumulation buffer for slow macroeconomic quarters and strategic growth.">ⓘ</span>
+            </label>
+            <span class="form-value-display" id="val-profit">30%</span>
+          </div>
+          <div class="input-with-slider">
+            <input type="range" id="input-profit" class="range-slider" min="0" max="50" step="5" value="30">
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Display Column -->
+      <div class="results-column">
+        <div class="results-card">
+          <div class="result-header">
+            <div>
+              <div class="result-badge">Calculated Practice Baseline</div>
+              <div class="result-amount-hero" id="res-day-rate">$3,040</div>
+              <div class="result-caption">Recommended commercial day rate (8 hrs delivery)</div>
+            </div>
+          </div>
+
+          <div class="results-subgrid">
+            <div class="metric-card">
+              <div class="metric-label">Hourly Advisory Floor</div>
+              <div class="metric-value" id="res-hourly-rate">$380</div>
+              <div class="metric-subtext">Base advisory rate</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Half-Day Strategy Session</div>
+              <div class="metric-value" id="res-breakeven-rate">$1,520</div>
+              <div class="metric-subtext">4-hour executive workshop</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Monthly Advisory Retainer</div>
+              <div class="metric-value" id="res-monthly-rate">$7,600</div>
+              <div class="metric-subtext">20 hrs/mo strategic counsel</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Target Gross Firm Billings</div>
+              <div class="metric-value" id="res-annual-revenue">$336,470</div>
+              <div class="metric-subtext">Annual practice revenue</div>
+            </div>
+          </div>
+
+          <!-- Revenue Distribution Breakdown -->
+          <div class="breakdown-section">
+            <div class="breakdown-title">Annual Gross Billings Distribution</div>
+            <div class="breakdown-bar">
+              <div class="bar-segment bar-income" id="bar-income" style="width: 48%;"></div>
+              <div class="bar-segment bar-tax" id="bar-tax" style="width: 22%;"></div>
+              <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 8%;"></div>
+              <div class="bar-segment bar-profit" id="bar-profit" style="width: 22%;"></div>
+            </div>
+            <div class="breakdown-legend">
+              <div class="legend-item"><span class="dot dot-income"></span> Net Take-Home: <span class="legend-val" id="legend-income-val">$160,000</span></div>
+              <div class="legend-item"><span class="dot dot-tax"></span> Taxes: <span class="legend-val" id="legend-tax-val">$75,294</span></div>
+              <div class="legend-item"><span class="dot dot-expenses"></span> Overhead & E&amp;O: <span class="legend-val" id="legend-expenses-val">$24,000</span></div>
+              <div class="legend-item"><span class="dot dot-profit"></span> Practice Capital: <span class="legend-val" id="legend-profit-val">$77,176</span></div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <button id="btn-open-rate-card" class="btn btn-primary">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              View Printable Fee Card
+            </button>
+            <button id="btn-open-embed" class="btn btn-secondary">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              Embed Tool
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Benchmark & Strategy Section -->
+    <article class="article-body" style="margin-top: 56px;">
+      <h2>2026 Consultant Industry Day Rate Benchmarks</h2>
+      <p>
+        Consulting fees reflect executive leverage and business impact rather than mere hours logged. Day rates vary across industries and seniority tiers:
+      </p>
+
+      <div class="table-responsive">
+        <table class="benchmark-table">
+          <thead>
+            <tr>
+              <th>Consulting Practice Area</th>
+              <th>Typical Day Rate (8h)</th>
+              <th>Monthly Advisory Retainer</th>
+              <th>Commercial Engagement Structure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Operations & Process Optimization</strong></td>
+              <td>$1,200 – $1,800 / day</td>
+              <td>$4,000 – $6,500 / mo</td>
+              <td>Audit & implementation sprints (2–4 days/week on-site or hybrid).</td>
+            </tr>
+            <tr>
+              <td><strong>Management & Strategy Consulting</strong></td>
+              <td>$1,600 – $2,500 / day</td>
+              <td>$6,000 – $12,000 / mo</td>
+              <td>Executive steering committees, M&amp;A integration, leadership workshops.</td>
+            </tr>
+            <tr>
+              <td><strong>Cloud & Enterprise Technical Architect</strong></td>
+              <td>$1,800 – $2,800 / day</td>
+              <td>$7,500 – $14,000 / mo</td>
+              <td>Architecture reviews, security posture assessments, vendor evaluations.</td>
+            </tr>
+            <tr>
+              <td><strong>Fractional C-Suite (CMO, CTO, CFO)</strong></td>
+              <td>$2,000 – $3,200 / day</td>
+              <td>$8,000 – $18,000 / mo</td>
+              <td>Dedicated 1–2 days per week embedded as executive leadership.</td>
+            </tr>
+            <tr>
+              <td><strong>Principal Transformation Partner</strong></td>
+              <td>$2,800 – $4,500+ / day</td>
+              <td>$15,000 – $30,000+ / mo</td>
+              <td>Turnaround strategy, board advisory, high-stakes organizational restructuring.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Why the "Rule of 100" Dictates Consultant Solvency</h3>
+      <p>
+        First-time consultants often make the mistake of multiplying 250 working days by their corporate day rate equivalent, assuming high continuous utilization. In reality, successful independent consultants deliver client work only 100 to 120 days per year:
+      </p>
+      <ul>
+        <li><strong>Business Development & Pipeline Lead Time:</strong> Generating high-ticket consulting contracts requires consultative sales discovery, multi-stakeholder presentations, and tailored proposals—consuming 30% to 40% of non-billable time.</li>
+        <li><strong>Bench Time & Project Seasonality:</strong> Corporate budgets pause during Q4 planning cycles and summer leadership holidays. Your active delivery rate must comfortably subsidize 2 to 3 months of annual bench time.</li>
+        <li><strong>Intellectual Capital Investment:</strong> Remaining competitive demands ongoing market research, proprietary framework development, and industry speaking engagements.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-accordion">
+        <details class="faq-item">
+          <summary class="faq-question">What is the standard formula to calculate a consultant day rate from a salary?</summary>
+          <div class="faq-answer">
+            <p>The classic consulting rule-of-thumb is: Target Annual Base Salary divided by 100 to 120 billable days. For example, a $150,000 corporate equivalent salary translates to a day rate of $1,250 to $1,500 per day. This accounts for unbillable business development, corporate overhead, taxes, and bench time.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Why do consultants bill by the day rather than by the hour?</summary>
+          <div class="faq-answer">
+            <p>Consulting work involves strategic cognitive context, executive stakeholder alignment, and unscheduled advisory problem-solving. Hourly billing commoditizes strategic advice and encourages micromanagement, whereas day rates and weekly advisory sprints anchor pricing to business outcomes.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How many days per year does an independent consultant actually bill?</summary>
+          <div class="faq-answer">
+            <p>A full-time independent consultant realistically bills between 100 and 130 days annually (around 10 to 12 days per month). The remaining 100+ business days are required for sales pipeline development, thought leadership, client pitches, administrative bookkeeping, and rest.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What expenses must an independent consultant deduct from gross revenue?</summary>
+          <div class="faq-answer">
+            <p>Key business deductions include Errors &amp; Omissions (E&amp;O) professional liability insurance, legal entity maintenance, CPA and bookkeeping services, client travel and lodging, research database subscriptions (Gartner, Statista), and home office overhead.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do advisory retainers work for senior consultants?</summary>
+          <div class="faq-answer">
+            <p>An advisory retainer provides ongoing executive access (e.g., bi-weekly strategic steering calls, asynchronous Slack/email feedback, document reviews). Typical retainers range from $3,500 to $10,000+ per month per client, offering predictable revenue without requiring continuous on-site presence.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+  </main>
+
+  <!-- Rate Card Modal Dialog -->
+  <div id="rate-card-modal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-card-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-card-title" class="modal-title">Verified Consultant Commercial Fee Schedule</h3>
+        <button id="btn-close-rate-card" class="btn-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="rate-card-preview" id="printable-rate-card">
+        <div class="rate-card-header">
+          <div>
+            <div class="rate-card-badge">Commercial Advisory Schedule (2026)</div>
+            <div class="rate-card-name">Independent Advisory Practice</div>
+          </div>
+          <div class="rate-card-brand">RateCraft Verified</div>
+        </div>
+        <table class="rate-card-table">
+          <tr>
+            <td>Standard Hourly Advisory Floor</td>
+            <td id="rc-hourly">$380 / hr</td>
+          </tr>
+          <tr>
+            <td>Dedicated Commercial Day Rate (8 hrs)</td>
+            <td id="rc-day">$3,040 / day</td>
+          </tr>
+          <tr>
+            <td>Weekly Executive Advisory Sprint</td>
+            <td id="rc-weekly">$12,160 / wk</td>
+          </tr>
+          <tr>
+            <td>Monthly Strategic Advisory Retainer</td>
+            <td id="rc-monthly">$7,600 / mo</td>
+          </tr>
+          <tr>
+            <td>Annual Practice Billings Target</td>
+            <td id="rc-yearly">$336,470 / yr</td>
+          </tr>
+        </table>
+        <div class="rate-card-terms">
+          * Day rates reflect dedicated executive advisory engagements. Out-of-pocket travel, specialized market research data, and custom stakeholder surveys are billed at cost.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-CNS-2026</span>
+            <span>Verified via ratecraft.app</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Fee Schedule (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Multi-Column Global Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
+            <div class="brand-icon">RC</div>
+            <span>Rate<span class="highlight">Craft</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Independent freelance pricing intelligence and commercial rate calculators. Built to help management consultants and strategic advisors price for outcomes.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Calculators</p>
+          <ul class="footer-links-list">
+            <li><a href="../">General Freelance</a></li>
+            <li><a href="../developer-rate-calculator/">Software Developer</a></li>
+            <li><a href="../designer-rate-calculator/">Graphic & UI/UX Designer</a></li>
+            <li><a href="../copywriter-rate-calculator/">Copywriter & Content</a></li>
+            <li><a href="../virtual-assistant-rate-calculator/">Virtual Assistant</a></li>
+            <li><a href="../video-editor-rate-calculator/">Video Editor & Post</a></li>
+            <li><a href="./">Consultant Day Rate</a></li>
+            <li><a href="../social-media-manager-rate-calculator/">Social Media Manager</a></li>
+            <li><a href="../uk-freelance-day-rate-calculator/">UK Contractor (£ GBP)</a></li>
+            <li><a href="../canada-freelance-rate-calculator/">Canada Contractor (CAD C$)</a></li>
+            <li><a href="../australia-freelance-rate-calculator/">Australia Contractor (AUD A$)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Editorial Guides</p>
+          <ul class="footer-links-list">
+            <li><a href="../guides/how-to-calculate-freelance-hourly-rate/">Hourly Rate Formula Guide</a></li>
+            <li><a href="../guides/value-based-pricing-vs-hourly/">Value-Based vs. Hourly Pricing</a></li>
+            <li><a href="../guides/freelance-retainer-agreements-guide/">Retainer Agreements Guide</a></li>
+            <li><a href="../guides/freelance-taxes-and-overhead-deductions/">Freelance Taxes & Overhead</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Company & Legal</p>
+          <ul class="footer-links-list">
+            <li><a href="../about/">About Us</a></li>
+            <li><a href="../contact/">Contact Us</a></li>
+            <li><a href="../privacy/">Privacy Policy</a></li>
+            <li><a href="../terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 RateCraft. Built for independent consultants, strategic advisors, and fractional executives worldwide.</div>
+        <ul class="footer-bottom-links">
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../terms/">Terms</a></li>
+          <li><a href="../contact/">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/calculator.js"></script>
+</body>
+</html>
