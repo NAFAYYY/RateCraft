@@ -135,6 +135,7 @@ header.site-header {
   font-weight: 600;
   padding: 6px 14px;
   border-radius: var(--radius-sm);
+  border: 1px solid transparent;
   transition: var(--transition);
   white-space: nowrap;
   display: inline-flex;
@@ -151,7 +152,7 @@ header.site-header {
 .nav-link.active {
   background: #1a2337;
   color: #ffffff;
-  border: 1px solid var(--border-medium);
+  border-color: var(--border-medium);
   box-shadow: var(--border-highlight);
   font-weight: 700;
 }
@@ -179,6 +180,7 @@ header.site-header {
   font-weight: 600;
   text-decoration: none;
   color: var(--text-muted);
+  border: 1px solid transparent;
   transition: var(--transition);
   display: inline-flex;
   align-items: center;
@@ -188,7 +190,7 @@ header.site-header {
 .lang-btn.active, .lang-btn:hover {
   background: #1a2234;
   color: #fff;
-  border: 1px solid var(--border-medium);
+  border-color: var(--border-medium);
 }
 
 .currency-selector {
