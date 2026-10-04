@@ -34,13 +34,19 @@
       b2b: { salary: 72000, expenses: 9000, taxRate: 25, vacationWeeks: 4, sickDays: 10, hoursPerWeek: 40, billablePercent: 60, profitMargin: 20 },
       direct: { salary: 98000, expenses: 12000, taxRate: 28, vacationWeeks: 5, sickDays: 10, hoursPerWeek: 35, billablePercent: 60, profitMargin: 25 },
       strategist: { salary: 135000, expenses: 16000, taxRate: 30, vacationWeeks: 6, sickDays: 12, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
+    },
+    uk: {
+      contractor: { salary: 65000, expenses: 8000, taxRate: 25, vacationWeeks: 5, sickDays: 8, hoursPerWeek: 40, billablePercent: 60, profitMargin: 20 },
+      inside: { salary: 75000, expenses: 4000, taxRate: 35, vacationWeeks: 5, sickDays: 8, hoursPerWeek: 40, billablePercent: 65, profitMargin: 15 },
+      outside: { salary: 95000, expenses: 12000, taxRate: 22, vacationWeeks: 6, sickDays: 10, hoursPerWeek: 40, billablePercent: 60, profitMargin: 25 },
+      consultant: { salary: 130000, expenses: 16000, taxRate: 28, vacationWeeks: 6, sickDays: 10, hoursPerWeek: 35, billablePercent: 65, profitMargin: 30 }
     }
   };
 
-  const defaultForRole = rolePresets[currentRole] ? (rolePresets[currentRole].fullstack || rolePresets[currentRole].uiux || rolePresets[currentRole].b2b || rolePresets[currentRole].mid) : rolePresets.general.mid;
+  const defaultForRole = rolePresets[currentRole] ? (rolePresets[currentRole].contractor || rolePresets[currentRole].fullstack || rolePresets[currentRole].uiux || rolePresets[currentRole].b2b || rolePresets[currentRole].mid) : rolePresets.general.mid;
 
   const state = {
-    currency: '$',
+    currency: document.body.dataset.currency || (document.documentElement.lang === 'es' ? '€' : '$'),
     lang: document.documentElement.lang || 'en',
     salary: defaultForRole.salary,
     expenses: defaultForRole.expenses,
@@ -310,6 +316,8 @@
         const presetKey = btn.dataset.preset;
         const activePresets = rolePresets[currentRole] || rolePresets.general;
         if (activePresets[presetKey]) {
+          document.querySelectorAll('.preset-btn').forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
           Object.assign(state, activePresets[presetKey]);
           syncUIFromState();
           showToast(state.lang === 'es' ? 'Preajuste aplicado con éxito' : 'Preset applied successfully');

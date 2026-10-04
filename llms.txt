@@ -35,6 +35,7 @@ RateCraft uses a rigorous bottom-up financial equation rather than simplistic sa
 ## Tools & Programmatic Calculators
 
 - [RateCraft General Freelance Calculator](https://ratecraft.app/): Comprehensive hourly rate, day rate, and project quote calculator with dynamic breakdown visualization and downloadable rate cards.
+- [UK Freelance Day Rate Calculator](https://ratecraft.app/uk-freelance-day-rate-calculator/): Tailored for British contractors, consultants, and limited company directors calculating GBP (£) day rates across Inside vs. Outside IR35, National Insurance, Corporation Tax, and unbilled bench periods.
 - [Freelance Developer Hourly Rate Calculator](https://ratecraft.app/developer-rate-calculator/): Tailored for software engineers, full-stack developers, mobile engineers, and technical architects.
 - [Freelance Designer Hourly Rate Calculator](https://ratecraft.app/designer-rate-calculator/): Built for UI/UX designers, brand identity specialists, design systems experts, and art directors.
 - [Freelance Copywriter Hourly Rate Calculator](https://ratecraft.app/copywriter-rate-calculator/): Designed for B2B copywriters, conversion copywriters, and content strategists.

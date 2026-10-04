@@ -83,6 +83,16 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- UK Contractor Calculator -->
+  <url>
+    <loc>https://ratecraft.app/uk-freelance-day-rate-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/uk-freelance-day-rate-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/uk-freelance-day-rate-calculator/"/>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
   <!-- ==================== 2. EDITORIAL GUIDES ==================== -->
   <!-- Guides Hub -->
   <url>
