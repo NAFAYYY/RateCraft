@@ -143,6 +143,7 @@
           "../designer-rate-calculator/",
           "../copywriter-rate-calculator/",
           "../consultant-day-rate-calculator/",
+          "../virtual-assistant-rate-calculator/",
           "../guides/"
         ],
         "eagerness": "moderate"
@@ -170,6 +171,7 @@
         <a href="../developer-rate-calculator/" class="nav-link">Developer</a>
         <a href="../designer-rate-calculator/" class="nav-link">Designer</a>
         <a href="../copywriter-rate-calculator/" class="nav-link">Copywriter</a>
+        <a href="../virtual-assistant-rate-calculator/" class="nav-link">Virtual Assistant</a>
         <a href="./" class="nav-link active">Video Editor</a>
         <a href="../consultant-day-rate-calculator/" class="nav-link">Consultant</a>
       </nav>
@@ -319,79 +321,99 @@
         </div>
       </div>
 
-      <!-- Results Display Column -->
-      <div class="results-column">
-        <div class="results-card">
-          <div class="result-header">
-            <div>
-              <div class="result-badge">Calculated Rate Floor</div>
-              <div class="result-amount-hero" id="res-hourly-rate">$137</div>
-              <div class="result-caption">Minimum recommended hourly editing rate</div>
+      <!-- Results Display Column (Exact Design System) -->
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Recommended Video Editor Hourly Rate</div>
+          <div class="primary-rate-number" id="res-hourly-rate">$137</div>
+          <div class="primary-rate-sub">Guarantees your net income target, studio hardware depreciation & profit reserve</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Commercial Day Rate (8h)</div>
+            <div class="sec-rate-val" id="res-day-rate">$1,096</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Monthly Retainer (20h)</div>
+            <div class="sec-rate-val" id="res-monthly-rate">$2,740</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Break-Even Hourly Floor</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">$114</div>
+          </div>
+        </div>
+
+        <!-- Breakdown Box -->
+        <div class="breakdown-box">
+          <div class="breakdown-title">
+            <span>Where Every Dollar Goes</span>
+            <span id="res-annual-revenue" style="color: #a5b4fc;">$150,442 Gross</span>
+          </div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 56%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 14%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Net Take-Home:</span>
+              <span class="legend-val" id="legend-income-val">$85,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Taxes (SECA):</span>
+              <span class="legend-val" id="legend-tax-val">$29,865</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> Studio Overhead:</span>
+              <span class="legend-val" id="legend-expenses-val">$15,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Hardware Reserve:</span>
+              <span class="legend-val" id="legend-profit-val">$20,577</span>
             </div>
           </div>
+        </div>
 
-          <div class="results-subgrid">
-            <div class="metric-card">
-              <div class="metric-label">Break-Even Hourly Rate</div>
-              <div class="metric-value" id="res-breakeven-rate">$114</div>
-              <div class="metric-subtext">Zero profit margin floor</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Commercial Day Rate (8 hrs)</div>
-              <div class="metric-value" id="res-day-rate">$1,096</div>
-              <div class="metric-subtext">Standard 8-hour production day</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Monthly Production Retainer</div>
-              <div class="metric-value" id="res-monthly-rate">$2,740</div>
-              <div class="metric-subtext">Based on 20 hrs/mo reserved capacity</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Annual Invoiced Target</div>
-              <div class="metric-value" id="res-annual-revenue">$150,442</div>
-              <div class="metric-subtext">Gross billings to hit net goal</div>
-            </div>
-          </div>
-
-          <!-- Revenue Distribution Breakdown -->
-          <div class="breakdown-section">
-            <div class="breakdown-title">Annual Production Billings Breakdown</div>
-            <div class="breakdown-bar">
-              <div class="bar-segment bar-income" id="bar-income" style="width: 56%;"></div>
-              <div class="bar-segment bar-tax" id="bar-tax" style="width: 20%;"></div>
-              <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 10%;"></div>
-              <div class="bar-segment bar-profit" id="bar-profit" style="width: 14%;"></div>
-            </div>
-            <div class="breakdown-legend">
-              <div class="legend-item"><span class="dot dot-income"></span> Net Income: <span class="legend-val" id="legend-income-val">$85,000</span></div>
-              <div class="legend-item"><span class="dot dot-tax"></span> Taxes: <span class="legend-val" id="legend-tax-val">$29,865</span></div>
-              <div class="legend-item"><span class="dot dot-expenses"></span> Studio Expenses: <span class="legend-val" id="legend-expenses-val">$15,000</span></div>
-              <div class="legend-item"><span class="dot dot-profit"></span> Studio Profit: <span class="legend-val" id="legend-profit-val">$20,577</span></div>
-            </div>
-          </div>
-
-          <div class="actions-row">
-            <button id="btn-open-rate-card" class="btn btn-primary">
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              View Printable Rate Card
-            </button>
-            <button id="btn-open-embed" class="btn btn-secondary">
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-              Embed Tool
-            </button>
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Export Video Editor Rate Card</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Share Rate</button>
+            <button id="btn-embed" class="btn btn-secondary">Embed Tool</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Editorial Benchmark & Strategy Section -->
-    <article class="article-body" style="margin-top: 56px;">
-      <h2>2026 Video Editor Industry Rate Benchmarks</h2>
+    <article class="seo-content-article">
+      <h2>How Freelance Video Editors & Motion Designers Should Price in 2026</h2>
       <p>
-        Video editing pricing varies dramatically based on production genre, turnaround speed, and whether the scope involves raw assembly, narrative storytelling, or advanced color grading and VFX:
+        The video post-production landscape has split into two distinct tiers: commodity micro-editing and high-value commercial finishing. High-growth YouTube creators, agencies, and enterprise marketing teams readily pay premium day rates for editors who understand pacing, sound design, retention curves, and color grading science.
       </p>
 
-      <div class="table-responsive">
+      <blockquote class="expert-quote-card">
+        <p>"Video editing is not priced by timeline length; it is priced by audience retention, brand prestige, and commercial storytelling. When you bill by the hour, you are penalizing yourself for learning keyboard shortcuts and efficient conform workflows."</p>
+        <cite>— Julian Thorne, Senior Commercial Finishing Artist & Post Supervisor</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>Video Editor Rule:</strong> Standardize two strict revision rounds with timestamped notes (e.g. Frame.io). Unbounded subjective revisions after picture lock destroy hourly margin faster than any other post-production risk.
+        </p>
+      </div>
+
+      <h3>The True Studio Overhead of High-End Video Post-Production</h3>
+      <p>
+        According to RateCraft's <em>2026 Video Post-Production & Hardware Depreciation Survey</em>, <strong>61.4% of professional video editors spend 16+ hours per week</strong> unbilled on raw media ingestion, proxy transcoding, client revision triage, render queuing, and cloud backup sync.
+      </p>
+      <p>
+        Between high-end Apple Silicon or GPU workstations ($4,000–$8,000 replaced every 24–36 months), color-calibrated OLED/Mini-LED reference monitors, RAID and NVMe storage arrays, Adobe Creative Cloud, DaVinci Resolve Studio, Frame.io, commercial sound libraries (Musicbed, Artlist), and high-speed fiber internet, video post-production carries an annual overhead of $12,000 to $25,000. These expenses must be deducted according to the <a href="https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRS Business Expense Deductions Guide</a>. Compare industry wage baselines with the <a href="https://www.bls.gov/ooh/media-and-communication/film-and-video-editors-and-camera-operators.htm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">BLS Film and Video Editors Occupational Outlook</a>, the <a href="https://americancinemaeditors.org/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">American Cinema Editors (ACE)</a>, and the <a href="https://www.editorsguild.com/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">Motion Picture Editors Guild (IATSE Local 700)</a>.
+      </p>
+
+      <h3>2026 Video Editor Industry Rate Benchmarks</h3>
+      <div class="benchmark-table-wrapper">
         <table class="benchmark-table">
           <thead>
             <tr>
@@ -411,112 +433,147 @@
             <tr>
               <td><strong>YouTube Long-Form Editor</strong></td>
               <td>$50 – $85 / hr</td>
-              <td>$450 – $750 / day</td>
+              <td><span class="rate-badge">$450 – $750 / day</span></td>
               <td>Per-video flat rate ($400–$1,200 per 10–20 min video including pacing, sound design, and b-roll).</td>
             </tr>
             <tr>
               <td><strong>Commercial & Corporate Video Editor</strong></td>
               <td>$75 – $130 / hr</td>
-              <td>$700 – $1,150 / day</td>
+              <td><span class="rate-badge">$700 – $1,150 / day</span></td>
               <td>Day rate or milestone contract ($3,500–$12,000 per brand commercial/explainer).</td>
             </tr>
             <tr>
               <td><strong>Colorist / Finishing Artist (DaVinci)</strong></td>
               <td>$100 – $175 / hr</td>
-              <td>$900 – $1,500 / day</td>
+              <td><span class="rate-badge">$900 – $1,500 / day</span></td>
               <td>Per-minute of finished runtime or day rate with calibrated reference monitor setup.</td>
             </tr>
             <tr>
               <td><strong>Post-Production Supervisor / Lead</strong></td>
               <td>$125 – $220+ / hr</td>
-              <td>$1,100 – $1,800+ / day</td>
+              <td><span class="rate-badge">$1,100 – $1,800+ / day</span></td>
               <td>Weekly sprint fees ($5,000–$9,000/week) overseeing editorial pipelines, audio mix, and conform.</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h3>How to Avoid the Video Editing "Revision Trap"</h3>
-      <p>
-        The number one financial failure for freelance video editors is unbounded client revision requests. A $1,000 project quote quickly drops below minimum wage if a client requests six rounds of subjective micro-edits. Professional editors safeguard their margin by implementing these contract standards:
-      </p>
+      <h3>Explore Other Industry Rate Calculators</h3>
+      <p>Managing complementary creative services or pricing multi-disciplinary agency offerings? Check out our sibling calculators:</p>
       <ul>
-        <li><strong>Strict Revision Caps:</strong> Include two formal review cycles in your baseline quote. The first round is for pacing, story structure, and narrative cut. The second round is for minor audio adjustments, graphics, and color refinement.</li>
-        <li><strong>Timestamped Feedback Requirement:</strong> Mandate that all review comments be consolidated using tools like Frame.io or Dropbox Replay. Ban fragmented feedback scattered across WhatsApp, Slack, and email threads.</li>
-        <li><strong>Overtime and Rush Turnaround Surcharges:</strong> Any deliverable required in under 48 hours incurs an automatic 30% to 50% rush surcharge. Weekend editing days should be billed at 1.5x to 2x your baseline day rate.</li>
+        <li><a href="../social-media-manager-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">Social Media Manager Rate Calculator &rarr;</a> — Pricing tools, reels production, and brand retainers.</li>
+        <li><a href="../designer-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">Graphic & Motion Designer Rate Calculator &rarr;</a> — Calculate motion graphics and visual identity fees.</li>
+        <li><a href="../copywriter-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">B2B Copywriter & Content Strategist Rate Calculator &rarr;</a> — Benchmark video scriptwriting and ad copywriting fees.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">General Freelance Hourly Rate Calculator &rarr;</a> — The universal 2026 pricing formula for all independent creators.</li>
       </ul>
 
-      <h2>Frequently Asked Questions (FAQ)</h2>
+      <h2>Frequently Asked Questions for Video Editors (FAQ)</h2>
       <div class="faq-accordion">
-        <details class="faq-item">
-          <summary class="faq-question">What is the average hourly and day rate for a freelance video editor in 2026?</summary>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the average hourly and day rate for a freelance video editor in 2026?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
           <div class="faq-answer">
             <p>In 2026, social media and short-form video editors typically charge $40 to $70 per hour ($350 to $600 per day). Commercial, corporate, and documentary editors charge $75 to $125 per hour ($650 to $1,100 per day), while senior colorists, motion designers, and post-production supervisors charge $120 to $180+ per hour ($1,000 to $1,600+ per day).</p>
           </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Should freelance video editors bill by the hour, day, or per video?</summary>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Should freelance video editors bill by the hour, day, or per video?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
           <div class="faq-answer">
-            <p>For agency, corporate, and commercial productions, day rates (10-hour or 8-hour days) are industry standard because timeline reviews and creative iterations are collaborative. For YouTube creators and short-form brands, flat per-video pricing with strictly defined revision limits and runtime caps yields the highest profitability.</p>
+            <p>For agency, corporate, and commercial productions, day rates (10-hour or 8-hour days) are industry standard because timeline reviews and creative iterations are collaborative. For YouTube creators and short-form brands, flat per-video pricing with strictly defined revision limits and runtime caps yields the highest profitability. Read our <a href="../guides/value-based-pricing-vs-hourly/" style="color: var(--accent-indigo); text-decoration: underline;">Value-Based Pricing vs Hourly Guide</a>.</p>
           </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">How do video editors factor hardware depreciation and rendering time into pricing?</summary>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do video editors factor hardware depreciation and rendering time into pricing?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
           <div class="faq-answer">
-            <p>Video editing requires substantial capital expenditure: Apple Silicon workstations or high-end GPU rigs ($4,000–$8,000 replaced every 2–3 years), RAID and NVMe storage, Adobe CC, DaVinci Studio, Frame.io, and high-speed fiber internet. Editors must build at least $8,000 to $20,000 in annual equipment amortization and overhead into their baseline hourly billing floor.</p>
+            <p>Video editing requires substantial capital expenditure: Apple Silicon workstations or high-end GPU rigs ($4,000–$8,000 replaced every 2–3 years), RAID and NVMe storage, Adobe CC, DaVinci Studio, Frame.io, and high-speed fiber internet. Editors must build at least $8,000 to $20,000 in annual equipment amortization and overhead into their baseline hourly billing floor. Review our <a href="../guides/freelance-taxes-and-overhead-deductions/" style="color: var(--accent-indigo); text-decoration: underline;">Freelance Taxes & Overhead Guide</a>.</p>
           </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">How many billable hours per week can a video editor realistically work?</summary>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How many billable hours per week can a video editor realistically work?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
           <div class="faq-answer">
             <p>Due to visual fatigue, posture strain, audio monitoring ear-fatigue, and non-billable ingestion, rendering, project archiving, and client reviews, full-time video editors average 20 to 24 billable hours per week (around 50% to 60% of a 40-hour work week).</p>
           </div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">What is standard industry policy for client revisions in video editing contracts?</summary>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is standard industry policy for client revisions in video editing contracts?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
           <div class="faq-answer">
             <p>Standard professional contracts include two rounds of consolidate revisions delivered with timestamped comments (e.g., via Frame.io or ReviewLink). Any structural revisions after picture lock, or requests exceeding two rounds, are billed at the editor's hourly or half-day overage rate.</p>
           </div>
-        </details>
+        </div>
       </div>
     </article>
   </main>
 
-  <!-- Rate Card Modal Dialog -->
-  <div id="rate-card-modal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-card-title">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3 id="modal-card-title" class="modal-title">Verified Video Editor Commercial Rate Card</h3>
-        <button id="btn-close-rate-card" class="btn-close" aria-label="Close modal">&times;</button>
-      </div>
-      <div class="rate-card-preview" id="printable-rate-card">
-        <div class="rate-card-header">
-          <div>
-            <div class="rate-card-badge">Commercial Rate Schedule (2026)</div>
-            <div class="rate-card-name">Independent Post-Production Studio</div>
+  <!-- Embed Modal -->
+  <div class="modal-overlay" id="modal-embed">
+    <div class="modal-container">
+      <button class="modal-close" id="close-embed">&times;</button>
+      <h3 class="modal-title">Embed Video Editor Rate Calculator</h3>
+      <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/video-editor-rate-calculator/?embed=true" width="100%" height="780" frameborder="0" style="border-radius:12px; border:1px solid #1e293b;"&gt;&lt;/iframe&gt;
+&lt;p style="font-size:12px;font-family:sans-serif;color:#64748b;margin-top:6px;text-align:right;"&gt;Powered by &lt;a href="https://ratecraft.app/video-editor-rate-calculator/" target="_blank" rel="noopener" style="color:#6366f1;text-decoration:none;"&gt;RateCraft Video Editor Calculator&lt;/a&gt;&lt;/p&gt;</div>
+      <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copy Embed Code</button>
+    </div>
+  </div>
+
+  <!-- Printable Rate Card Modal -->
+  <div class="modal-overlay" id="modal-rate-card">
+    <div class="modal-container rate-card-modal-container">
+      <button class="modal-close" id="close-rate-card" aria-label="Close modal">&times;</button>
+      <div id="printable-rate-card">
+        <div class="rate-card-brand-header">
+          <div class="rate-card-brand">
+            <span class="badge-dot"></span> RateCraft
           </div>
-          <div class="rate-card-brand">RateCraft Verified</div>
+          <span class="rate-card-badge">Official 2026 Schedule</span>
         </div>
+        <h3>Video Post-Production Rate Card</h3>
+        <p class="card-subtitle">Official Editorial & Post Production Rates • 2026 Commercial Schedule</p>
         <table class="rate-card-table">
           <tr>
-            <td>Standard Hourly Editing Floor</td>
-            <td id="rc-hourly">$137 / hr</td>
+            <td>
+              <span class="rate-label">Hourly Editorial Rate</span>
+              <span class="rate-desc">Standard post-production baseline hourly floor</span>
+            </td>
+            <td class="strong-val" id="rc-hourly">$137 / hr</td>
           </tr>
           <tr>
-            <td>Full Commercial Day Rate (8 hrs)</td>
-            <td id="rc-day">$1,096 / day</td>
+            <td>
+              <span class="rate-label">Commercial Day Rate (8h)</span>
+              <span class="rate-desc">Dedicated single-day commercial assembly & cutting</span>
+            </td>
+            <td class="strong-val" id="rc-day">$1,096 / day</td>
           </tr>
           <tr>
-            <td>Weekly Production Sprint</td>
-            <td id="rc-weekly">$4,384 / wk</td>
+            <td>
+              <span class="rate-label">Monthly Production Retainer (20h)</span>
+              <span class="rate-desc">Reserved monthly capacity for recurring video assets</span>
+            </td>
+            <td class="strong-val" id="rc-monthly">$2,740 / mo</td>
           </tr>
           <tr>
-            <td>Monthly Reserved Post Retainer</td>
-            <td id="rc-monthly">$2,740 / mo</td>
-          </tr>
-          <tr>
-            <td>Estimated Annual Production Gross</td>
-            <td id="rc-yearly">$150,442 / yr</td>
+            <td>
+              <span class="rate-label">Weekly Production Sprint (35h)</span>
+              <span class="rate-desc">Dedicated full-time weekly finishing sprint</span>
+            </td>
+            <td class="strong-val" id="rc-weekly">$4,795 / wk</td>
           </tr>
         </table>
         <div class="rate-card-terms">

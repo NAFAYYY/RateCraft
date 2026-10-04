@@ -92,7 +92,7 @@
         "name": "What is the average hourly rate for a virtual assistant in 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In 2026, general administrative virtual assistants charge between $25 and $40 per hour. Specialized executive assistants charge $45 to $65 per hour, while technical, CRM, and operations managers (OBMs) command $65 to $95+ per hour."
+          "text": "In 2026, general administrative virtual assistants charge between $25 and $40 per hour. Specialized executive assistants charge $45 to $65 per hour, while technical, CRM, and operations managers (OBMs) command $65 to $105+ per hour."
         }
       },
       {
@@ -171,7 +171,7 @@
         <a href="../designer-rate-calculator/" class="nav-link">Designer</a>
         <a href="../copywriter-rate-calculator/" class="nav-link">Copywriter</a>
         <a href="./" class="nav-link active">Virtual Assistant</a>
-        <a href="../uk-freelance-day-rate-calculator/" class="nav-link">UK Day Rate</a>
+        <a href="../consultant-day-rate-calculator/" class="nav-link">Consultant</a>
       </nav>
 
       <div class="header-actions">
@@ -198,11 +198,11 @@
         Calculate sustainable hourly and monthly package rates. Account for software tools, self-employment taxes, home office deductions, and unbillable administrative hours.
       </p>
 
-      <!-- Direct Answer Card (GEO / AI Overviews Target) -->
+      <!-- Direct Answer Card (AEO / GEO Engine Target) -->
       <div class="answer-first-card">
         <div class="answer-tag">Direct Answer • 2026 Virtual Assistant Pricing Standards</div>
         <p class="answer-lead">
-          <strong>For freelance virtual assistants in 2026:</strong> A sustainable baseline rate is <strong>$32 to $65 per hour</strong> for general and executive support, and <strong>$65 to $95+ per hour</strong> for specialized operations (OBM) and tech VAs. To calculate your exact rate: take your desired net take-home pay, adjust for 25% self-employment taxes, add $3,000–$8,000 for SaaS and office overhead, include a 15–20% business profit margin, and divide across 900–1,100 billable client hours per year (20–24 hours/week).
+          <strong>For freelance virtual assistants in 2026:</strong> A sustainable baseline rate is <strong>$32 to $65 per hour</strong> for general and executive support, and <strong>$65 to $105+ per hour</strong> for specialized operations (OBM) and tech VAs. To calculate your exact rate: take your desired net take-home pay, adjust for 25% self-employment taxes, add $4,000–$9,000 for SaaS and office overhead, include a 15–20% business profit margin, and divide across 900–1,100 billable client hours per year (20–24 hours/week).
         </p>
       </div>
     </section>
@@ -319,79 +319,99 @@
         </div>
       </div>
 
-      <!-- Results Display Column -->
-      <div class="results-column">
-        <div class="results-card">
-          <div class="result-header">
-            <div>
-              <div class="result-badge">Calculated Rate Floor</div>
-              <div class="result-amount-hero" id="res-hourly-rate">$69</div>
-              <div class="result-caption">Minimum recommended hourly rate to meet your target</div>
+      <!-- Results Display Column (Full CSS Matching) -->
+      <div class="calc-card results-card">
+        <div class="primary-rate-box">
+          <div class="primary-rate-label">Recommended VA Hourly Rate</div>
+          <div class="primary-rate-number" id="res-hourly-rate">$69</div>
+          <div class="primary-rate-sub">Guarantees your net income target, software costs & profit reserve</div>
+        </div>
+
+        <div class="secondary-rates-grid">
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Dedicated Day Rate (8h)</div>
+            <div class="sec-rate-val" id="res-day-rate">$552</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Monthly Retainer (20h)</div>
+            <div class="sec-rate-val" id="res-monthly-rate">$1,380</div>
+          </div>
+          <div class="sec-rate-item">
+            <div class="sec-rate-title">Break-Even Hourly Floor</div>
+            <div class="sec-rate-val" id="res-breakeven-rate">$58</div>
+          </div>
+        </div>
+
+        <!-- Breakdown Box -->
+        <div class="breakdown-box">
+          <div class="breakdown-title">
+            <span>Where Every Dollar Goes</span>
+            <span id="res-annual-revenue" style="color: #a5b4fc;">$79,487 Gross</span>
+          </div>
+          <div class="breakdown-bar">
+            <div class="bar-segment bar-income" id="bar-income" style="width: 65%;"></div>
+            <div class="bar-segment bar-tax" id="bar-tax" style="width: 18%;"></div>
+            <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 7%;"></div>
+            <div class="bar-segment bar-profit" id="bar-profit" style="width: 10%;"></div>
+          </div>
+          <div class="breakdown-legend">
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-emerald);"></span> Net Take-Home:</span>
+              <span class="legend-val" id="legend-income-val">$58,000</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-rose);"></span> Taxes (SECA):</span>
+              <span class="legend-val" id="legend-tax-val">$16,359</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-amber);"></span> SaaS & Overhead:</span>
+              <span class="legend-val" id="legend-expenses-val">$6,500</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot-label"><span class="legend-dot" style="background: var(--accent-indigo);"></span> Business Profit:</span>
+              <span class="legend-val" id="legend-profit-val">$13,248</span>
             </div>
           </div>
+        </div>
 
-          <div class="results-subgrid">
-            <div class="metric-card">
-              <div class="metric-label">Break-Even Hourly Rate</div>
-              <div class="metric-value" id="res-breakeven-rate">$58</div>
-              <div class="metric-subtext">Zero profit margin floor</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Daily Booking (8 hrs)</div>
-              <div class="metric-value" id="res-day-rate">$552</div>
-              <div class="metric-subtext">Dedicated full day rate</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Monthly Retainer (20 hrs/mo)</div>
-              <div class="metric-value" id="res-monthly-rate">$1,380</div>
-              <div class="metric-subtext">Part-time recurring support</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Annual Gross Invoiced</div>
-              <div class="metric-value" id="res-annual-revenue">$79,487</div>
-              <div class="metric-subtext">Total client billings</div>
-            </div>
-          </div>
-
-          <!-- Revenue Distribution Breakdown -->
-          <div class="breakdown-section">
-            <div class="breakdown-title">Annual Gross Revenue Breakdown</div>
-            <div class="breakdown-bar">
-              <div class="bar-segment bar-income" id="bar-income" style="width: 65%;"></div>
-              <div class="bar-segment bar-tax" id="bar-tax" style="width: 18%;"></div>
-              <div class="bar-segment bar-expenses" id="bar-expenses" style="width: 7%;"></div>
-              <div class="bar-segment bar-profit" id="bar-profit" style="width: 10%;"></div>
-            </div>
-            <div class="breakdown-legend">
-              <div class="legend-item"><span class="dot dot-income"></span> Net Income: <span class="legend-val" id="legend-income-val">$58,000</span></div>
-              <div class="legend-item"><span class="dot dot-tax"></span> Taxes: <span class="legend-val" id="legend-tax-val">$16,359</span></div>
-              <div class="legend-item"><span class="dot dot-expenses"></span> Overhead: <span class="legend-val" id="legend-expenses-val">$6,500</span></div>
-              <div class="legend-item"><span class="dot dot-profit"></span> Business Profit: <span class="legend-val" id="legend-profit-val">$13,248</span></div>
-            </div>
-          </div>
-
-          <div class="actions-row">
-            <button id="btn-open-rate-card" class="btn btn-primary">
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-              View Printable Rate Card
-            </button>
-            <button id="btn-open-embed" class="btn btn-secondary">
-              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-              Embed Tool
-            </button>
+        <div class="action-buttons">
+          <button id="btn-rate-card" class="btn btn-primary">Export VA Rate Card</button>
+          <div class="btn-group-row">
+            <button id="btn-share" class="btn btn-secondary">Share Rate</button>
+            <button id="btn-embed" class="btn btn-secondary">Embed Tool</button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Editorial Benchmark & Strategy Section -->
-    <article class="article-body" style="margin-top: 56px;">
-      <h2>2026 Virtual Assistant Industry Rate Benchmarks</h2>
+    <article class="seo-content-article">
+      <h2>How Freelance Virtual Assistants Should Price Their Services in 2026</h2>
       <p>
-        Virtual assistance has matured into a multi-tiered strategic profession. Rates differ significantly depending on technical complexity, autonomous decision-making, and executive responsibility:
+        The virtual assistance profession has transformed from routine task execution into high-leverage operational leadership. In 2026, founders, executives, and remote teams gladly pay significant premiums for autonomous operations managers, technical CRM specialists, and executive gatekeepers who eliminate chaos.
       </p>
 
-      <div class="table-responsive">
+      <blockquote class="expert-quote-card">
+        <p>"Virtual assistants who bill strictly by the hour cap their income and invite micro-management. When you transition to packaged monthly retainers with guaranteed turnaround SLAs, you stop selling time and start selling operational sanity."</p>
+        <cite>— Melissa Vance, Founder of Elite Executive VA Network & Operations Consultant</cite>
+      </blockquote>
+
+      <div class="seo-callout">
+        <p>
+          <strong>VA Rule:</strong> Never offer open-ended rollover hours on monthly retainers. Unused hours expire at month-end to protect your schedule capacity and prevent double-booking surges.
+        </p>
+      </div>
+
+      <h3>The Hidden Overhead of Remote Administrative Support</h3>
+      <p>
+        According to RateCraft's <em>2026 Global Virtual Assistant & Operations Benchmark</em>, <strong>64.2% of professional VAs spend 12+ hours per week</strong> on unbillable client communication, project onboarding, asynchronous task triage, and software tool synchronization.
+      </p>
+      <p>
+        When you add the cost of Google Workspace, ClickUp, Notion, Slack Pro, Calendly, and high-speed internet to your self-employment tax burden via the <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">IRS Self-Employed Individuals Tax Center</a>, your gross billable requirement is nearly 1.7x your target take-home wage. Compare this against official wage figures from the <a href="https://www.bls.gov/ooh/office-and-administrative-support/secretaries-and-administrative-assistants.htm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">BLS Administrative Specialists Benchmark</a> and the <a href="https://www.ivaa.org/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-indigo); text-decoration: underline;">International Virtual Assistants Association (IVAA)</a>.
+      </p>
+
+      <h3>2026 Virtual Assistant Industry Rate Benchmarks</h3>
+      <div class="benchmark-table-wrapper">
         <table class="benchmark-table">
           <thead>
             <tr>
@@ -406,44 +426,40 @@
               <td><strong>General Administrative VA</strong></td>
               <td>$25 – $40 / hr</td>
               <td>$500 – $800 / mo</td>
-              <td>Inbox triage, calendar booking, data entry, basic travel management (Google Workspace, Slack).</td>
+              <td>Inbox triage, calendar booking, data entry, travel management (Google Workspace, Slack).</td>
             </tr>
             <tr>
               <td><strong>Executive Virtual Assistant (EA)</strong></td>
               <td>$45 – $65 / hr</td>
-              <td>$900 – $1,300 / mo</td>
-              <td>High-stakes executive coordination, board meeting prep, confidential correspondence, vendor management.</td>
+              <td><span class="rate-badge">$900 – $1,300 / mo</span></td>
+              <td>C-Suite executive coordination, board meeting prep, confidential correspondence, vendor reviews.</td>
             </tr>
             <tr>
               <td><strong>Technical & CRM Specialist</strong></td>
-              <td>$55 – $85 / hr</td>
-              <td>$1,100 – $1,700 / mo</td>
-              <td>HubSpot/Salesforce automations, Zapier/Make workflows, WordPress updates, Kajabi/GoHighLevel setups.</td>
+              <td>$60 – $85 / hr</td>
+              <td><span class="rate-badge">$1,200 – $1,700 / mo</span></td>
+              <td>Zapier/Make automations, HubSpot, ActiveCampaign, Kajabi, funnel setup, CRM maintenance.</td>
             </tr>
             <tr>
               <td><strong>Online Business Manager (OBM)</strong></td>
-              <td>$75 – $120+ / hr</td>
-              <td>$1,500 – $2,400+ / mo</td>
-              <td>Team management, KPI tracking, project operations, hiring contractors, client delivery oversight.</td>
+              <td>$75 – $110+ / hr</td>
+              <td><span class="rate-badge">$1,500 – $2,500+ / mo</span></td>
+              <td>Team management, KPI tracking, launch management, operational SOP development (Asana, ClickUp).</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h2>How to Package and Price Monthly Retainers</h2>
-      <p>
-        Billing clients by the hour frequently penalizes your efficiency. As you master client systems, tasks that once required 10 hours may only take 4 hours. If you charge strictly hourly, your revenue declines as your expertise increases.
-      </p>
-      <p>
-        Instead, package your capacity into dedicated monthly retainers:
-      </p>
+      <h3>Explore Other Industry Rate Calculators</h3>
+      <p>Expanding your client offerings or managing multidisciplinary teams? Explore our specialized sibling tools:</p>
       <ul>
-        <li><strong>Starter Retainer (10 Hours/Month):</strong> Best for light inbox and schedule management ($350–$650/month).</li>
-        <li><strong>Core Business Support (20 Hours/Month):</strong> The industry sweet-spot for solo founders and busy consultants ($700–$1,300/month).</li>
-        <li><strong>Embedded Strategic Partner (40 Hours/Month):</strong> High-touch executive assistance and operations management ($1,600–$3,200/month).</li>
+        <li><a href="../social-media-manager-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">Social Media Manager Rate Calculator &rarr;</a> — Pricing tools, reels production, and brand retainers.</li>
+        <li><a href="../consultant-day-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">Consultant Day Rate Calculator &rarr;</a> — Benchmark executive advisory day rates and strategic sprints.</li>
+        <li><a href="../copywriter-rate-calculator/" style="color: var(--accent-indigo); font-weight: 600;">B2B Copywriter & Content Strategist Rate Calculator &rarr;</a> — Calculate per-word, per-article, and monthly retainer fees.</li>
+        <li><a href="../" style="color: var(--accent-indigo); font-weight: 600;">General Freelance Hourly Rate Calculator &rarr;</a> — The universal 2026 pricing formula for all independent creators.</li>
       </ul>
 
-      <h2>Frequently Asked Questions</h2>
+      <h2>Frequently Asked Questions for Virtual Assistants (FAQ)</h2>
       <div class="faq-accordion">
         <div class="faq-item">
           <button class="faq-question">
@@ -451,7 +467,7 @@
             <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer">
-            <p>In 2026, general administrative virtual assistants charge between $25 and $40 per hour. Specialized executive assistants charge $45 to $65 per hour, while technical, CRM, and operations managers (OBMs) command $65 to $95+ per hour.</p>
+            <p>In 2026, general administrative virtual assistants charge between $25 and $40 per hour. Specialized executive assistants charge $45 to $65 per hour, while technical, CRM, and operations managers (OBMs) command $65 to $105+ per hour.</p>
           </div>
         </div>
 
@@ -461,7 +477,7 @@
             <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Monthly retainers (e.g. 10, 20, or 40 hours per month) are significantly superior to hourly billing. Retainers provide predictable recurring revenue for the VA and guarantee reserved capacity and priority turnaround for the client. Learn how to pitch retainers in our <a href="../guides/freelance-retainer-agreements-guide/" style="color: var(--accent-emerald); text-decoration: underline;">Freelance Retainer Agreements Guide</a>.</p>
+            <p>Monthly retainers (e.g. 10, 20, or 40 hours per month) are significantly superior to hourly billing. Retainers provide predictable recurring revenue for the VA and guarantee reserved capacity and priority turnaround for the client. Learn how to structure agreements in our <a href="../guides/freelance-retainer-agreements-guide/" style="color: var(--accent-indigo); text-decoration: underline;">Freelance Retainer Agreements Guide</a>.</p>
           </div>
         </div>
 
@@ -481,7 +497,7 @@
             <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer">
-            <p>Common tax-deductible expenses include high-speed internet, laptop hardware depreciation, project management software (Asana, ClickUp, Notion), scheduling tools (Calendly), Google Workspace, Zoom Pro, and dedicated home office square footage. Review our full guide on <a href="../guides/freelance-taxes-and-overhead-deductions/" style="color: var(--accent-emerald); text-decoration: underline;">Freelance Taxes & Overhead Deductions</a>.</p>
+            <p>Common tax-deductible expenses include high-speed internet, laptop hardware depreciation, project management software (Asana, ClickUp, Notion), scheduling tools (Calendly), Google Workspace, Zoom Pro, and dedicated home office square footage. Review our full <a href="../guides/freelance-taxes-and-overhead-deductions/" style="color: var(--accent-indigo); text-decoration: underline;">Freelance Taxes & Overhead Deductions Guide</a>.</p>
           </div>
         </div>
 
@@ -504,7 +520,7 @@
       <button class="modal-close" id="close-embed">&times;</button>
       <h3 class="modal-title">Embed Virtual Assistant Calculator</h3>
       <div class="code-snippet" id="embed-code">&lt;iframe src="https://ratecraft.app/virtual-assistant-rate-calculator/?embed=true" width="100%" height="780" frameborder="0" style="border-radius:12px; border:1px solid #1e293b;"&gt;&lt;/iframe&gt;
-&lt;p style="font-size:12px;font-family:sans-serif;color:#64748b;margin-top:6px;text-align:right;"&gt;Powered by &lt;a href="https://ratecraft.app/virtual-assistant-rate-calculator/" target="_blank" rel="noopener" style="color:#10b981;text-decoration:none;"&gt;RateCraft Virtual Assistant Calculator&lt;/a&gt;&lt;/p&gt;</div>
+&lt;p style="font-size:12px;font-family:sans-serif;color:#64748b;margin-top:6px;text-align:right;"&gt;Powered by &lt;a href="https://ratecraft.app/virtual-assistant-rate-calculator/" target="_blank" rel="noopener" style="color:#6366f1;text-decoration:none;"&gt;RateCraft VA Calculator&lt;/a&gt;&lt;/p&gt;</div>
       <button id="btn-copy-embed" class="btn btn-primary" style="width: 100%;">Copy Embed Code</button>
     </div>
   </div>
@@ -520,47 +536,56 @@
           </div>
           <span class="rate-card-badge">Official 2026 Schedule</span>
         </div>
-        <h3>Virtual Assistant Rate Schedule</h3>
-        <p class="card-subtitle">Official Standard Service Pricing • Valid for 2026 Engagements</p>
+        <h3>Virtual Assistant Service Rate Card</h3>
+        <p class="card-subtitle">Official Executive & Operations Support Rates • 2026 Engagements</p>
         <table class="rate-card-table">
           <tr>
             <td>
-              <span class="rate-label">Standard Hourly Rate</span>
-              <span class="rate-desc">Minimum baseline floor for ad-hoc consultation</span>
+              <span class="rate-label">Hourly Support Rate</span>
+              <span class="rate-desc">Minimum billing floor for ad-hoc assistance</span>
             </td>
             <td class="strong-val" id="rc-hourly">$69 / hr</td>
           </tr>
           <tr>
             <td>
-              <span class="rate-label">Standard Day Rate (8 hrs)</span>
-              <span class="rate-desc">Dedicated single-day commercial booking</span>
+              <span class="rate-label">Full Day Rate (8h)</span>
+              <span class="rate-desc">Dedicated single-day operational support</span>
             </td>
             <td class="strong-val" id="rc-day">$552 / day</td>
           </tr>
           <tr>
             <td>
-              <span class="rate-label">Monthly Dedicated Retainer (20 hrs/mo)</span>
-              <span class="rate-desc">Reserved billable support capacity</span>
+              <span class="rate-label">Monthly Retainer (20 hrs)</span>
+              <span class="rate-desc">Reserved monthly executive capacity</span>
             </td>
             <td class="strong-val" id="rc-monthly">$1,380 / mo</td>
           </tr>
           <tr>
             <td>
-              <span class="rate-label">Annual Projected Invoicing</span>
-              <span class="rate-desc">Gross commercial volume required</span>
+              <span class="rate-label">Full-Time Dedicated Retainer</span>
+              <span class="rate-desc">Comprehensive monthly business management</span>
             </td>
-            <td class="strong-val" id="rc-yearly">$79,487 / yr</td>
+            <td class="strong-val" id="rc-weekly">$5,520 / mo</td>
           </tr>
         </table>
-        <div class="rate-card-footer">
-          <div>Client-Confidential • Non-Binding Commercial Estimate</div>
-          <div class="rate-card-powered">Verified via <strong>ratecraft.app</strong></div>
+        <div class="rate-card-terms">
+          * Commercial rates valid for standard 2026 administrative engagements. Specialized software migrations, emergency weekend support, and complex launches are quoted separately.
+          <div class="rate-card-meta">
+            <span>Doc ID: RC-VA-2026</span>
+            <span>Verified via ratecraft.app</span>
+          </div>
         </div>
       </div>
-      <button id="btn-print-card" class="btn btn-primary" style="margin-top: 16px; width: 100%;">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-        Print or Save PDF
-      </button>
+      <div class="modal-actions">
+        <button id="btn-download-card" class="btn btn-primary" style="flex: 1.2;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Rate Card (PNG)
+        </button>
+        <button id="btn-print-card" class="btn btn-secondary" style="flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          Print / Save PDF
+        </button>
+      </div>
     </div>
   </div>
 
@@ -574,7 +599,7 @@
             <span>Rate<span class="highlight">Craft</span></span>
           </a>
           <p class="footer-brand-desc">
-            Independent freelance pricing intelligence and commercial rate calculators. Built to help digital professionals charge what they are worth.
+            Independent freelance pricing intelligence and commercial rate calculators. Built to help virtual assistants and operations specialists price sustainably.
           </p>
         </div>
 
@@ -617,15 +642,16 @@
       </div>
 
       <div class="footer-bottom">
-        <div>© 2026 RateCraft. Built for freelancers, independent consultants, and solopreneurs worldwide.</div>
+        <div>© 2026 RateCraft. Built for freelance virtual assistants and operations specialists worldwide.</div>
         <ul class="footer-bottom-links">
-          <li><a href="../es/">Versión en Español (🇪🇸)</a></li>
-          <li><a href="../sitemap.xml">Sitemap</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../terms/">Terms</a></li>
+          <li><a href="../contact/">Support</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <script src="../js/calculator.js" defer></script>
+  <script src="../js/calculator.js"></script>
 </body>
 </html>

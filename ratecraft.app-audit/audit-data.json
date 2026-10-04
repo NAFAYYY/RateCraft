@@ -43,7 +43,7 @@
     "info": []
   },
   "stats": {
-    "total_words": 26331,
+    "total_words": 27441,
     "schemas_found": 74,
     "broken_links": [],
     "orphaned_pages": [],
@@ -143,7 +143,7 @@
         "Australia Freelance Rate & Tax Calculator"
       ],
       "h2_count": 3,
-      "h3_count": 2,
+      "h3_count": 5,
       "og_tags": {
         "og:title": "Australia Freelance Rate Calculator (2026) | AUD Hourly & Day",
         "og:description": "Calculate freelance contractor hourly and day rates in Australia (AUD). Factoring in ATO income taxes, 12% Superannuation, GST threshold, and overhead.",
@@ -169,7 +169,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "word_count": 906,
+      "word_count": 1079,
       "internal_links_out": [
         "/",
         "/",
@@ -177,6 +177,11 @@
         "/uk-freelance-day-rate-calculator/",
         "/canada-freelance-rate-calculator/",
         "/australia-freelance-rate-calculator/",
+        "/uk-freelance-day-rate-calculator/",
+        "/canada-freelance-rate-calculator/",
+        "/developer-rate-calculator/",
+        "/",
+        "/guides/freelance-taxes-and-overhead-deductions/",
         "/",
         "/",
         "/developer-rate-calculator/",
@@ -216,7 +221,7 @@
         "Canada Freelance Rate & Tax Calculator"
       ],
       "h2_count": 3,
-      "h3_count": 2,
+      "h3_count": 5,
       "og_tags": {
         "og:title": "Canada Freelance Rate Calculator (2026) | CAD Hourly & Day",
         "og:description": "Calculate freelance contractor hourly and day rates in Canada (CAD). Factoring in CRA self-employment tax, double CPP contributions, HST/GST, and expenses.",
@@ -242,7 +247,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "word_count": 933,
+      "word_count": 1074,
       "internal_links_out": [
         "/",
         "/",
@@ -250,6 +255,11 @@
         "/uk-freelance-day-rate-calculator/",
         "/canada-freelance-rate-calculator/",
         "/australia-freelance-rate-calculator/",
+        "/uk-freelance-day-rate-calculator/",
+        "/australia-freelance-rate-calculator/",
+        "/developer-rate-calculator/",
+        "/",
+        "/guides/freelance-taxes-and-overhead-deductions/",
         "/",
         "/",
         "/developer-rate-calculator/",
@@ -289,7 +299,7 @@
         "Consultant Day Rate & Retainer Calculator"
       ],
       "h2_count": 3,
-      "h3_count": 2,
+      "h3_count": 5,
       "og_tags": {
         "og:title": "Consultant Day Rate Calculator (2026) | Daily & Retainer",
         "og:description": "Calculate freelance consultant day rates and advisory retainers. Accounts for business development unbillable hours, E&O insurance, travel, and profit.",
@@ -315,15 +325,23 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "word_count": 767,
+      "word_count": 1005,
       "internal_links_out": [
         "/",
         "/",
         "/developer-rate-calculator/",
         "/designer-rate-calculator/",
         "/copywriter-rate-calculator/",
+        "/virtual-assistant-rate-calculator/",
+        "/video-editor-rate-calculator/",
         "/consultant-day-rate-calculator/",
         "/uk-freelance-day-rate-calculator/",
+        "/developer-rate-calculator/",
+        "/copywriter-rate-calculator/",
+        "/",
+        "/guides/value-based-pricing-vs-hourly/",
+        "/guides/freelance-taxes-and-overhead-deductions/",
+        "/guides/freelance-retainer-agreements-guide/",
         "/",
         "/",
         "/developer-rate-calculator/",
@@ -2136,7 +2154,7 @@
         "Social Media Manager Rate & Retainer Calculator"
       ],
       "h2_count": 3,
-      "h3_count": 2,
+      "h3_count": 5,
       "og_tags": {
         "og:title": "Social Media Manager Rate Calculator (2026) | Pricing Tool",
         "og:description": "Calculate freelance social media manager hourly and monthly retainer pricing. Includes scheduling tools, content creation overhead, taxes, and client limits.",
@@ -2162,15 +2180,22 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "word_count": 791,
+      "word_count": 991,
       "internal_links_out": [
         "/",
         "/",
         "/developer-rate-calculator/",
         "/designer-rate-calculator/",
         "/copywriter-rate-calculator/",
+        "/virtual-assistant-rate-calculator/",
         "/social-media-manager-rate-calculator/",
         "/consultant-day-rate-calculator/",
+        "/video-editor-rate-calculator/",
+        "/copywriter-rate-calculator/",
+        "/designer-rate-calculator/",
+        "/",
+        "/guides/freelance-retainer-agreements-guide/",
+        "/guides/freelance-taxes-and-overhead-deductions/",
         "/",
         "/",
         "/developer-rate-calculator/",
@@ -2362,7 +2387,7 @@
         "Video Editor Hourly & Day Rate Calculator"
       ],
       "h2_count": 3,
-      "h3_count": 2,
+      "h3_count": 5,
       "og_tags": {
         "og:title": "Video Editor Rate Calculator (2026) | Hourly & Day Rate",
         "og:description": "Calculate freelance video editing hourly and day rates. Factors in workstation depreciation, DaVinci/Adobe licenses, rendering time, and client revisions.",
@@ -2388,15 +2413,22 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "word_count": 873,
+      "word_count": 1053,
       "internal_links_out": [
         "/",
         "/",
         "/developer-rate-calculator/",
         "/designer-rate-calculator/",
         "/copywriter-rate-calculator/",
+        "/virtual-assistant-rate-calculator/",
         "/video-editor-rate-calculator/",
         "/consultant-day-rate-calculator/",
+        "/social-media-manager-rate-calculator/",
+        "/designer-rate-calculator/",
+        "/copywriter-rate-calculator/",
+        "/",
+        "/guides/value-based-pricing-vs-hourly/",
+        "/guides/freelance-taxes-and-overhead-deductions/",
         "/",
         "/",
         "/developer-rate-calculator/",
@@ -2435,8 +2467,8 @@
       "h1_texts": [
         "Virtual Assistant Hourly & Retainer Rate Calculator"
       ],
-      "h2_count": 4,
-      "h3_count": 2,
+      "h2_count": 3,
+      "h3_count": 5,
       "og_tags": {
         "og:title": "Virtual Assistant Rate Calculator (2026) | Hourly & Retainer",
         "og:description": "Calculate your freelance virtual assistant hourly and monthly retainer rates. Includes home office overhead, software tools, taxes, and unbillable admin time.",
@@ -2462,7 +2494,7 @@
         "BreadcrumbList",
         "FAQPage"
       ],
-      "word_count": 723,
+      "word_count": 901,
       "internal_links_out": [
         "/",
         "/",
@@ -2470,7 +2502,11 @@
         "/designer-rate-calculator/",
         "/copywriter-rate-calculator/",
         "/virtual-assistant-rate-calculator/",
-        "/uk-freelance-day-rate-calculator/",
+        "/consultant-day-rate-calculator/",
+        "/social-media-manager-rate-calculator/",
+        "/consultant-day-rate-calculator/",
+        "/copywriter-rate-calculator/",
+        "/",
         "/guides/freelance-retainer-agreements-guide/",
         "/guides/freelance-taxes-and-overhead-deductions/",
         "/",
@@ -2493,7 +2529,9 @@
         "/contact/",
         "/privacy/",
         "/terms/",
-        "/es/"
+        "/privacy/",
+        "/terms/",
+        "/contact/"
       ]
     }
   },
@@ -2512,7 +2550,7 @@
     },
     "stats": {
       "total_pages": 33,
-      "total_words": 26331,
+      "total_words": 27441,
       "total_schemas": 74,
       "critical_issues": 0,
       "high_issues": 0,
