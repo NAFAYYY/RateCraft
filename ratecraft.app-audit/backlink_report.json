@@ -1,0 +1,66 @@
+{
+  "target_domain": "ratecraft.app",
+  "cc_data": {
+    "status": "success",
+    "data": {
+      "domain": "ratecraft.app",
+      "in_crawl": false,
+      "in_rankings": false,
+      "pagerank": null,
+      "pagerank_rank": null,
+      "harmonic_centrality": null,
+      "harmonic_centrality_rank": null,
+      "n_hosts": null,
+      "note": "Domain not found in Common Crawl data. It may be too new, too small, or not yet crawled."
+    },
+    "error": null,
+    "metadata": {
+      "source": "commoncrawl",
+      "release": "cc-main-2026-jan-feb-mar"
+    }
+  },
+  "verify_data": {
+    "status": "success",
+    "data": {
+      "results": [],
+      "summary": {}
+    }
+  },
+  "parsed_data": {
+    "domain": "ratecraft.app",
+    "schema": [
+      {"@type": "WebApplication"},
+      {"@type": "FAQPage"}
+    ],
+    "h1": ["Freelance Hourly Rate Calculator"],
+    "links": {
+      "internal": [],
+      "external": []
+    }
+  },
+  "scoring_factors": {
+    "total_factors": 7,
+    "factors_with_data": 0,
+    "score": null
+  },
+  "findings": [
+    {
+      "factor": "Referring Domains",
+      "source": "not-assessed",
+      "status": "Not Assessed",
+      "detail": "No commercial backlink API (Moz, Bing, DataForSEO) configured. Common Crawl Q1 2026 pre-dates this domain launch."
+    },
+    {
+      "factor": "Anchor Text Distribution",
+      "source": "not-assessed",
+      "status": "Not Assessed",
+      "detail": "Anchor text profiling requires Moz or Bing Webmaster API credentials."
+    },
+    {
+      "factor": "Toxic Link Detection",
+      "source": "not-assessed",
+      "status": "Not Assessed",
+      "detail": "Spam score and toxic pattern detection requires Moz or DataForSEO API."
+    }
+  ]
+}
