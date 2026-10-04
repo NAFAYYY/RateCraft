@@ -169,55 +169,66 @@
         <div class="brand-icon">RC</div>
         <span>Rate<span class="highlight">Craft</span></span>
       </a>
-      <nav class="nav-links">
-        <a href="../">General</a>
-        <a href="../developer-rate-calculator/">Developers</a>
-        <a href="../designer-rate-calculator/">Designers</a>
-        <a href="../copywriter-rate-calculator/">Copywriters</a>
-        <a href="./" class="active">UK Contractors</a>
-        <a href="../guides/">Guides</a>
-        <a href="../es/" class="lang-switch-btn" title="Cambiar a Español">🇪🇸 ES</a>
+
+      <!-- Tools Navigation Links -->
+      <nav class="nav-links" aria-label="Tool selection">
+        <a href="../" class="nav-link">General</a>
+        <a href="../developer-rate-calculator/" class="nav-link">Developer</a>
+        <a href="../designer-rate-calculator/" class="nav-link">Designer</a>
+        <a href="../copywriter-rate-calculator/" class="nav-link">Copywriter</a>
+        <a href="./" class="nav-link active">UK Day Rate</a>
       </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <nav class="lang-switch" aria-label="Language Selector">
+          <a href="./" class="lang-btn active">🇬🇧 UK (£)</a>
+          <a href="../es/" class="lang-btn">🇪🇸 ES</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="main-content">
+  <main class="main-wrapper">
     <!-- Breadcrumb UI -->
-    <nav class="breadcrumb-container" aria-label="Breadcrumb">
-      <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="../">Home</a></li>
-        <li class="breadcrumb-separator">/</li>
-        <li class="breadcrumb-item active" aria-current="page">UK Freelance Day Rate Calculator</li>
-      </ol>
+    <nav class="article-breadcrumbs" aria-label="Breadcrumb" style="margin-bottom: 20px;">
+      <a href="../">Home</a> <span>/</span> <span>UK Freelance Day Rate Calculator</span>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-      <div class="badge-pill">
-        <span class="badge-dot"></span> UK Contractor Edition (2026)
+      <div class="badge-tag">
+        <span class="badge-pulse"></span> UK Contractor Edition (2026)
       </div>
-      <h1 class="hero-title">UK Freelance Day Rate Calculator</h1>
+      <h1 class="hero-title">
+        UK Freelance <span class="gradient-text">Day Rate</span> Calculator
+      </h1>
       <p class="hero-subtitle">
         Calculate your true day rate and hourly billing in £ GBP. Factor in Inside vs. Outside IR35, HMRC Corporation Tax, National Insurance, holiday buffer, and non-billable bench time.
       </p>
 
-      <!-- Direct Answer GEO / Snippet Callout -->
-      <div class="seo-callout direct-answer-box" style="margin-top: 24px; text-align: left;">
-        <p><strong>UK Contractor Day Rate Formula (2026):</strong> Your minimum day rate equals <code>[ (Target Net Income ÷ (1 - Tax/NI Rate)) + Annual Business Expenses ] × (1 + Bench Margin) ÷ 220 Billable Days</code>. To match a £70,000 permanent salary with full holiday and pension parity, UK contractors typically charge between <strong>£400 and £500/day Outside IR35</strong>, or <strong>£520 to £650/day Inside IR35</strong>.</p>
+      <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
+      <div class="answer-first-card">
+        <div class="answer-tag">Direct Answer • 2026 UK Contractor Pricing Benchmark</div>
+        <p class="answer-lead">
+          <strong>UK Contractor Day Rate Formula (2026):</strong> Your minimum day rate equals <code>[ (Target Net Income ÷ (1 - Tax/NI Rate)) + Annual Business Expenses ] × (1 + Bench Margin) ÷ 220 Billable Days</code>. To match a £70,000 permanent salary with full holiday and pension parity, UK contractors typically charge between <strong>£400 and £500/day Outside IR35</strong>, or <strong>£520 to £650/day Inside IR35</strong>.
+        </p>
       </div>
     </section>
 
     <!-- Calculator App Container -->
-    <section class="calc-app-container">
+    <section class="calculator-grid" id="calculator">
       <!-- Inputs Column -->
-      <div class="calc-card inputs-card">
-        <!-- Preset Roles Bar -->
-        <div class="presets-bar">
-          <div class="presets-label">UK Contractor Presets:</div>
-          <div class="preset-buttons">
+      <div class="calc-card">
+        <div class="card-header">
+          <h2 class="card-title">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            UK Contractor Financials
+          </h2>
+          <div class="preset-pills">
             <button class="pill-btn preset-btn active" data-preset="contractor">Standard Contractor</button>
-            <button class="pill-btn preset-btn" data-preset="inside">Inside IR35 (Umbrella)</button>
-            <button class="pill-btn preset-btn" data-preset="outside">Outside IR35 (Ltd Co)</button>
+            <button class="pill-btn preset-btn" data-preset="inside">Inside IR35</button>
+            <button class="pill-btn preset-btn" data-preset="outside">Outside IR35</button>
             <button class="pill-btn preset-btn" data-preset="consultant">Senior Consultant</button>
           </div>
         </div>
