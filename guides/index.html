@@ -96,7 +96,7 @@
 </head>
 <body>
 
-  <!-- Site Navigation -->
+    <!-- Site Navigation -->
   <header class="site-header">
     <div class="header-container">
       <a href="../" class="brand-logo" title="RateCraft Freelance Tools">
@@ -165,8 +165,8 @@
 
         <!-- Language Switcher -->
         <nav class="lang-switch" aria-label="Language Selector">
-          <a href="./" class="lang-btn active">🇺🇸 EN</a>
-          <a href="../es/guias/" class="lang-btn">🇪🇸 ES</a>
+          <a href="./" class="lang-btn active">EN</a>
+          <a href="../es/guias/" class="lang-btn">ES</a>
         </nav>
 
         <!-- Mobile Menu Toggle Button -->
@@ -179,7 +179,7 @@
     </div>
   </header>
 
-  <!-- Mobile Sidebar Drawer Overlay & Menu -->
+  <!-- Mobile Sidebar Drawer Overlay & Menu (High-Craft Edition, No Emojis) -->
   <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
   <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
     <div class="drawer-header">
@@ -188,61 +188,186 @@
         <span>Rate<span class="highlight">Craft</span></span>
       </a>
       <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close navigation menu">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </button>
     </div>
 
     <div class="drawer-content">
-      <div class="drawer-group">
-        <div class="drawer-group-title">💼 Profession Calculators</div>
-        <ul class="drawer-links">
-          <li><a href="../developer-rate-calculator/" class="drawer-link">Software Developer</a></li>
-          <li><a href="../designer-rate-calculator/" class="drawer-link">Designer (UI/UX & Brand)</a></li>
-          <li><a href="../copywriter-rate-calculator/" class="drawer-link">Copywriter & Content</a></li>
-          <li><a href="../virtual-assistant-rate-calculator/" class="drawer-link">Virtual Assistant</a></li>
-          <li><a href="../video-editor-rate-calculator/" class="drawer-link">Video Editor & Motion</a></li>
-          <li><a href="../consultant-day-rate-calculator/" class="drawer-link">Consultant Day Rate</a></li>
-          <li><a href="../social-media-manager-rate-calculator/" class="drawer-link">Social Media Manager</a></li>
-        </ul>
+      <!-- Section 1: By Profession -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-dot"></span>
+          <span class="drawer-section-title">Calculators by Profession</span>
+        </div>
+        <div class="drawer-card-group">
+          <a href="../developer-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Software Developer</span>
+              <span class="drawer-item-desc">Web, mobile & cloud engineering</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../designer-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Designer</span>
+              <span class="drawer-item-desc">UI/UX, brand & product systems</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../copywriter-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Copywriter</span>
+              <span class="drawer-item-desc">SEO writing, sales copy & technical</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../virtual-assistant-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Virtual Assistant</span>
+              <span class="drawer-item-desc">Executive support & operations</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../video-editor-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Video Editor</span>
+              <span class="drawer-item-desc">YouTube, reels, motion & post</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../consultant-day-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Consultant</span>
+              <span class="drawer-item-desc">Advisory & corporate day rates</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../social-media-manager-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Social Media Manager</span>
+              <span class="drawer-item-desc">Content, community & retainers</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="drawer-group">
-        <div class="drawer-group-title">🌍 Country & Regional Tax</div>
-        <ul class="drawer-links">
-          <li><a href="../" class="drawer-link">General Global / USA ($)</a></li>
-          <li><a href="../uk-freelance-day-rate-calculator/" class="drawer-link">UK Contractor (£ IR35 / VAT)</a></li>
-          <li><a href="../canada-freelance-rate-calculator/" class="drawer-link">Canada Contractor (CAD C$ / CRA)</a></li>
-          <li><a href="../australia-freelance-rate-calculator/" class="drawer-link">Australia Contractor (AUD A$ / GST)</a></li>
-        </ul>
+      <!-- Section 2: Regional & Tax Benchmarks -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-dot dot-cyan"></span>
+          <span class="drawer-section-title">Regional & Currency Models</span>
+        </div>
+        <div class="drawer-card-group">
+          <a href="../" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">General Global</span>
+                <span class="drawer-tag">USD $</span>
+              </div>
+              <span class="drawer-item-desc">Universal hourly pricing formula</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../uk-freelance-day-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">UK Contractor</span>
+                <span class="drawer-tag">GBP £</span>
+              </div>
+              <span class="drawer-item-desc">IR35, VAT & National Insurance</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../canada-freelance-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">Canada Contractor</span>
+                <span class="drawer-tag">CAD C$</span>
+              </div>
+              <span class="drawer-item-desc">CRA self-employment, CPP & HST</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../australia-freelance-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">Australia Contractor</span>
+                <span class="drawer-tag">AUD A$</span>
+              </div>
+              <span class="drawer-item-desc">GST, superannuation & Medicare</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="drawer-group">
-        <div class="drawer-group-title">📚 Pricing Guides</div>
-        <ul class="drawer-links">
-          <li><a href="../guides/" class="drawer-link drawer-link-highlight">All Pricing Guides &rarr;</a></li>
-          <li><a href="../guides/how-to-calculate-freelance-hourly-rate/" class="drawer-link">The Rule of 220 Formula</a></li>
-          <li><a href="../guides/value-based-pricing-vs-hourly/" class="drawer-link">Value-Based vs Hourly Pricing</a></li>
-          <li><a href="../guides/freelance-retainer-agreements-guide/" class="drawer-link">Freelance Retainer Agreements</a></li>
-          <li><a href="../guides/freelance-taxes-and-overhead-deductions/" class="drawer-link">Taxes & Overhead Deductions</a></li>
-        </ul>
+      <!-- Section 3: Pricing Guides -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-dot dot-indigo"></span>
+          <span class="drawer-section-title">Pricing Methodology</span>
+        </div>
+        <div class="drawer-card-group">
+          <a href="../guides/" class="drawer-item drawer-item-action">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title text-cyan">All Pricing Guides</span>
+              <span class="drawer-item-desc">Benchmarks, retainers & strategies</span>
+            </div>
+            <span class="drawer-action-arrow">&rarr;</span>
+          </a>
+          <a href="../guides/how-to-calculate-freelance-hourly-rate/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">The Rule of 220 Formula</span>
+              <span class="drawer-item-desc">Scientific billable hours model</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../guides/value-based-pricing-vs-hourly/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Value-Based vs Hourly</span>
+              <span class="drawer-item-desc">Moving beyond time billing</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../guides/freelance-retainer-agreements-guide/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Retainer Agreements</span>
+              <span class="drawer-item-desc">Predictable recurring revenue</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../guides/freelance-taxes-and-overhead-deductions/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Taxes & Overhead Deductions</span>
+              <span class="drawer-item-desc">Maximizing net take-home pay</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="drawer-group">
-        <div class="drawer-group-title">ℹ️ Company & Legal</div>
-        <ul class="drawer-links">
-          <li><a href="../about/" class="drawer-link">About Us</a></li>
-          <li><a href="../contact/" class="drawer-link">Contact</a></li>
-          <li><a href="../privacy/" class="drawer-link">Privacy Policy</a></li>
-          <li><a href="../terms/" class="drawer-link">Terms of Service</a></li>
-        </ul>
+      <!-- Section 4: Platform & Legal -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-dot dot-slate"></span>
+          <span class="drawer-section-title">Platform</span>
+        </div>
+        <div class="drawer-grid-links">
+          <a href="../about/" class="drawer-grid-link">About RateCraft</a>
+          <a href="../contact/" class="drawer-grid-link">Contact</a>
+          <a href="../privacy/" class="drawer-grid-link">Privacy Policy</a>
+          <a href="../terms/" class="drawer-grid-link">Terms of Service</a>
+        </div>
       </div>
 
+      <!-- Drawer Footer with Language -->
       <div class="drawer-footer">
-        <div class="drawer-lang">
-          <span class="drawer-lang-label">Language:</span>
+        <div class="drawer-footer-inner">
+          <span class="drawer-footer-label">Language</span>
           <div class="lang-switch">
-            <a href="./" class="lang-btn active">🇺🇸 English</a>
-            <a href="../es/guias/" class="lang-btn">🇪🇸 Español</a>
+            <a href="./" class="lang-btn active">EN</a>
+            <a href="../es/guias/" class="lang-btn">ES</a>
           </div>
         </div>
       </div>
