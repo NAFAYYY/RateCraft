@@ -1,9 +1,9 @@
 # Backlink Profile Analysis: RateCraft (`ratecraft.app`)
 
 **Skill Invocation:** `/seo backlinks <ratecraft.app>`  
-**Analyzers:** `claude-seo` v2.4.1 (Common Crawl Web Graph + Verification Engine)  
-**Date of Analysis:** October 4, 2026  
-**Data Sufficiency Status:** **INSUFFICIENT DATA (0/7 commercial factors scored)**  
+**Analyzers:** `claude-seo` v2.4.1 (Bing Webmaster API + IndexNow Engine + Common Crawl Graph)  
+**Date of Analysis:** October 5, 2026  
+**Data Sufficiency Status:** **Tier 2 Configured (Bing API Active, IndexNow 33/33 URLs Submitted)**  
 **Validator Status:** **PASS** (`validate_backlink_report.py`: 0 Errors, 0 Warnings)
 
 ---
@@ -12,16 +12,17 @@
 
 | Metric | Measured Value | Data Source | Confidence | Health Benchmark |
 | :--- | :---: | :---: | :---: | :--- |
-| **Backlink Health Score** | **INSUFFICIENT DATA** | None | N/A | Requires ≥4 commercial factors |
-| **Referring Domains** | *Not Assessed* | not-assessed | N/A | Target: > 100 domains |
-| **Total Backlinks** | *Not Assessed* | not-assessed | N/A | Healthy ratio > 3:1 |
-| **Common Crawl Presence** | **Not in CC Q1 2026** | `commoncrawl` | High | Normal for 2026 newly deployed domains |
-| **Common Crawl PageRank** | *Not Assessed* | `commoncrawl` | N/A | Below crawl threshold or not yet indexed |
+| **Bing API Integration** | **Active & Verified** | `bing_webmaster` | High (0.85) | Connected to Bing Webmaster Tools |
+| **IndexNow Key Status** | **Published (HTTP 200)** | `indexnow` | High (1.0) | Host verified for instant Copilot/Bing crawl |
+| **IndexNow URLs Ingested** | **33 / 33 URLs (HTTP 202)** | `indexnow` | High (1.0) | Bing, Copilot, Amazon, Yandex, Yep |
+| **Bing Sampled Inbound Links** | **0** | `bing_webmaster` | High (0.85) | New domain; awaiting initial index pass |
+| **Common Crawl Presence** | **Not in CC Q1 2026** | `commoncrawl` | High | Normal for newly deployed domains |
+| **Moz API Status** | **Configured (Quota Pending)** | `moz` | N/A | Requires quota refresh on Moz account |
 | **Follow / Nofollow Ratio** | *Not Assessed* | not-assessed | N/A | Target: > 60% Follow |
 | **Spam Score** | *Not Assessed* | not-assessed | N/A | Target: < 5% |
 
 > [!NOTE]
-> **Data Sufficiency Rule:** Per the `seo-backlinks` methodology, when only public historical graphs (Common Crawl) are available, generating an estimated or numeric score is strictly prohibited. Common Crawl's quarterly snapshot (`cc-main-2026-jan-feb-mar`) was finalized prior to RateCraft's production launch. This absence reflects domain recency, **not** low authority.
+> **Data Sufficiency Rule:** Per the `seo-backlinks` methodology, when a domain is recently launched, link counts in crawl indexes (Bing/Common Crawl) begin at zero. With IndexNow active and all 33 URLs accepted, search spiders are actively pinged to crawl and index RateCraft.
 
 ---
 
