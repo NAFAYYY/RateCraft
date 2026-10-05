@@ -89,11 +89,31 @@
 </head>
 <body>
 
-    <!-- Site Navigation -->
+      <!-- Site Navigation -->
   <header class="site-header">
     <div class="header-container">
       <a href="../../" class="brand-logo" title="RateCraft Freelance Tools">
-        <div class="brand-icon">RC</div>
+        <svg class="brand-icon" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="rc-stem" x1="7" y1="7" x2="11.5" y2="25" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#818cf8"/>
+              <stop offset="100%" stop-color="#4f46e5"/>
+            </linearGradient>
+            <linearGradient id="rc-loop" x1="11.5" y1="7" x2="24" y2="19" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6366f1"/>
+              <stop offset="50%" stop-color="#06b6d4"/>
+              <stop offset="100%" stop-color="#10b981"/>
+            </linearGradient>
+            <linearGradient id="rc-surge" x1="15" y1="17" x2="25" y2="25" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#10b981"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="8" fill="#080d1a" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+          <rect x="7" y="7" width="4.5" height="18" rx="2" fill="url(#rc-stem)"/>
+          <path d="M 11.5 7 L 18 7 C 21.31 7 24 9.69 24 13 C 24 16.31 21.31 19 18 19 L 11.5 19 Z M 15 11 L 15 15 L 18 15 C 19.1 15 20 14.1 20 13 C 20 11.9 19.1 11 18 11 Z" fill="url(#rc-loop)"/>
+          <path d="M 15 17 L 19.5 17 L 25 25 L 20.5 25 Z" fill="url(#rc-surge)"/>
+        </svg>
         <span>Rate<span class="highlight">Craft</span></span>
       </a>
 
@@ -177,7 +197,27 @@
   <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
     <div class="drawer-header">
       <a href="../../" class="brand-logo" title="RateCraft">
-        <div class="brand-icon">RC</div>
+        <svg class="brand-icon" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="rc-stem-m" x1="7" y1="7" x2="11.5" y2="25" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#818cf8"/>
+            <stop offset="100%" stop-color="#4f46e5"/>
+          </linearGradient>
+          <linearGradient id="rc-loop-m" x1="11.5" y1="7" x2="24" y2="19" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#6366f1"/>
+            <stop offset="50%" stop-color="#06b6d4"/>
+            <stop offset="100%" stop-color="#10b981"/>
+          </linearGradient>
+          <linearGradient id="rc-surge-m" x1="15" y1="17" x2="25" y2="25" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#38bdf8"/>
+            <stop offset="100%" stop-color="#10b981"/>
+          </linearGradient>
+        </defs>
+        <rect width="32" height="32" rx="8" fill="#080d1a" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+        <rect x="7" y="7" width="4.5" height="18" rx="2" fill="url(#rc-stem-m)"/>
+        <path d="M 11.5 7 L 18 7 C 21.31 7 24 9.69 24 13 C 24 16.31 21.31 19 18 19 L 11.5 19 Z M 15 11 L 15 15 L 18 15 C 19.1 15 20 14.1 20 13 C 20 11.9 19.1 11 18 11 Z" fill="url(#rc-loop-m)"/>
+        <path d="M 15 17 L 19.5 17 L 25 25 L 20.5 25 Z" fill="url(#rc-surge-m)"/>
+      </svg>
         <span>Rate<span class="highlight">Craft</span></span>
       </a>
       <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close navigation menu">

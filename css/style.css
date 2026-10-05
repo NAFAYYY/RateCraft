@@ -134,16 +134,14 @@ ins.adsbygoogle[data-anchor-status="displayed"] {
 .brand-icon {
   width: 32px;
   height: 32px;
-  background: #1a2234;
-  border: 1px solid var(--border-medium);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent-emerald);
-  font-weight: 900;
-  font-size: 0.85rem;
-  box-shadow: var(--border-highlight);
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.2s ease;
+}
+
+.brand-logo:hover .brand-icon {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.45));
 }
 
 .brand-logo span.highlight {
