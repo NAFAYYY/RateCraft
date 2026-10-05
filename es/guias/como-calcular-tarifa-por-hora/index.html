@@ -89,7 +89,7 @@
 </head>
 <body>
 
-  <!-- Site Header -->
+  <!-- Site Navigation -->
   <header class="site-header">
     <div class="header-container">
       <a href="../../" class="brand-logo" title="RateCraft Herramientas Freelance">
@@ -97,21 +97,152 @@
         <span>Rate<span class="highlight">Craft</span></span>
       </a>
 
-      <nav class="nav-links" aria-label="Selección de herramientas">
-        <a href="../../" class="nav-link">General</a>
-        <a href="../../calculadora-precio-hora-programador/" class="nav-link">Programador</a>
-        <a href="../../calculadora-tarifa-disenador/" class="nav-link">Diseñador</a>
-        <a href="../../calculadora-tarifa-redactor/" class="nav-link">Redactor</a>
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Navegación principal">
+        <div class="nav-dropdown" id="nav-calculators-dropdown">
+          <button type="button" class="nav-link nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+            <span>Calculadoras</span>
+            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          
+          <div class="dropdown-menu dropdown-mega" role="menu">
+            <div class="dropdown-grid">
+              <div class="dropdown-col">
+                <div class="dropdown-col-header">
+                  <span class="dropdown-col-title">Por Profesión</span>
+                </div>
+                <ul class="dropdown-list">
+                  <li><a href="../../calculadora-precio-hora-programador/" class="dropdown-item"><strong>Programador</strong><span>Desarrollo web, software y apps</span></a></li>
+                  <li><a href="../../calculadora-tarifa-disenador/" class="dropdown-item"><strong>Diseñador</strong><span>Diseño UI/UX, producto y marcas</span></a></li>
+                  <li><a href="../../calculadora-tarifa-redactor/" class="dropdown-item"><strong>Redactor & Copywriter</strong><span>Contenido SEO, copywriting y textos</span></a></li>
+                  <li><a href="../../../virtual-assistant-rate-calculator/" class="dropdown-item"><strong>Asistente Virtual</strong><span>Gestión administrativa y operaciones</span></a></li>
+                  <li><a href="../../../video-editor-rate-calculator/" class="dropdown-item"><strong>Editor de Video</strong><span>YouTube, reels y postproducción</span></a></li>
+                  <li><a href="../../../consultant-day-rate-calculator/" class="dropdown-item"><strong>Consultor de Negocios</strong><span>Tarifa diaria y asesoría estratégica</span></a></li>
+                  <li><a href="../../../social-media-manager-rate-calculator/" class="dropdown-item"><strong>Social Media Manager</strong><span>Gestión de redes y retainers</span></a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown-col">
+                <div class="dropdown-col-header">
+                  <span class="dropdown-col-title">Por Región e Impuestos</span>
+                </div>
+                <ul class="dropdown-list">
+                  <li><a href="../../" class="dropdown-item"><strong>España / Europa (€)</strong><span>Cálculo IRPF y cuota de autónomo</span></a></li>
+                  <li><a href="../../../" class="dropdown-item"><strong>Global / EE.UU. ($)</strong><span>Fórmula general en dólares</span></a></li>
+                  <li><a href="../../../uk-freelance-day-rate-calculator/" class="dropdown-item"><strong>Reino Unido (£)</strong><span>Contratistas UK, IR35 y VAT</span></a></li>
+                  <li><a href="../../../canada-freelance-rate-calculator/" class="dropdown-item"><strong>Canadá (CAD C$)</strong><span>Impuestos CRA, CPP y HST</span></a></li>
+                  <li><a href="../../../australia-freelance-rate-calculator/" class="dropdown-item"><strong>Australia (AUD A$)</strong><span>GST, superannuation y ATO</span></a></li>
+                </ul>
+
+                <div class="dropdown-col-header mt-dropdown">
+                  <span class="dropdown-col-title">Guías Destacadas</span>
+                </div>
+                <ul class="dropdown-list">
+                  <li><a href="../../guias/como-calcular-tarifa-por-hora/" class="dropdown-item"><strong>Fórmula Regla de 220</strong><span>Fijación de precios rentable</span></a></li>
+                  <li><a href="../../guias/precios-por-valor-vs-por-hora/" class="dropdown-item"><strong>Precios por Valor vs Hora</strong><span>Maximiza tus ingresos</span></a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="dropdown-footer">
+              <a href="../../guias/" class="dropdown-footer-link">Ver todas las guías y comparativas &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="../../guias/" class="nav-link">Guías</a>
+        <a href="../../sobre-nosotros/" class="nav-link">Sobre Nosotros</a>
       </nav>
 
       <div class="header-actions">
+
+
+        <!-- Language Switcher -->
         <nav class="lang-switch" aria-label="Selector de idioma">
           <a href="../../../guides/how-to-calculate-freelance-hourly-rate/" class="lang-btn">🇺🇸 EN</a>
           <a href="./" class="lang-btn active">🇪🇸 ES</a>
         </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Sidebar Drawer Overlay & Menu -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Navegación Móvil" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="../../" class="brand-logo" title="RateCraft">
+        <div class="brand-icon">RC</div>
+        <span>Rate<span class="highlight">Craft</span></span>
+      </a>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Cerrar menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <div class="drawer-content">
+      <div class="drawer-group">
+        <div class="drawer-group-title">💼 Calculadoras por Profesión</div>
+        <ul class="drawer-links">
+          <li><a href="../../calculadora-precio-hora-programador/" class="drawer-link">Programador / Desarrollador</a></li>
+          <li><a href="../../calculadora-tarifa-disenador/" class="drawer-link">Diseñador UI/UX & Gráfico</a></li>
+          <li><a href="../../calculadora-tarifa-redactor/" class="drawer-link">Redactor & Copywriter</a></li>
+          <li><a href="../../../virtual-assistant-rate-calculator/" class="drawer-link">Asistente Virtual</a></li>
+          <li><a href="../../../video-editor-rate-calculator/" class="drawer-link">Editor de Video</a></li>
+          <li><a href="../../../consultant-day-rate-calculator/" class="drawer-link">Consultor de Negocios</a></li>
+          <li><a href="../../../social-media-manager-rate-calculator/" class="drawer-link">Social Media Manager</a></li>
+        </ul>
+      </div>
+
+      <div class="drawer-group">
+        <div class="drawer-group-title">🌍 Países e Impuestos</div>
+        <ul class="drawer-links">
+          <li><a href="../../" class="drawer-link">España / Europa (€ EUR)</a></li>
+          <li><a href="../../../" class="drawer-link">Global / EE.UU. ($ USD)</a></li>
+          <li><a href="../../../uk-freelance-day-rate-calculator/" class="drawer-link">Reino Unido (£ GBP / IR35)</a></li>
+          <li><a href="../../../canada-freelance-rate-calculator/" class="drawer-link">Canadá (CAD C$ / CRA)</a></li>
+          <li><a href="../../../australia-freelance-rate-calculator/" class="drawer-link">Australia (AUD A$ / GST)</a></li>
+        </ul>
+      </div>
+
+      <div class="drawer-group">
+        <div class="drawer-group-title">📚 Guías de Precios</div>
+        <ul class="drawer-links">
+          <li><a href="../../guias/" class="drawer-link drawer-link-highlight">Todas las Guías &rarr;</a></li>
+          <li><a href="../../guias/como-calcular-tarifa-por-hora/" class="drawer-link">Fórmula Regla de 220</a></li>
+          <li><a href="../../guias/precios-por-valor-vs-por-hora/" class="drawer-link">Precios por Valor vs Hora</a></li>
+          <li><a href="../../guias/contratos-retainer-freelance/" class="drawer-link">Contratos Retainer</a></li>
+          <li><a href="../../guias/impuestos-gastos-autonomos/" class="drawer-link">Impuestos y Gastos Deducibles</a></li>
+        </ul>
+      </div>
+
+      <div class="drawer-group">
+        <div class="drawer-group-title">ℹ️ Empresa y Legal</div>
+        <ul class="drawer-links">
+          <li><a href="../../sobre-nosotros/" class="drawer-link">Sobre Nosotros</a></li>
+          <li><a href="../../contacto/" class="drawer-link">Contacto</a></li>
+          <li><a href="../../privacidad/" class="drawer-link">Política de Privacidad</a></li>
+          <li><a href="../../terminos/" class="drawer-link">Términos de Servicio</a></li>
+        </ul>
+      </div>
+
+      <div class="drawer-footer">
+        <div class="drawer-lang">
+          <span class="drawer-lang-label">Idioma:</span>
+          <div class="lang-switch">
+            <a href="../../../guides/how-to-calculate-freelance-hourly-rate/" class="lang-btn">🇺🇸 English</a>
+            <a href="./" class="lang-btn active">🇪🇸 Español</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
 
   <!-- Main Content Wrapper -->
   <main class="article-wrapper">
@@ -299,5 +430,6 @@
     </div>
   </footer>
 
+  <script src="../../../js/nav.js" defer></script>
 </body>
 </html>
