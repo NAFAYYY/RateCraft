@@ -90,27 +90,19 @@ In the freelance rate calculator space (competitors: Clockify, Bonsai, Freelance
 
 ---
 
-## 6. How to Enable Live API Data
+## 6. Live API Data Integration Status
 
-To upgrade this backlink profile from **Tier 0** (Public Graphs) to **Tier 1 & 2** (Live Domain Authority, spam scores, and anchor distributions):
+RateCraft has been upgraded to **Tier 2 (Full Free)**:
 
-### Option A: Free Moz API (2,500 free rows/month)
-1. Register for a free account at [moz.com/products/api](https://moz.com/products/api).
-2. Copy your API token from [moz.com/products/api/keys](https://moz.com/products/api/keys).
-3. Set the environment variable or create `/Users/mohsinraja/.config/claude-seo/backlinks-api.json`:
-   ```json
-   {
-     "moz_api_key": "YOUR_MOZ_API_KEY"
-   }
-   ```
+### 1. Bing Webmaster Tools API: Active & Connected
+- **API Status:** Connected via key `78fe14e5...` in `~/.config/claude-seo/backlinks-api.json`.
+- **Verified Site:** `https://ratecraft.app/`
+- **Capabilities:** Real-time inbound link monitoring, URL indexing verification, and competitor comparisons across verified properties.
 
-### Option B: Free Bing Webmaster Tools API
-1. Sign in to [bing.com/webmasters](https://www.bing.com/webmasters) and verify `ratecraft.app`.
-2. Navigate to **Settings > API Access > API Key**.
-3. Add the key to `/Users/mohsinraja/.config/claude-seo/backlinks-api.json`:
-   ```json
-   {
-     "bing_api_key": "YOUR_BING_API_KEY",
-     "bing_verified_sites": ["ratecraft.app"]
-   }
-   ```
+### 2. IndexNow Protocol: Active & Verified
+- **Host Key:** Published at `https://ratecraft.app/cf8be9291cf0442db17ed17bcfb9c768.txt` (HTTP 200).
+- **Ingestion:** 33 / 33 URLs submitted and accepted (HTTP 202) across Bing, Microsoft Copilot, Amazon Alexa, Naver, Seznam.cz, Yandex, and Yep.
+
+### 3. Moz API: Configured (Quota Activation Pending)
+- **Status:** Saved in `~/.config/claude-seo/backlinks-api.json`.
+- **Note:** Free tier requires active billing card verification on [moz.com/products/api/keys](https://moz.com/products/api/keys) to allocate the monthly 2,500 rows. Once refreshed, DA/PA and Spam Score metrics will populate automatically.
