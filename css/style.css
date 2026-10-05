@@ -69,7 +69,7 @@ body {
 header.site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   min-height: 58px;
   box-sizing: border-box;
   background: rgba(9, 13, 22, 0.92);
@@ -77,15 +77,36 @@ header.site-header {
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
   padding: 12px 24px;
+  contain: layout;
 }
 
-/* AdSense Layout Stabilization (Prevents dynamic Auto-Ad layout jumping) */
+/* AdSense Layout Stabilization (Prevents dynamic Auto-Ad layout jumping & CLS) */
+html, body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+html[style*="margin-top"], body[style*="margin-top"] {
+  margin-top: 0 !important;
+}
+
 ins.adsbygoogle {
   display: block;
 }
+/* Suppress any auto-ad dynamically injected before the header */
+body > .google-auto-placed:first-child,
+body > ins.adsbygoogle:first-child {
+  display: none !important;
+}
+/* Anchor ad enforcement: keep anchor overlay pinned to bottom to prevent top viewport shifts */
+ins.adsbygoogle[data-anchor-status="displayed"] {
+  position: fixed !important;
+  bottom: 0 !important;
+  top: auto !important;
+}
 .google-auto-placed {
-  margin: 16px auto !important;
+  margin: 20px auto !important;
   max-width: 100% !important;
+  contain: layout;
   overflow: hidden !important;
 }
 
