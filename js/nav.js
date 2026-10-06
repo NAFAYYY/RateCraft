@@ -13,10 +13,17 @@
     var dropdowns = document.querySelectorAll('.nav-dropdown');
 
     // --- Mobile Drawer Toggle ---
+    if (drawer && !drawer.classList.contains('is-active')) {
+      drawer.setAttribute('inert', '');
+      drawer.inert = true;
+    }
+
     function openDrawer() {
       if (!drawer || !backdrop) return;
       drawer.classList.add('is-active');
       drawer.setAttribute('aria-hidden', 'false');
+      drawer.removeAttribute('inert');
+      drawer.inert = false;
       backdrop.classList.add('is-active');
       backdrop.setAttribute('aria-hidden', 'false');
       if (toggleBtn) {
@@ -30,6 +37,8 @@
       if (!drawer || !backdrop) return;
       drawer.classList.remove('is-active');
       drawer.setAttribute('aria-hidden', 'true');
+      drawer.setAttribute('inert', '');
+      drawer.inert = true;
       backdrop.classList.remove('is-active');
       backdrop.setAttribute('aria-hidden', 'true');
       if (toggleBtn) {
