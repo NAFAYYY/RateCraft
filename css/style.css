@@ -212,9 +212,23 @@ ins.adsbygoogle[data-anchor-status="displayed"] {
   transform: rotate(180deg);
 }
 
+/* Invisible bridge on trigger when active/hovered to prevent dead-zone drop */
+.nav-dropdown:hover::after,
+.nav-dropdown.is-open::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -8px;
+  right: -8px;
+  height: 16px;
+  background: transparent;
+  pointer-events: auto;
+  z-index: 1040;
+}
+
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 6px);
   left: 0;
   background: rgba(14, 21, 37, 0.98);
   backdrop-filter: blur(20px);
@@ -225,10 +239,21 @@ ins.adsbygoogle[data-anchor-status="displayed"] {
   padding: 16px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(8px);
-  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  transform: translateY(6px);
+  transition: opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1), transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.18s;
   z-index: 1050;
   pointer-events: none;
+}
+
+/* Upward invisible bridge on menu: bridges diagonal mouse movement across trigger gap */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -8px;
+  right: -8px;
+  height: 20px;
+  background: transparent;
 }
 
 .nav-dropdown:hover .dropdown-menu,
