@@ -1,0 +1,22 @@
+{
+  "name": "RateCraft Freelance Tools",
+  "short_name": "RateCraft",
+  "description": "Accurate freelance hourly rate, day rate, and commercial pricing calculators.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060913",
+  "theme_color": "#060913",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "64x64 128x128 256x256 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
