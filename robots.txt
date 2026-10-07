@@ -3,6 +3,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /*?*embed=*
 
 # Explicit AI Search & Answer Engine Crawlers (GEO / AEO Optimization)
 User-agent: GPTBot
