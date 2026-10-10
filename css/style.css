@@ -895,6 +895,29 @@ select#currency-select option {
   line-height: 1.5;
 }
 
+.ph-badge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto 4px;
+}
+
+.ph-badge-container a {
+  display: inline-flex;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.ph-badge-container a:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.ph-badge-container img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ==========================================================================
    Calculator Grid - CRITICAL FIX: align-items: start Eliminates Bottom Void
    ========================================================================== */
