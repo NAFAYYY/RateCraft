@@ -59,6 +59,12 @@ RateCraft uses a rigorous bottom-up financial equation rather than simplistic sa
 ## In-Depth Editorial Guides
 
 - [How to Calculate Your True Freelance Hourly Rate (2026 Formula)](https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/): Step-by-step masterclass on calculating hourly rates factoring in unbillable time, self-employment taxes, overhead, and profit margins.
+- [How to Raise Your Freelance Rates (2026 Strategy Guide)](https://ratecraft.app/guides/how-to-raise-freelance-rates/): Field-tested scripts, timing strategies, and pricing psychology to raise rates without losing clients.
+- [The Rule of 220 Billable Days Explained](https://ratecraft.app/guides/rule-of-220-billable-hours-explained/): Why 2,080 annual hours bankrupts freelancers and how to calculate realistic utilization rates.
+- [Freelance Contract Pricing Clauses Guide](https://ratecraft.app/guides/freelance-contract-pricing-clauses/): 7 essential contract terms every freelancer needs to prevent scope creep, late payments, and IP disputes.
+- [Fixed-Price vs. Hourly Project Quoting](https://ratecraft.app/guides/fixed-price-vs-hourly-project-quoting/): Comparative analysis between time-billing and flat fees, risk premiums, and hybrid retainers.
+- [Freelance Software Developer Rates in 2026](https://ratecraft.app/guides/freelance-software-developer-rates-guide/): Market benchmark data across junior to lead tiers, cloud/ML stack multipliers, and US/EU client arbitrage.
+- [Freelance Designer Pricing Guide 2026](https://ratecraft.app/guides/freelance-designer-pricing-guide/): Hourly, day, and project benchmarks for UI/UX, product design, branding, and design systems.
 - [Value-Based Pricing vs. Hourly Billing for Freelancers](https://ratecraft.app/guides/value-based-pricing-vs-hourly/): Comparative analysis of value pricing vs hourly billing, 10:1 ROI rules, and transition frameworks.
 - [The Complete Freelance Retainer Agreement Guide](https://ratecraft.app/guides/freelance-retainer-agreements-guide/): Pitching, structuring, and pricing monthly retainer agreements to eliminate feast-or-famine cycles.
 - [Freelance Taxes & Overhead Deductions Guide](https://ratecraft.app/guides/freelance-taxes-and-overhead-deductions/): Solopreneur financial blueprint for self-employment tax, estimated quarterly payments, and legitimate write-offs.
@@ -70,6 +76,12 @@ RateCraft uses a rigorous bottom-up financial equation rather than simplistic sa
 - [Calculadora Tarifa por Hora Diseñador Freelance](https://ratecraft.app/es/calculadora-tarifa-disenador/): Tarifario oficial para diseñadores gráficos y UI/UX.
 - [Calculadora Precio por Hora Redactor Freelance](https://ratecraft.app/es/calculadora-tarifa-redactor/): Tarifario para copywriters y redactores.
 - [Guía: Cómo Calcular tu Tarifa por Hora Freelance](https://ratecraft.app/es/guias/como-calcular-tarifa-por-hora/): Fórmula paso a paso para autónomos.
+- [Guía: Cómo Subir tus Tarifas Freelance](https://ratecraft.app/es/guias/como-subir-tarifas-freelance/): Estrategias de negociación, plantillas de correo y gestión de objeciones.
+- [Guía: La Regla de los 220 Días Facturables](https://ratecraft.app/es/guias/regla-de-220-horas-facturables/): Metodología de horas facturables y tasa de utilización real.
+- [Guía: Cláusulas Clave en Contratos de Precios](https://ratecraft.app/es/guias/clausulas-contratos-freelance/): 7 disposiciones legales para blindar honorarios y cobros.
+- [Guía: Precio Fijo vs. Tarifa por Hora](https://ratecraft.app/es/guias/precio-fijo-vs-precio-por-hora/): Análisis comparativo de rentabilidad y cojines de contingencia.
+- [Guía: Tarifas de Desarrolladores de Software Freelance](https://ratecraft.app/es/guias/tarifas-desarrollador-freelance/): Benchmarks 2026, multiplicadores tecnológicos y clientes internacionales.
+- [Guía: Tarifas para Diseñadores UI/UX y Gráficos](https://ratecraft.app/es/guias/tarifas-disenador-freelance/): Precios por hora, sprints y cesión de derechos de marca.
 - [Guía: Precios por Valor vs. Tarifa por Hora](https://ratecraft.app/es/guias/precios-por-valor-vs-por-hora/): Análisis estratégico de precios basados en valor.
 - [Guía de Contratos Retainer para Freelancers](https://ratecraft.app/es/guias/contratos-retainer-freelance/): Estructuración y venta de contratos de retención mensual.
 - [Guía de Impuestos y Gastos Deducibles de Autónomos](https://ratecraft.app/es/guias/impuestos-gastos-autonomos/): Fiscalidad, cuota RETA, IRPF y gastos deducibles.
