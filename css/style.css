@@ -2784,3 +2784,85 @@ footer.site-footer {
   transform: translateY(0);
   opacity: 1;
 }
+
+/* ==========================================================================
+   Editorial Author Box & E-E-A-T Review Standards
+   ========================================================================== */
+.editorial-trust-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  margin: 20px 0 28px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.editorial-trust-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--accent-emerald);
+}
+
+.author-bio-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin: 45px 0 25px;
+}
+
+.author-bio-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.author-bio-content {
+  flex: 1;
+}
+
+.author-bio-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.author-bio-role {
+  font-size: 0.825rem;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.author-bio-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .author-bio-card {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
