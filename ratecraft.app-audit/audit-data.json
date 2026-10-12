@@ -1,193 +1,149 @@
 {
   "summary": {
-    "health_score": 96.2,
+    "health_score": 97.8,
     "grade": "A+",
-    "business_type": "Utility / SaaS / Financial Rate Calculator (Free Commercial Tools)",
+    "business_type": "Utility / SaaS / Financial Rate Intelligence Platform",
     "domain": "ratecraft.app",
-    "pages_audited": 33,
+    "pages_audited": 45,
     "languages": ["en", "es"],
+    "indexed_pages": 35,
+    "total_impressions": 415,
     "top_findings": [
       {
-        "category": "Schema & Structured Data",
-        "severity": "Medium",
-        "title": "BreadcrumbList missing on 8 company & legal pages",
-        "recommendation": "Add BreadcrumbList JSON-LD to about, contact, privacy, and terms pages (both EN and ES) to reach 100% coverage."
+        "category": "Technical SEO / Crawl Efficiency",
+        "severity": "Low",
+        "title": "Add rel='nofollow' to footer sitemap link",
+        "recommendation": "Add rel='nofollow' to the sitemap links in all footers so Googlebot treats sitemap.xml strictly as a machine feed rather than an indexable web page."
       },
       {
-        "category": "Technical SEO / AI Discovery",
-        "severity": "Low",
-        "title": "llms.txt discovery link tag in HTML head",
-        "recommendation": "Add <link rel=\"alternate\" type=\"text/plain\" href=\"https://ratecraft.app/llms.txt\" title=\"LLM Manifest\"> to document heads."
-      },
-      {
-        "category": "Technical SEO / Edge Headers",
-        "severity": "Low",
-        "title": "Security headers on Cloudflare Worker responses",
-        "recommendation": "Ensure X-Content-Type-Options: nosniff and Referrer-Policy: strict-origin-when-cross-origin are explicitly emitted."
-      },
-      {
-        "category": "PWA / Mobile Icons",
-        "severity": "Low",
-        "title": "Web App Manifest & PNG touch icons",
-        "recommendation": "Add site.webmanifest with standard 192x192 and 512x512 PNG app icons alongside the SVG favicon."
+        "category": "Authority & Backlinks",
+        "severity": "High",
+        "title": "Product Hunt Launch (Oct 14) for DA 91+ authority backlink",
+        "recommendation": "Execute scheduled launch to provide the domain authority push required to propel Pos 11-25 keywords into the Top 5."
       }
     ],
     "quick_wins": [
-      "Inject BreadcrumbList into the 8 company/legal pages for 100% rich breadcrumb snippet coverage.",
-      "Add <link rel=\"alternate\" type=\"text/plain\" href=\"/llms.txt\"> to HTML <head> for automatic LLM agent discovery.",
-      "Add editorial review credential badges on guide pages for enhanced E-E-A-T signals."
+      "Add rel='nofollow' to footer sitemap link to clear GSC sitemap re-crawling.",
+      "Submit AlternativeTo and Indie Hackers profiles for supplemental tech citations."
     ]
   },
   "categories": [
     {
       "name": "Technical SEO",
-      "weight": "22%",
-      "score": 98,
+      "score": 99,
       "what_works": [
-        "100% (33/33) self-referential canonical tags with consistent trailing slashes",
-        "100% reciprocal hreflang symmetry between English and Spanish pages",
-        "Clean, valid robots.txt permitting major search engines and AI crawlers (GPTBot, ClaudeBot, PerplexityBot)",
-        "Accurate, complete sitemap.xml listing all 33 URLs with priority and changefreq metadata",
-        "Zero crawl traps, infinite redirects, or accidental noindex tags"
+        "100% self-referential HTTPS canonical URLs across all 45 pages",
+        "100% reciprocal hreflang pairings between all English and Spanish URLs",
+        "Universal and AI crawler access declared in robots.txt",
+        "Complete 45-URL sitemap.xml with accurate changefreq and priority metadata",
+        "Clean 404 response on unknown routes and strong edge security headers"
       ],
       "findings": [
         {
-          "title": "Missing HTML link reference to llms.txt",
+          "title": "Sitemap link in HTML footer should carry rel='nofollow'",
           "severity": "Low",
-          "description": "robots.txt references llms.txt, but HTML heads do not declare it as an alternate discovery link.",
-          "recommendation": "Add link rel alternate type text/plain href https://ratecraft.app/llms.txt title LLM Context to document heads."
+          "description": "Googlebot crawls sitemap.xml via footer link as a web page instead of strictly as a sitemap feed.",
+          "recommendation": "Add rel='nofollow' to footer sitemap link."
         }
       ]
     },
     {
       "name": "Content Quality & E-E-A-T",
-      "weight": "23%",
-      "score": 95,
+      "score": 97,
       "what_works": [
-        "High information density (average 1,047 words per page, 0% AI fluff)",
-        "Rigorous financial equations explained step-by-step (Rule of 220, billable hour traps)",
-        "Jurisdiction-specific compliance (IR35 inside/outside, CRA CPP, ATO Superannuation)",
-        "Zero duplicate content across all 33 URLs",
-        "Claude SEO content quality scored 96/100 on homepage, 95/100 on sub-calculators"
+        "20 deep editorial guides (>24,000 words total) modeling 2026 contractor economics",
+        "96-97/100 score on Claude SEO content quality with 0/100 filler score",
+        "Author bio cards for Muhammad Nafay (Lead Engineer & Founder) across all guides and About page",
+        "Editorial review and fact-check badges with quarterly update schedules and zero-sponsorship declaration"
       ],
-      "findings": [
-        {
-          "title": "Formal Editorial / Financial Reviewer Byline",
-          "severity": "Low",
-          "description": "Guides have comprehensive methodology, but adding a formal verified reviewer note strengthens financial E-E-A-T.",
-          "recommendation": "Add 'Reviewed for accuracy by Financial Analyst' metadata block on editorial guides."
-        }
-      ]
+      "findings": []
     },
     {
       "name": "On-Page SEO",
-      "weight": "20%",
       "score": 99,
       "what_works": [
-        "100% unique title tags (0 duplicates across 33 pages, all 40-65 chars)",
-        "100% unique meta descriptions (0 duplicates, all 120-165 chars)",
-        "Strict single H1 heading hierarchy per page (0 anomalies)",
-        "Complete Open Graph and Twitter Card metadata with 1200x630 visual cards",
-        "Rich internal link mesh (1,412 links with 0 broken links)"
+        "100% unique title tags with target search intent and (2026) year tag",
+        "145-158 character CTR-optimized meta descriptions across all pages",
+        "Strict H1-H3 logical hierarchy",
+        "Symmetrical 11-link editorial footer internal linking on every single page (495/495 links verified)",
+        "Complete Open Graph and Twitter Card tags"
       ],
       "findings": []
     },
     {
-      "name": "Schema / Structured Data",
-      "weight": "10%",
-      "score": 92,
+      "name": "Schema & Structured Data",
+      "score": 98,
       "what_works": [
-        "15 WebApplication schemas with free pricing offers and aggregate rating 4.9",
-        "15 FAQPage schemas containing 7 comprehensive questions and answers each",
-        "8 Article schemas on in-depth guides with author, publisher, and timestamps",
-        "Zero JSON-LD syntax or parser errors across all pages"
+        "WebApplication and SoftwareApplication schema on all 11 calculators with free offer metadata",
+        "Article schema on all 20 guides with author attribution and publisher details",
+        "BreadcrumbList schema across all pages",
+        "Organization schema with founder entity signals"
       ],
-      "findings": [
-        {
-          "title": "BreadcrumbList missing on 8 company and legal pages",
-          "severity": "Medium",
-          "description": "25 of 33 pages have BreadcrumbList. The remaining 8 pages (about, contact, privacy, terms, and Spanish equivalents) lack breadcrumbs.",
-          "recommendation": "Add BreadcrumbList schema to achieve 100% (33/33) rich snippet eligibility."
-        }
-      ]
+      "findings": []
     },
     {
       "name": "Performance (Core Web Vitals)",
-      "weight": "10%",
       "score": 96,
       "what_works": [
-        "Preloaded asynchronous WOFF2 fonts with display=swap (0 CLS)",
-        "Inline vector SVG brand logos (zero render-blocking image network requests)",
-        "Speculation Rules API prefetching on key calculator hubs",
-        "Vanilla JS architecture with script deferral (zero hydration overhead)"
+        "Vanilla HTML, CSS, and lightweight JS with zero hydration overhead",
+        "Speculation Rules API prefetching for instant next-hop navigations",
+        "Preloaded Google Fonts with zero Cumulative Layout Shift (CLS = 0.00)",
+        "Hardcoded SVG dimensions and inline fallbacks preventing layout movement"
       ],
       "findings": []
     },
     {
-      "name": "AI Search Readiness (GEO & Agentic)",
-      "weight": "10%",
-      "score": 94,
+      "name": "AI Search Readiness (GEO / AEO)",
+      "score": 98,
       "what_works": [
-        "P0 agent readiness checks passing: primary content accessible without JS",
-        "Deliberate robots.txt crawler permissions for OpenAI, Anthropic, Perplexity, and Apple",
-        "Comprehensive 7.8 KB llms.txt manifest following official spec",
-        "Direct numerical answer cards optimized for Google AI Overviews and answer engines"
+        "100% Pass on P0 and P1 in agentic_check.py",
+        "Structured llms.txt catalog covering all 11 calculators and 20 guides",
+        "Robots.txt permissions for GPTBot, ClaudeBot, PerplexityBot, and Google-Extended",
+        "Content-Signal header declaring ai-train=yes, search=yes"
       ],
-      "findings": [
-        {
-          "title": "Content-Signal HTTP Header declaration",
-          "severity": "Low",
-          "description": "Declaring Content-Signal in HTTP response headers clarifies AI indexation and training policy.",
-          "recommendation": "Configure Content-Signal: ai-train=yes, search=yes in edge worker headers."
-        }
-      ]
+      "findings": []
     },
     {
-      "name": "Images & Media",
-      "weight": "5%",
-      "score": 95,
+      "name": "Images & Assets",
+      "score": 96,
       "what_works": [
-        "100% vector SVG brand logos and navigation icons",
-        "Proper aria-hidden and title accessibility attributes on all SVGs",
-        "Validated Open Graph social preview images (og-image.png, 1200x630)"
+        "Clean scalable vector graphics for all UI icons and logos",
+        "Pre-rendered Open Graph card (1200x630)",
+        "site.webmanifest and SVG favicon with touch icons"
       ],
-      "findings": [
-        {
-          "title": "Web App Manifest and PNG App Icons",
-          "severity": "Low",
-          "description": "Currently uses favicon.svg. Adding a site.webmanifest with standard 192px/512px PNG icons enhances mobile browser bookmarking.",
-          "recommendation": "Create site.webmanifest with standard PNG icons."
-        }
-      ]
+      "findings": []
     }
   ],
   "action_plan": {
     "phases": [
       {
-        "name": "Phase 1: Quick Wins & Schema Completion",
-        "timeframe": "Immediate (Days 1-2)",
+        "name": "Phase 1: Immediate Maintenance",
+        "timeframe": "Today",
         "items": [
-          "Inject BreadcrumbList structured data into the 8 company/legal pages (about, contact, privacy, terms in EN & ES).",
-          "Add <link rel=\"alternate\" type=\"text/plain\" href=\"https://ratecraft.app/llms.txt\"> to HTML <head>.",
-          "Add site.webmanifest for PWA icon discovery."
+          "Add rel='nofollow' to footer sitemap link",
+          "Remove redundant X-Robots-Tag noindex on /sitemap.xml in _headers"
         ]
       },
       {
-        "name": "Phase 2: Edge Headers & AI Agent Policy",
-        "timeframe": "Week 1",
+        "name": "Phase 2: Product Hunt & Authority Launch",
+        "timeframe": "Oct 14, 2026",
         "items": [
-          "Emit security and AI policy headers (X-Content-Type-Options: nosniff, Content-Signal) via Cloudflare Worker.",
-          "Submit IndexNow bulk ping for any newly touched pages to Bing/Yandex."
+          "Execute Product Hunt launch for DA 91+ do-follow backlink",
+          "Monitor initial influx of organic traffic and user engagement"
         ]
       },
       {
-        "name": "Phase 3: Authority & Citability Expansion",
+        "name": "Phase 3: Search Console Tracking & Optimization",
         "timeframe": "Weeks 2-3",
         "items": [
-          "Add verified financial reviewer credentials to guide articles to reinforce E-E-A-T.",
-          "Expand external citations to official tax authority docs (HMRC, CRA, ATO, IRS) on regional calculators."
+          "Track striking-distance keywords (pos 11-25) as they transition onto Page 1",
+          "Optimize title tags on pages with impressions over 50 to maximize CTR"
         ]
       }
     ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
   }
 }
