@@ -389,10 +389,16 @@
     const copyEmbedBtn = document.getElementById('btn-copy-embed');
 
     if (embedBtn && embedModal) {
-      embedBtn.addEventListener('click', () => embedModal.classList.add('active'));
+      embedBtn.addEventListener('click', () => {
+        embedModal.classList.add('active');
+        document.body.classList.add('modal-open');
+      });
     }
     if (closeEmbed && embedModal) {
-      closeEmbed.addEventListener('click', () => embedModal.classList.remove('active'));
+      closeEmbed.addEventListener('click', () => {
+        embedModal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+      });
     }
     if (copyEmbedBtn) {
       copyEmbedBtn.addEventListener('click', () => {
@@ -630,10 +636,16 @@
       const downloadCardBtn = document.getElementById('btn-download-card');
 
       if (rateCardBtn && rateCardModal) {
-        rateCardBtn.addEventListener('click', () => rateCardModal.classList.add('active'));
+        rateCardBtn.addEventListener('click', () => {
+          rateCardModal.classList.add('active');
+          document.body.classList.add('modal-open');
+        });
       }
       if (closeRateCard && rateCardModal) {
-        closeRateCard.addEventListener('click', () => rateCardModal.classList.remove('active'));
+        closeRateCard.addEventListener('click', () => {
+          rateCardModal.classList.remove('active');
+          document.body.classList.remove('modal-open');
+        });
       }
       if (printCardBtn) {
         printCardBtn.addEventListener('click', () => window.print());
@@ -652,11 +664,23 @@
       });
     });
 
-    // Close modals on overlay click
+    // Close modals on overlay click & Escape key
     document.querySelectorAll('.modal-overlay').forEach((modal) => {
       modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.remove('active');
+        if (e.target === modal) {
+          modal.classList.remove('active');
+          document.body.classList.remove('modal-open');
+        }
       });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-overlay.active').forEach((modal) => {
+          modal.classList.remove('active');
+        });
+        document.body.classList.remove('modal-open');
+      }
     });
   }
 
