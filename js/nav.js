@@ -179,39 +179,4 @@
   } else {
     initNav();
   }
-
-  // --- High-Performance AdSense Lazy Loader (Core Web Vitals & Clarity Speed Optimized) ---
-  (function initDeferredAdSense() {
-    var adsLoaded = false;
-    var clientPub = 'ca-pub-2523102948371054';
-
-    function loadAdSense() {
-      if (adsLoaded) return;
-      adsLoaded = true;
-
-      ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function(evt) {
-        window.removeEventListener(evt, loadAdSense, { passive: true });
-      });
-
-      var adScript = document.createElement('script');
-      adScript.async = true;
-      adScript.crossOrigin = 'anonymous';
-      adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + clientPub;
-      document.head.appendChild(adScript);
-    }
-
-    // Trigger on first user interaction (scroll, touch, mouse move, click)
-    ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function(evt) {
-      window.addEventListener(evt, loadAdSense, { passive: true, once: true });
-    });
-
-    // Fallback: If no interaction, load after page is completely idle (3.5s)
-    if ('requestIdleCallback' in window) {
-      window.requestIdleCallback(function() {
-        setTimeout(loadAdSense, 2500);
-      });
-    } else {
-      setTimeout(loadAdSense, 3500);
-    }
-  })();
 })();
