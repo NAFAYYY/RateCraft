@@ -924,6 +924,103 @@ select#currency-select option {
   height: auto;
 }
 
+/* Product Hunt Launch Day Top Banner */
+.ph-launch-bar {
+  background: linear-gradient(90deg, #ff6154 0%, #ea580c 50%, #dc2626 100%);
+  color: #ffffff;
+  padding: 9px 16px;
+  position: relative;
+  z-index: 1001;
+  font-size: 0.84rem;
+  box-shadow: 0 2px 12px rgba(234, 88, 12, 0.3);
+}
+
+.ph-launch-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-right: 28px;
+}
+
+.ph-launch-pill {
+  background: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.ph-launch-text {
+  font-weight: 600;
+}
+
+.ph-launch-btn {
+  background: #ffffff;
+  color: #dc2626;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.ph-launch-btn:hover {
+  transform: translateY(-1px);
+  background: #fff5f5;
+  color: #b91c1c;
+}
+
+.ph-launch-close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+}
+
+.ph-launch-close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .ph-launch-bar {
+    padding: 8px 10px;
+    font-size: 0.76rem;
+  }
+  .ph-launch-bar-inner {
+    gap: 6px;
+    padding-right: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+  .ph-launch-text {
+    font-size: 0.74rem;
+  }
+  .ph-launch-btn {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+  }
+}
+
 /* ==========================================================================
    Calculator Grid - CRITICAL FIX: align-items: start Eliminates Bottom Void
    ========================================================================== */
