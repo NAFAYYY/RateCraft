@@ -637,6 +637,7 @@
 
       if (rateCardBtn && rateCardModal) {
         rateCardBtn.addEventListener('click', () => {
+          rateCardModal.scrollTop = 0;
           rateCardModal.classList.add('active');
           document.body.classList.add('modal-open');
         });
