@@ -74,6 +74,7 @@ RateCraft uses a rigorous bottom-up financial equation rather than simplistic sa
 - [Calculadora de Tarifa Freelance y Precio por Hora](https://ratecraft.app/es/): Herramienta financiera en euros y divisas locales para autónomos.
 - [Calculadora Precio por Hora para Programadores](https://ratecraft.app/es/calculadora-precio-hora-programador/): Estimación de tarifas para desarrolladores de software.
 - [Calculadora Tarifa por Hora Diseñador Freelance](https://ratecraft.app/es/calculadora-tarifa-disenador/): Tarifario oficial para diseñadores gráficos y UI/UX.
+- [Calculadora Tarifa Editor de Video Freelance](https://ratecraft.app/es/calculadora-tarifa-editor-video/): Tarifario oficial para editores de video, reels, YouTube y postproducción.
 - [Calculadora Precio por Hora Redactor Freelance](https://ratecraft.app/es/calculadora-tarifa-redactor/): Tarifario para copywriters y redactores.
 - [Guía: Cómo Calcular tu Tarifa por Hora Freelance](https://ratecraft.app/es/guias/como-calcular-tarifa-por-hora/): Fórmula paso a paso para autónomos.
 - [Guía: Cómo Subir tus Tarifas Freelance](https://ratecraft.app/es/guias/como-subir-tarifas-freelance/): Estrategias de negociación, plantillas de correo y gestión de objeciones.
