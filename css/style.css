@@ -50,7 +50,7 @@
 
 html {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -67,7 +67,7 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
 }
 
@@ -1283,9 +1283,12 @@ select#currency-select option {
 }
 
 /* Results Cockpit Card - Snug & Compact */
-.results-card {
+.results-card,
+.result-card {
   position: sticky;
   top: 76px;
+  align-self: start;
+  z-index: 10;
   background: var(--bg-card);
   border: 1px solid var(--border-medium);
   padding: 20px;
@@ -2146,7 +2149,8 @@ body.modal-open {
    Comprehensive Mobile & Tablet Responsive Styles (< 960px, < 640px, < 480px)
    ========================================================================== */
 @media (max-width: 960px) {
-  .results-card {
+  .results-card,
+  .result-card {
     position: static;
     top: auto;
   }
