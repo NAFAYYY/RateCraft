@@ -1,12 +1,12 @@
 # RateCraft Comprehensive Website SEO & Search Intelligence Audit Report
 
 **Target Domain:** [https://ratecraft.app](https://ratecraft.app)  
-**Audit Date:** October 18, 2026  
+**Audit Date:** October 20, 2026  
 **Auditor:** Antigravity SEO Intelligence Suite (`/claudeseo`)  
 **Scope:** 46 Production URLs (24 English, 22 Spanish)  
-**Overall SEO Health Score:** **98.8 / 100 (Grade: A+)**  
-**Search Console Status:** Active & Verified — 39 Indexed Pages, 857 Impressions, 6 Organic Clicks, Generative AI Citation Unlocked  
-**Analytics Status (GA4):** 61 Active Users, 415 Engaged Events, 0.0% Bounce Rate on Regional Hubs  
+**Overall SEO Health Score:** **99.0 / 100 (Grade: A+)**  
+**Search Console Status:** Active & Verified — 1,072 Impressions (1.07K+ Milestone Crossed), 6 Organic Clicks, 169 Ranking Queries, 6 Generative AI (AI Overviews) Citations  
+**Analytics Status (GA4):** 65+ Active Users, 438+ Engaged Events, 0.0% Bounce Rate on Regional Hubs  
 
 ---
 
@@ -14,13 +14,13 @@
 
 RateCraft operates as an ultra-fast, zero-dependency financial rate intelligence suite and commercial pricing calculator platform for freelancers, contractors, and agencies. 
 
-Between October 12 and October 18, RateCraft achieved several pivotal SEO milestones:
-1. **Impressions Surged to 857 (+27.5%):** GSC impressions climbed to 857 with daily impression velocity exceeding 100 impressions/day.
-2. **Global Footprint in 75 Countries:** Led by Tier-1 commercial traffic: United States (364 imp), Spain (99 imp, 2 clicks), United Kingdom (87 imp), Singapore (48 imp), Canada (32 imp, 1 click), Australia (30 imp).
-3. **Spanish Market Outperforming in CTR:** Spanish tools achieved an extraordinary 5.4% CTR (Spain) and 20.0% CTR (Chile) due to low local competition and authentic financial terminology.
-4. **Generative AI Citation Unlocked:** Google Search Console officially enabled the **"Generative AI features (Beta)"** tab, verifying that Google’s Gemini / AI Overviews engine is actively reading, trusting, and citing RateCraft (`/es/calculadora-precio-hora-programador/` and `/terms/`).
-5. **Editorial Intelligence Showcases Deployed:** High-authority 4-card research grids embedded on both English (`index.html`) and Spanish (`es/index.html`) homepages, scaling visible text depth to ~3,000 words per homepage and satisfying AdSense content depth criteria.
-6. **Spanish Video Editor Calculator Launched:** Deployed [`/es/calculadora-tarifa-editor-video/`](https://ratecraft.app/es/calculadora-tarifa-editor-video/) to capture Spanish creator economy volume.
+Between October 3 and October 20, RateCraft achieved major commercial and search intelligence milestones:
+1. **1,000+ Impressions Milestone Crossed (1,072 Impressions):** GSC verified impressions crossed into 4 digits (1.07K), peaking at an all-time daily record of **123 impressions on October 18**.
+2. **Generative AI Citation Velocity (6 AI Overviews Impressions):** Google Search Console's new **"Generative AI features (Beta)"** report confirms Google Gemini / AI Overviews is citing RateCraft live in generative answers (peaking at 4 AI citations in a single day on Oct 18), led by `/es/calculadora-precio-hora-programador/` (3 citations) and `/developer-rate-calculator/` (2 citations).
+3. **169 Unique Ranking Search Queries:** Query diversity expanded from ~50 to 169 distinct search queries across high-intent commercial clusters (freelance hourly rate calculators, copywriter pricing, video editing rates, and consulting day rates).
+4. **Global Footprint Across 80 Countries:** Traffic distribution is led by Tier-1 commercial economies: United States (475 imp), Spain (110 imp, 2 clicks), United Kingdom (107 imp), Singapore (55 imp), Canada (41 imp, 1 click, pos 14.6), and Australia (35 imp).
+5. **Spanish Market Outperforming in CTR:** Spanish tools achieved remarkable engagement: Spain (2 clicks, 1.82% CTR) and Chile (1 click, 20.0% CTR, pos 8.4) with Spanish developer and designer calculators reaching striking distance on Page 2 (pos 12.7).
+6. **Striking Distance Page-1 Candidates:** Multiple queries have broken into Page 1 (`freelance profit calculator` at pos 2, `seo hourly rate calculator` at pos 4, `calculate your day rate` at pos 5.5, `freelancer hourly rate calculator` at pos 6, `what is a fair day rate for a top executive advisor?` at pos 6.7).
 
 ---
 
@@ -41,12 +41,24 @@ Between October 12 and October 18, RateCraft achieved several pivotal SEO milest
 
 ## 2. Live Field Data Intelligence (GSC & GA4)
 
-### A. Google Search Console Metrics
-* **Total Impressions:** 857 (Velocity peaking at ~105 impressions/day).
-* **Total Organic Clicks:** 6 (Distributed across Spain, Canada, Chile, and Pakistan).
-* **Average Position:** 41.7 (Entering Page 4–5 testing phase across 50+ queries).
-* **Top Impression Query:** `video editor freelance rates` (19 impressions), `freelance video editor rates` (12 impressions), `video editing rates` (12 impressions).
-* **AI Overviews (GEO):** Active citation registered on `terms/` and technical financial disclaimers.
+### A. Google Search Console Metrics (Export Date: Oct 20, 2026)
+* **Total Impressions:** 1,072 (Official GSC milestone: 1.07K crossed, peaking at **123 impressions/day on Oct 18**).
+* **Total Organic Clicks:** 6 (Distributed across Spain [2], Canada [1], Chile [1], and Pakistan [2]).
+* **Total Ranked Search Queries:** 169 queries actively ranking in Google SERPs.
+* **Average Position:** 43.6 overall; Page-2 striking distance on key regional/niche pages (e.g. Canada at 12.3, Spanish Developer at 12.7, Consultant at 15.5).
+* **Top Impression Queries:**
+  - `freelance hourly rate calculator` (36 imp, pos 32.9)
+  - `freelance rate calculator` (34 imp, pos 25.6)
+  - `freelance copywriter rates` (27 imp, pos 75.8)
+  - `video editor freelance rates` (25 imp, pos 72.4)
+  - `value based pricing freelance` (23 imp, pos 70.4)
+  - `freelance video editor rates` (22 imp, pos 76.0)
+  - `freelance product designer hourly rate` (21 imp, pos 69.1)
+  - `video editing rates` (21 imp, pos 81.7)
+  - `cuanto cobra un copywriter` (20 imp, pos 55.2)
+* **Generative AI Features (Google Gemini / AI Overviews - Beta):**
+  - **6 Total Citations in Google Generative AI Search** (peaked at 4 citations on Oct 18).
+  - Cited URLs: `/es/calculadora-precio-hora-programador/` (3 citations), `/developer-rate-calculator/` (2 citations), and `/terms/` (1 citation).
 
 ### B. Google Analytics 4 Behavior
 * **Active Users:** 61 (58 New Users).

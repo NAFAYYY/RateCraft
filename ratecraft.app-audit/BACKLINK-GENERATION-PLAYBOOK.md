@@ -92,9 +92,9 @@ You can run your exact numbers for free on RateCraft (https://ratecraft.app) —
 | Day | Action | Platform | Time | Done? |
 | :---: | :--- | :--- | :---: | :---: |
 | **Day 1** | Submit listing | [AlternativeTo](https://alternativeto.net/software/create/) | 3 mins | [ ] |
-| **Day 2** | Submit listing | [Product Hunt](https://www.producthunt.com/posts/new) | 4 mins | [ ] |
+| **Day 2** | Submit listing | [Product Hunt](https://www.producthunt.com/posts/new) | 4 mins | [x] |
 | **Day 3** | Submit listing | [Indie Hackers](https://indiehackers.com/products/new) & [SaaSHub](https://saashub.com/submit) | 3 mins | [ ] |
 | **Day 4** | 1-line PR | [awesome-freelancing (GitHub)](https://github.com/gauravmak/awesome-freelancing/edit/master/README.md) | 2 mins | [ ] |
-| **Day 5** | 1-line PR | [free-for-dev (GitHub)](https://github.com/ripienaar/free-for-dev/edit/master/README.md) | 2 mins | [ ] |
+| **Day 5** | 1-line PR | [free-for-dev (GitHub)](https://github.com/ripienaar/free-for-dev/edit/master/README.md) | 2 mins | [x] |
 | **Day 6** | Submit tool | [Toolify](https://toolify.ai/submit) & [MicroLaunch](https://microlaunch.net/submit) | 3 mins | [ ] |
 | **Day 7** | Answer 1 question | `r/freelance` or `r/webdev` | 4 mins | [ ] |
