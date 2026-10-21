@@ -172,6 +172,16 @@
         }
       });
     });
+
+    // Universal FAQ Accordion Handler
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.parentElement;
+        item.classList.toggle('active');
+        var isExpanded = item.classList.contains('active');
+        btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+      });
+    });
   }
 
   if (document.readyState === 'loading') {
