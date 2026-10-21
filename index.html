@@ -63,120 +63,107 @@
   <link rel="preload" href="css/style.css?v=7" as="style">
   <link rel="stylesheet" href="css/style.css?v=7">
   <style>
-    /* Quick 1-Click Role & Country Selector Bar */
-    .quick-selector-bar {
-      margin: 20px auto 24px;
-      max-width: 980px;
+    /* Compact, Ultra-Practical Quick Selector Strip */
+    .role-selector-strip {
+      margin: 16px auto 20px;
+      max-width: 1040px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .selector-track {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
       background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 14px;
-      padding: 16px 20px;
-      box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-      text-align: left;
-    }
-    .quick-selector-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .quick-selector-title {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #06b6d4;
-    }
-    .quick-selector-title svg {
-      color: #06b6d4;
-    }
-    .quick-selector-hint {
-      font-size: 0.75rem;
-      color: #94a3b8;
-      font-weight: 500;
-    }
-    .quick-selector-chips {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .quick-chip-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .quick-group-label {
-      font-size: 0.725rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #64748b;
-      min-width: 64px;
-      flex-shrink: 0;
-    }
-    .quick-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 13px;
-      background: rgba(30, 41, 59, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 9999px;
-      color: #cbd5e1;
-      font-size: 0.8125rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      max-width: 100%;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
       white-space: nowrap;
     }
-    .quick-chip:hover {
-      background: rgba(99, 102, 241, 0.18);
-      border-color: rgba(99, 102, 241, 0.45);
-      color: #ffffff;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+    .selector-track::-webkit-scrollbar {
+      display: none;
     }
-    .quick-chip.active {
-      background: rgba(16, 185, 129, 0.15);
-      border-color: rgba(16, 185, 129, 0.4);
+    .strip-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      padding: 0 4px 0 2px;
+      flex-shrink: 0;
+      user-select: none;
+    }
+    .strip-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 11px;
+      border-radius: 9999px;
+      color: #94a3b8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      flex-shrink: 0;
+    }
+    .strip-pill svg {
+      color: #94a3b8;
+      flex-shrink: 0;
+      transition: color 0.15s ease;
+    }
+    .strip-pill:hover {
+      color: #ffffff;
+      background: rgba(99, 102, 241, 0.18);
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-1px);
+    }
+    .strip-pill:hover svg {
+      color: #38bdf8;
+    }
+    .strip-pill.active {
+      background: rgba(16, 185, 129, 0.12);
+      border-color: rgba(16, 185, 129, 0.35);
       color: #10b981;
     }
-    .quick-chip-divider {
-      height: 1px;
-      background: rgba(255, 255, 255, 0.05);
-      width: 100%;
+    .strip-pill.active svg {
+      color: #10b981;
     }
-    @media (max-width: 640px) {
-      .quick-selector-bar {
-        padding: 12px 14px;
-        margin: 16px -4px 20px;
+    .strip-sep {
+      width: 1px;
+      height: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 0 4px;
+      flex-shrink: 0;
+    }
+    .pill-curr {
+      font-weight: 700;
+      font-size: 0.725rem;
+      color: #06b6d4;
+      background: rgba(6, 182, 212, 0.1);
+      padding: 1px 5px;
+      border-radius: 4px;
+      line-height: 1.2;
+    }
+    @media (max-width: 900px) {
+      .role-selector-strip {
+        justify-content: flex-start;
+        padding: 0;
+        margin: 12px 0 16px;
       }
-      .quick-chip-group {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding-bottom: 4px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .quick-chip-group::-webkit-scrollbar {
-        display: none;
-      }
-      .quick-group-label {
-        position: sticky;
-        left: 0;
-        background: rgba(15, 23, 42, 0.95);
-        padding-right: 6px;
-        z-index: 2;
+      .selector-track {
+        border-radius: 10px;
+        padding: 6px 8px;
+        width: 100%;
       }
     }
   </style>
@@ -716,37 +703,75 @@
         The definitive <strong>freelance rate calculator</strong> and <strong>freelance hourly rate calculator</strong>. Accurately price your services by accounting for taxes, operating overhead, non-billable admin time, and desired profit margins.
       </p>
 
-      <!-- Quick 1-Click Role & Country Selector Chip Bar (Above the fold bounce-reduction) -->
-      <div class="quick-selector-bar">
-        <div class="quick-selector-header">
-          <span class="quick-selector-title">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-            Quick 1-Click Role & Country Rate Calculators
-          </span>
-          <span class="quick-selector-hint">Select your role or currency for instant tailored benchmarks</span>
+      <!-- Compact, Professional Role & Country Selector Strip -->
+      <nav class="role-selector-strip" aria-label="Quick Calculator Selector">
+        <div class="selector-track">
+          <span class="strip-label">Role:</span>
+          
+          <a href="developer-rate-calculator/" class="strip-pill" title="Software Developer Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Developer</span>
+          </a>
+
+          <a href="designer-rate-calculator/" class="strip-pill" title="UI/UX & Product Designer Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+            <span>Designer</span>
+          </a>
+
+          <a href="copywriter-rate-calculator/" class="strip-pill" title="Copywriter Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+            <span>Copywriter</span>
+          </a>
+
+          <a href="video-editor-rate-calculator/" class="strip-pill" title="Video Editor Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            <span>Video Editor</span>
+          </a>
+
+          <a href="consultant-day-rate-calculator/" class="strip-pill" title="Consultant Day Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            <span>Consultant</span>
+          </a>
+
+          <a href="virtual-assistant-rate-calculator/" class="strip-pill" title="Virtual Assistant Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>VA</span>
+          </a>
+
+          <a href="social-media-manager-rate-calculator/" class="strip-pill" title="Social Media Manager Rate Calculator">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            <span>Social Media</span>
+          </a>
+
+          <span class="strip-sep" aria-hidden="true"></span>
+          <span class="strip-label">Country:</span>
+
+          <a href="./" class="strip-pill active" title="General Freelance / US Calculator">
+            <span class="pill-curr">$</span>
+            <span>USA</span>
+          </a>
+
+          <a href="uk-freelance-day-rate-calculator/" class="strip-pill" title="UK Contractor Day Rate Calculator">
+            <span class="pill-curr">£</span>
+            <span>UK Day Rate</span>
+          </a>
+
+          <a href="canada-freelance-rate-calculator/" class="strip-pill" title="Canada Contractor Rate Calculator">
+            <span class="pill-curr">C$</span>
+            <span>Canada</span>
+          </a>
+
+          <a href="australia-freelance-rate-calculator/" class="strip-pill" title="Australia Contractor Rate Calculator">
+            <span class="pill-curr">A$</span>
+            <span>Australia</span>
+          </a>
+
+          <a href="es/" class="strip-pill" title="Calculadora en Español (€)">
+            <span class="pill-curr">€</span>
+            <span>España</span>
+          </a>
         </div>
-        <div class="quick-selector-chips">
-          <div class="quick-chip-group">
-            <span class="quick-group-label">By Role:</span>
-            <a href="developer-rate-calculator/" class="quick-chip"><span class="chip-icon">💻</span> Developer</a>
-            <a href="designer-rate-calculator/" class="quick-chip"><span class="chip-icon">🎨</span> Designer</a>
-            <a href="copywriter-rate-calculator/" class="quick-chip"><span class="chip-icon">✍️</span> Copywriter</a>
-            <a href="video-editor-rate-calculator/" class="quick-chip"><span class="chip-icon">🎬</span> Video Editor</a>
-            <a href="consultant-day-rate-calculator/" class="quick-chip"><span class="chip-icon">💼</span> Consultant</a>
-            <a href="virtual-assistant-rate-calculator/" class="quick-chip"><span class="chip-icon">⚡</span> Virtual Assistant</a>
-            <a href="social-media-manager-rate-calculator/" class="quick-chip"><span class="chip-icon">📱</span> Social Media</a>
-          </div>
-          <div class="quick-chip-divider"></div>
-          <div class="quick-chip-group">
-            <span class="quick-group-label">Country:</span>
-            <a href="./" class="quick-chip active"><span class="chip-flag">🇺🇸</span> USA ($)</a>
-            <a href="uk-freelance-day-rate-calculator/" class="quick-chip"><span class="chip-flag">🇬🇧</span> UK Day Rate (£)</a>
-            <a href="canada-freelance-rate-calculator/" class="quick-chip"><span class="chip-flag">🇨🇦</span> Canada (CAD C$)</a>
-            <a href="australia-freelance-rate-calculator/" class="quick-chip"><span class="chip-flag">🇦🇺</span> Australia (AUD A$)</a>
-            <a href="es/" class="quick-chip"><span class="chip-flag">🇪🇸</span> España / LatAm (€)</a>
-          </div>
-        </div>
-      </div>
+      </nav>
 
       <!-- Answer-First Definition Card (AEO / GEO Engine Target) -->
       <div class="answer-first-card">
