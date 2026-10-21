@@ -425,44 +425,5 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Privacy Policy -->
-  <url>
-    <loc>https://ratecraft.app/privacy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/privacy/"/>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ratecraft.app/es/privacidad/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/privacy/"/>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Terms of Service -->
-  <url>
-    <loc>https://ratecraft.app/terms/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/terms/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/terminos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/terms/"/>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ratecraft.app/es/terminos/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/terms/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://ratecraft.app/es/terminos/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/terms/"/>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>
+
