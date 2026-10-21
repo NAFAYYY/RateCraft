@@ -4,6 +4,7 @@ import re
 
 EN_GUIDES = [
     ("guides/", "All Freelance Guides"),
+    ("guides/how-to-convert-salary-to-freelance-hourly-rate/", "Salary to Hourly Rate"),
     ("guides/how-to-calculate-freelance-hourly-rate/", "Hourly Rate Formula"),
     ("guides/how-to-raise-freelance-rates/", "How to Raise Freelance Rates"),
     ("guides/rule-of-220-billable-hours-explained/", "The Rule of 220 Formula"),
