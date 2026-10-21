@@ -184,6 +184,16 @@
     <priority>0.88</priority>
   </url>
 
+  <!-- Guide: Salary to Freelance Hourly Rate Conversion -->
+  <url>
+    <loc>https://ratecraft.app/guides/how-to-convert-salary-to-freelance-hourly-rate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ratecraft.app/guides/how-to-convert-salary-to-freelance-hourly-rate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ratecraft.app/guides/how-to-convert-salary-to-freelance-hourly-rate/"/>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
   <!-- Guide 1: Hourly Rate Calculation Formula -->
   <url>
     <loc>https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/</loc>

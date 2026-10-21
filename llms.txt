@@ -58,6 +58,7 @@ RateCraft uses a rigorous bottom-up financial equation rather than simplistic sa
 
 ## In-Depth Editorial Guides
 
+- [How to Convert Full-Time Salary to Freelance Hourly Rate ($80k, $100k, $150k Breakdown)](https://ratecraft.app/guides/how-to-convert-salary-to-freelance-hourly-rate/): Detailed mathematical guide to replacing corporate compensation packages. Includes $80k, $100k, and $150k financial breakdowns, self-employment tax gross-ups, and the Rule of 2 multiplier.
 - [How to Calculate Your True Freelance Hourly Rate (2026 Formula)](https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/): Step-by-step masterclass on calculating hourly rates factoring in unbillable time, self-employment taxes, overhead, and profit margins.
 - [How to Raise Your Freelance Rates (2026 Strategy Guide)](https://ratecraft.app/guides/how-to-raise-freelance-rates/): Field-tested scripts, timing strategies, and pricing psychology to raise rates without losing clients.
 - [The Rule of 220 Billable Days Explained](https://ratecraft.app/guides/rule-of-220-billable-hours-explained/): Why 2,080 annual hours bankrupts freelancers and how to calculate realistic utilization rates.

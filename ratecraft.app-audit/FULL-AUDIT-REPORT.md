@@ -160,6 +160,6 @@ Between October 3 and October 20, RateCraft achieved major commercial and search
 - [x] Dispatched all updated URLs to IndexNow (HTTP 202 Accepted).
 
 ### Phase 2: Next Growth Sprints (AnswerThePublic Content Cluster) 🚀
+- [x] **Week 2 (Completed):** Published Article 3: *"How to Convert a Full-Time Salary to a Freelance Hourly Rate ($80k, $100k, $150k Breakdown)"* at [`/guides/how-to-convert-salary-to-freelance-hourly-rate/`](https://ratecraft.app/guides/how-to-convert-salary-to-freelance-hourly-rate/) with 2,200+ words, scenario tables, and FAQPage JSON-LD.
+- [x] **Homepage UX Enhancement (Completed):** Added above-the-fold 1-click "Quick Role & Country Selector" chip bar on [`index.html`](https://ratecraft.app/) with direct access to all 7 role calculators and 5 regional currency tools to lower bounce rate.
 - **Week 1 (Next Step):** Publish Article 2: *"UI/UX vs Product Designer Rates: 2026 Hourly & Day Rate Guide"* to capture designer search volume and funnel into [`/designer-rate-calculator/`](https://ratecraft.app/designer-rate-calculator/).
-- **Week 2:** Publish Article 3: *"How to Convert a Full-Time Salary to a Freelance Hourly Rate ($80k, $100k, $150k Breakdown)"* to capture high-volume conversion search intent.
-- **Homepage UX Enhancement:** Add a 1-click "Quick Role & Country Selector" chip bar above the fold on [`index.html`](https://ratecraft.app/) to lower homepage bounce rate from 73% to < 40%.
