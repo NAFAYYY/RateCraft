@@ -272,7 +272,7 @@
         "name": "How do I calculate taxes for an independent contractor or freelancer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To calculate taxes as an independent contractor, set aside 25% to 35% of your gross billable revenue. Independent contractors are responsible for both the employee and employer portions of FICA taxes (15.3% self-employment tax covering Medicare and Social Security) in addition to federal and local income taxes. Factor these taxes directly into your hourly rate floor using our calculator before taking on client work."
+          "text": "To calculate taxes as a US 1099 independent contractor, set aside 25% to 30% of gross billable revenue in your hourly rate calculation. Unlike W-2 employees who only pay 7.65% FICA, 1099 contractors pay the full 15.3% IRS self-employment tax (12.4% Social Security up to the $184,500 wage base in 2026 + 2.9% Medicare uncapped). Freelancers can deduct half their self-employment tax, claim the 20% Section 199A QBI deduction (under $201,750 taxable income for single filers), and submit quarterly estimated tax payments via Form 1040-ES."
         }
       },
       {
@@ -1276,6 +1276,39 @@
         <li><strong>Annual Billable Hours:</strong> <code>(52 - Vacation Weeks - Sick Weeks) &times; (Weekly Hours &times; Billable %)</code>. For a comprehensive walkthrough with step-by-step mathematical examples, read our guide on <a href="guides/how-to-calculate-freelance-hourly-rate/">How to Calculate Your True Freelance Hourly Rate</a>.</li>
       </ul>
 
+      <!-- US 1099 vs. W-2 Independent Contractor Tax Guide Block -->
+      <div class="us-tax-guide-block" style="margin: 36px 0; padding: 28px; background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%); border: 1px solid rgba(99, 102, 241, 0.28); border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;">
+          <span style="display: inline-block; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; color: #818cf8; background: rgba(99, 102, 241, 0.15); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.05em;">US Contractor Intelligence</span>
+          <span style="font-size: 0.825rem; color: var(--text-tertiary);">IRS 2026 1099-NEC &amp; FICA Provisions</span>
+        </div>
+        <h3 style="margin: 0 0 10px; font-size: 1.3rem; color: #fff; font-weight: 700;">US 1099 vs. W-2 Independent Contractor Tax Guide (2026)</h3>
+        <p style="margin: 0 0 20px; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+          When transitioning from a salaried W-2 role to a 1099-NEC independent contractor or freelance single-member LLC in the United States, your hourly billing rate must account for self-employment taxes and quarterly estimated tax filings. Factor these key IRS benchmarks into your calculator inputs:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 18px;">
+          <div style="padding: 18px; background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.07); border-radius: 12px;">
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-rose); text-transform: uppercase; margin-bottom: 6px;">15.3% IRS Self-Employment Tax (FICA)</div>
+            <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted); line-height: 1.55;">
+              W-2 employees only pay <strong>7.65%</strong> because employers cover the matching half. As a 1099 independent contractor, you pay both employee and employer portions totaling <strong>15.3% FICA</strong>: <strong>12.4% Social Security</strong> (up to the 2026 wage base limit of <strong>$184,500</strong>) plus <strong>2.9% Medicare</strong> (uncapped, plus 0.9% Additional Medicare over $200k for single filers).
+            </p>
+          </div>
+
+          <div style="padding: 18px; background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.07); border-radius: 12px;">
+            <div style="font-size: 0.8rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 6px;">20% QBI Deduction &amp; Form 1040-ES</div>
+            <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted); line-height: 1.55;">
+              US freelancers can deduct half of their self-employment tax from gross income and claim the <strong>20% Qualified Business Income (QBI) deduction</strong> under Section 199A (for single filers with taxable income under <strong>$201,750</strong> in 2026). To avoid IRS underpayment penalties, set aside <strong>25%–30%</strong> in our Tax Rate slider for quarterly estimated payments (<strong>Form 1040-ES</strong>).
+            </p>
+          </div>
+        </div>
+
+        <div style="font-size: 0.85rem; color: var(--text-tertiary); display: flex; align-items: center; gap: 8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-indigo); flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <span>Converting an employee salary to contractor rates? Read our <a href="guides/salary-to-hourly-converter-freelance/" style="color: var(--accent-indigo); text-decoration: underline;">Salary to Freelance Hourly Rate Conversion Breakdown ($80k, $100k, $150k)</a>.</span>
+        </div>
+      </div>
+
       <h3>3. 2026 Freelance Hourly Rate Benchmarks by Industry</h3>
       <p>
         Curious how your calculated rate aligns with global market standards? Here are average verified rates for experienced independent professionals:
@@ -1379,7 +1412,7 @@
             <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-answer">
-            <p>To calculate taxes as an independent contractor, set aside 25% to 35% of your gross billable revenue. Independent contractors are responsible for both the employee and employer portions of FICA taxes (15.3% self-employment tax covering Medicare and Social Security) in addition to federal and local income taxes. Factor these taxes directly into your hourly rate floor using our calculator before taking on client work.</p>
+            <p>To calculate taxes as a US 1099 independent contractor, set aside 25% to 30% of your gross billable revenue in the calculator's Tax Rate input. Unlike W-2 employees who only pay 7.65% FICA, 1099 independent contractors pay the full 15.3% IRS self-employment tax (12.4% Social Security up to the $184,500 wage base limit in 2026 + 2.9% Medicare uncapped). US freelancers can deduct half of their self-employment tax, claim the 20% Qualified Business Income (QBI) deduction under Section 199A (for single filers under $201,750 taxable income in 2026), and submit quarterly estimated tax payments using Form 1040-ES.</p>
           </div>
         </div>
 
