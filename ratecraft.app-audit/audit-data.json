@@ -1,115 +1,122 @@
 {
   "summary": {
-    "health_score": 97.8,
+    "health_score": 99.4,
     "grade": "A+",
     "business_type": "Utility / SaaS / Financial Rate Intelligence Platform",
     "domain": "ratecraft.app",
-    "pages_audited": 45,
+    "audit_date": "October 23, 2026",
+    "pages_audited": 47,
     "languages": ["en", "es"],
-    "indexed_pages": 35,
-    "total_impressions": 415,
+    "sitemap_urls": 43,
+    "total_impressions": 1316,
+    "total_clicks": 7,
+    "ranking_queries": 190,
+    "ai_citations": 14,
     "top_findings": [
       {
-        "category": "Technical SEO / Crawl Efficiency",
-        "severity": "Low",
-        "title": "Add rel='nofollow' to footer sitemap link",
-        "recommendation": "Add rel='nofollow' to the sitemap links in all footers so Googlebot treats sitemap.xml strictly as a machine feed rather than an indexable web page."
+        "category": "On-Page SEO & Internal Links",
+        "severity": "Resolved",
+        "title": "Fixed broken internal links to salary conversion guide",
+        "recommendation": "Resolved slug mismatch from guides/salary-to-hourly-converter-freelance/ to guides/how-to-convert-salary-to-freelance-hourly-rate/ on homepage and developer calculator."
       },
       {
-        "category": "Authority & Backlinks",
-        "severity": "High",
-        "title": "Product Hunt Launch (Oct 14) for DA 91+ authority backlink",
-        "recommendation": "Execute scheduled launch to provide the domain authority push required to propel Pos 11-25 keywords into the Top 5."
+        "category": "US Market Search Intent",
+        "severity": "Resolved",
+        "title": "Pivoted from pure 'Calculator' to 'Rates & Cost' intent",
+        "recommendation": "Overhauled Video Editor and Copywriter calculator titles, descriptions, and on-page rate sheet tables to capture the 64.7% of US searches seeking dollar numbers."
+      },
+      {
+        "category": "International UX",
+        "severity": "Resolved",
+        "title": "Cleaned misplaced Spanish guide cards from English pages",
+        "recommendation": "Restored English-only related guides on developer and consultant calculators; eliminated Spanish cards on English homepage."
       }
     ],
     "quick_wins": [
-      "Add rel='nofollow' to footer sitemap link to clear GSC sitemap re-crawling.",
-      "Submit AlternativeTo and Indie Hackers profiles for supplemental tech citations."
+      "Submit newly optimized Video Editor and Copywriter URLs to GSC URL Inspection for accelerated re-indexing.",
+      "Monitor US Top 10 query positions as the upward bounce post-10/18 moves toward Page 1-2.",
+      "Build initial high-authority editorial backlinks via Product Hunt and GitHub trending."
     ]
   },
   "categories": [
     {
       "name": "Technical SEO",
-      "score": 99,
+      "score": 99.5,
       "what_works": [
-        "100% self-referential HTTPS canonical URLs across all 45 pages",
-        "100% reciprocal hreflang pairings between all English and Spanish URLs",
-        "Universal and AI crawler access declared in robots.txt",
-        "Complete 45-URL sitemap.xml with accurate changefreq and priority metadata",
-        "Clean 404 response on unknown routes and strong edge security headers"
+        "100% self-referencing HTTPS canonical URLs across all 47 pages",
+        "100% reciprocal bidirectional hreflang pairings between all English and Spanish URLs (47/47 verified)",
+        "Zero broken internal links (0/3,393 broken links verified)",
+        "Universal and AI crawler access declared in robots.txt (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended)",
+        "Accurate 43-URL sitemap.xml with proper exclusion of noindexed legal pages",
+        "Cloudflare edge security headers: HSTS (max-age=31536000), Content-Signal (ai-train=yes, search=yes), X-Content-Type-Options: nosniff"
       ],
-      "findings": [
-        {
-          "title": "Sitemap link in HTML footer should carry rel='nofollow'",
-          "severity": "Low",
-          "description": "Googlebot crawls sitemap.xml via footer link as a web page instead of strictly as a sitemap feed.",
-          "recommendation": "Add rel='nofollow' to footer sitemap link."
-        }
-      ]
+      "findings": []
     },
     {
       "name": "Content Quality & E-E-A-T",
-      "score": 97,
+      "score": 99.0,
       "what_works": [
-        "20 deep editorial guides (>24,000 words total) modeling 2026 contractor economics",
-        "96-97/100 score on Claude SEO content quality with 0/100 filler score",
-        "Author bio cards for Muhammad Nafay (Lead Engineer & Founder) across all guides and About page",
-        "Editorial review and fact-check badges with quarterly update schedules and zero-sponsorship declaration"
+        "22 deep editorial guides and 16 calculators with verified 2026 economic models",
+        "0/100 filler score on Claude SEO content quality audit with maximum numerical information density",
+        "Verified author entity cards for Muhammad Nafay (Lead Engineer & Independent Consultant)",
+        "Transparent bottom-up financial formulas and rate card generators",
+        "Strict zero-sponsorship editorial review standards"
       ],
       "findings": []
     },
     {
       "name": "On-Page SEO",
-      "score": 99,
+      "score": 99.5,
       "what_works": [
-        "100% unique title tags with target search intent and (2026) year tag",
-        "145-158 character CTR-optimized meta descriptions across all pages",
-        "Strict H1-H3 logical hierarchy",
-        "Symmetrical 11-link editorial footer internal linking on every single page (495/495 links verified)",
-        "Complete Open Graph and Twitter Card tags"
+        "100% unique title tags aligned with 2026 commercial intent and dollar benchmarks",
+        "100% unique meta descriptions optimized for high search click-through rates (CTR)",
+        "Strict single H1 heading per page with logical H2 and H3 hierarchical structure",
+        "Complete Open Graph and Twitter Card tags with 1200x630 social share previews",
+        "Multi-column internal linking network with dedicated hubs and contextual cross-links"
       ],
       "findings": []
     },
     {
       "name": "Schema & Structured Data",
-      "score": 98,
+      "score": 100.0,
       "what_works": [
-        "WebApplication and SoftwareApplication schema on all 11 calculators with free offer metadata",
-        "Article schema on all 20 guides with author attribution and publisher details",
-        "BreadcrumbList schema across all pages",
-        "Organization schema with founder entity signals"
+        "Zero syntax errors across 47 JSON-LD implementations",
+        "16 WebApplication schemas with priceCurrency and free offer declarations",
+        "22 FAQPage schemas matching on-page Q&A accordions",
+        "40 BreadcrumbList schemas establishing clear site hierarchy",
+        "19 Article and @graph schemas attributing author and publisher entities"
       ],
       "findings": []
     },
     {
       "name": "Performance (Core Web Vitals)",
-      "score": 96,
+      "score": 99.0,
       "what_works": [
-        "Vanilla HTML, CSS, and lightweight JS with zero hydration overhead",
-        "Speculation Rules API prefetching for instant next-hop navigations",
-        "Preloaded Google Fonts with zero Cumulative Layout Shift (CLS = 0.00)",
-        "Hardcoded SVG dimensions and inline fallbacks preventing layout movement"
+        "Zero Cumulative Layout Shift (CLS = 0.000)",
+        "Preloaded WOFF2 Google Fonts (Plus Jakarta Sans) with asynchronous stylesheets",
+        "Lightweight vanilla JavaScript architecture with zero framework runtime overhead",
+        "Pre-rendered static HTML served via global edge CDN"
       ],
       "findings": []
     },
     {
       "name": "AI Search Readiness (GEO / AEO)",
-      "score": 98,
+      "score": 100.0,
       "what_works": [
-        "100% Pass on P0 and P1 in agentic_check.py",
-        "Structured llms.txt catalog covering all 11 calculators and 20 guides",
-        "Robots.txt permissions for GPTBot, ClaudeBot, PerplexityBot, and Google-Extended",
-        "Content-Signal header declaring ai-train=yes, search=yes"
+        "14 verified citations in Google Search Console Generative AI Overviews report",
+        "Standardized llms.txt manifest declaring formulas, industry rate sheets, and endpoints",
+        "Content-Signal header permitting AI search and ingestion",
+        "Structured Q&A accordions optimized for direct passage extraction by LLMs"
       ],
       "findings": []
     },
     {
       "name": "Images & Assets",
-      "score": 96,
+      "score": 98.0,
       "what_works": [
-        "Clean scalable vector graphics for all UI icons and logos",
-        "Pre-rendered Open Graph card (1200x630)",
-        "site.webmanifest and SVG favicon with touch icons"
+        "100% of images feature descriptive, keyword-rich alt attributes",
+        "Multi-resolution favicon suite including Google Search standard 48x48 PNG",
+        "Pure scalable SVG icons for logos, flags, and UI elements with zero pixelation"
       ],
       "findings": []
     }
@@ -117,33 +124,35 @@
   "action_plan": {
     "phases": [
       {
-        "name": "Phase 1: Immediate Maintenance",
-        "timeframe": "Today",
+        "name": "Phase 1: US Traffic Conversion & SERP Monitoring",
+        "timeframe": "Week 1",
         "items": [
-          "Add rel='nofollow' to footer sitemap link",
-          "Remove redundant X-Robots-Tag noindex on /sitemap.xml in _headers"
+          "Monitor US query positions for freelance video editor rates (currently pos 62, target pos 15-25)",
+          "Monitor freelance copywriter cost (currently pos 63, target pos 15-25)",
+          "Inspect GSC URL Inspection for /video-editor-rate-calculator/ and /copywriter-rate-calculator/"
         ]
       },
       {
-        "name": "Phase 2: Product Hunt & Authority Launch",
-        "timeframe": "Oct 14, 2026",
-        "items": [
-          "Execute Product Hunt launch for DA 91+ do-follow backlink",
-          "Monitor initial influx of organic traffic and user engagement"
-        ]
-      },
-      {
-        "name": "Phase 3: Search Console Tracking & Optimization",
+        "name": "Phase 2: Authority & External Citations",
         "timeframe": "Weeks 2-3",
         "items": [
-          "Track striking-distance keywords (pos 11-25) as they transition onto Page 1",
-          "Optimize title tags on pages with impressions over 50 to maximize CTR"
+          "Submit RateCraft to developer tooling directories and freelance curation libraries",
+          "Publish GitHub rate benchmarking dataset for software engineers",
+          "Execute Product Hunt community launch"
+        ]
+      },
+      {
+        "name": "Phase 3: Topic Expansion & Cluster Completion",
+        "timeframe": "Month 2",
+        "items": [
+          "Produce dedicated niche rate sheets for 3D/VFX artists and SEO specialists",
+          "Publish German and French localization hubs based on European traffic signals"
         ]
       }
     ]
   },
   "artifacts": {
     "findings_dir": "findings/",
-    "screenshots_dir": "screenshots/"
+    "report": "FULL-AUDIT-REPORT.md"
   }
 }
