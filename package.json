@@ -1,0 +1,10 @@
+{
+  "name": "ratecraft",
+  "version": "1.0.0",
+  "description": "RateCraft - Freelance Rate Calculator Web Application",
+  "scripts": {
+    "build:css": "npx esbuild css/style.css --minify --outfile=css/style.min.css",
+    "build:js": "npx esbuild js/nav.js --minify --outfile=js/nav.min.js && npx esbuild js/calculator.js --minify --outfile=js/calculator.min.js",
+    "build": "npm run build:css && npm run build:js"
+  }
+}
