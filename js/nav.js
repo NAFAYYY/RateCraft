@@ -173,14 +173,15 @@
       });
     });
 
-    // Universal FAQ Accordion Handler
-    document.querySelectorAll('.faq-question').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var item = btn.parentElement;
-        item.classList.toggle('active');
-        var isExpanded = item.classList.contains('active');
-        btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
-      });
+    // Universal FAQ Accordion Handler (Event Delegation with closest)
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('.faq-question');
+      if (!btn) return;
+      var item = btn.closest('.faq-item');
+      if (!item) return;
+      item.classList.toggle('active');
+      var isExpanded = item.classList.contains('active');
+      btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
     });
   }
 
