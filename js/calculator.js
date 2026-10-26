@@ -657,14 +657,6 @@
     }
     setupRateCardEvents();
 
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        item.classList.toggle('active');
-      });
-    });
-
     // Close modals on overlay click & Escape key
     document.querySelectorAll('.modal-overlay').forEach((modal) => {
       modal.addEventListener('click', (e) => {
