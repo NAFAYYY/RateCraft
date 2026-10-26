@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
 [![Vanilla JS](https://img.shields.io/badge/Framework-Zero%20Dependencies-blue.svg)](https://ratecraft.app)
 [![Bilingual](https://img.shields.io/badge/Languages-EN%20%7C%20ES-indigo.svg)](https://ratecraft.app/es/)
-[![Pages](https://img.shields.io/badge/Total%20Pages-26-purple.svg)](https://ratecraft.app/sitemap.xml)
+[![Pages](https://img.shields.io/badge/Total%20Pages-47-purple.svg)](https://ratecraft.app/sitemap.xml)
 
 > **RateCraft** (https://ratecraft.app) is a high-performance, client-side financial calculator suite and editorial publication built for freelancers, independent contractors, and solo consultants worldwide. It eliminates guesswork by reverse-engineering sustainable minimum hourly rates, day rates, weekly sprint retainers, and fixed project quotes with built-in scope buffers, operational overhead coverage, and self-employment tax accounting.
 
