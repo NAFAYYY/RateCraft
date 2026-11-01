@@ -58,56 +58,102 @@
   </noscript>
   <link rel="preload" href="../../css/style.min.css?v=8" as="style">
   <link rel="stylesheet" href="../../css/style.min.css?v=8">
-    <!-- Schema.org BreadcrumbList -->
+  <!-- Schema.org Graph: BreadcrumbList + Article + FAQPage -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://ratecraft.app/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Guides",
-      "item": "https://ratecraft.app/guides/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "How to Calculate Freelance Hourly Rate",
-      "item": "https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"
-    }
-  ]
-}
-  </script>
-
-<script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "How to Calculate Your True Freelance Hourly Rate (2026 Formula)",
-    "description": "Step-by-step 2026 guide to calculating your freelance hourly rate factoring in unbillable hours, self-employment taxes, overhead, and profit margins.",
-    "author": {
-      "@type": "Person",
-      "name": "Muhammad Nafay",
-      "jobTitle": "Lead Engineer & Independent Consultant",
-      "url": "https://ratecraft.app/about/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "RateCraft",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://ratecraft.app/favicon.svg"
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ratecraft.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://ratecraft.app/guides/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to Calculate Freelance Hourly Rate",
+            "item": "https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": "How to Calculate Your True Freelance Hourly Rate (2026 Formula)",
+        "description": "Step-by-step 2026 guide to calculating your freelance hourly rate factoring in unbillable hours, self-employment taxes, overhead, and profit margins.",
+        "author": {
+          "@type": "Person",
+          "name": "Muhammad Nafay",
+          "jobTitle": "Lead Engineer & Independent Consultant",
+          "url": "https://ratecraft.app/about/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "RateCraft",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ratecraft.app/apple-touch-icon.png"
+          }
+        },
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-11-01",
+        "mainEntityOfPage": "https://ratecraft.app/guides/how-to-calculate-freelance-hourly-rate/"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate a freelance hourly rate from an employee salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To convert an employee salary into a sustainable freelance rate, take your target take-home pay, divide by (1 - your effective tax rate) to cover 15.3% self-employment taxes, add $10,000 to $18,000 in annual business overhead, add a 15% to 20% business profit cushion, and divide by 1,000 to 1,100 billable client hours per year. As a benchmark, an employee earning $100,000 requires a freelance rate of roughly $130 to $155 per hour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why can't you divide your annual salary target by 2,080 hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The standard corporate figure of 2,080 hours (40 hours × 52 weeks) includes paid sick leave, paid holidays, and non-billable meetings that are subsidized by an employer. Freelancers spend 40% to 45% of their working hours on pitching, client onboarding, invoicing, and administrative tasks, meaning an independent professional realistically bills only 1,000 to 1,100 hours per year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What percentage of a freelancer's time is actually billable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Full-time freelancers average a 50% to 60% billable utilization rate, which equates to 20 to 24 billable client hours per week in a typical 40-hour work week. The remaining 16 to 20 hours represent unbillable operational overhead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much should freelancers add for self-employment taxes and overhead?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In the United States, independent contractors must cover the full 15.3% FICA self-employment tax plus state and federal income taxes (typically budgeting 25% to 30% total for taxes). Annual software, hardware, and legal overhead typically costs $8,000 to $16,000 depending on specialization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should freelancers quote hourly rates or convert to day rates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Experienced freelancers use their hourly rate as an internal cost baseline, but quote clients in day rates (8 or 10-hour days) or weekly sprints. This eliminates nickel-and-dime time-tracking disputes, rewards efficiency, and provides predictable cash flow."
+            }
+          }
+        ]
       }
-    },
-    "datePublished": "2026-01-15",
-    "dateModified": "2026-10-02"
+    ]
   }
   </script>
   <!-- Microsoft Clarity Tracking Code -->
@@ -458,6 +504,27 @@
     </div>
 
     <article class="article-body">
+      <!-- Direct Answer Card (GEO / AI Overviews Target) -->
+      <div class="answer-first-card" style="margin: 24px 0 32px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: 12px; padding: 22px 24px;">
+        <div class="answer-tag" style="display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-indigo); background: rgba(99, 102, 241, 0.15); padding: 4px 10px; border-radius: 6px; margin-bottom: 12px;">Quick Answer • 2026 Hourly Rate Formula</div>
+        <p class="answer-lead" style="font-size: 1.05rem; line-height: 1.65; color: var(--text-primary); margin: 0;">
+          <strong>The 2026 Freelance Hourly Rate Formula:</strong> <code>Hourly Rate = [(Target Net Income ÷ (1 - Tax Rate) + Annual Overhead) × (1 + Profit Margin)] ÷ Annual Billable Hours</code>. Dividing a corporate salary by 2,080 hours guarantees undercharging because freelancers only average <strong>1,000 to 1,100 billable client hours per year</strong> (a 55% utilization rate). For example, a $90,000 take-home goal with 28% taxes, $12,000 overhead, and a 20% profit reserve requires a minimum rate of <strong>$161 per hour</strong> (or <strong>$1,290 per day</strong>).
+        </p>
+      </div>
+
+      <!-- Interactive Calculator CTA Card -->
+      <div class="calc-cta-card" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(99, 102, 241, 0.08) 100%); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 12px; padding: 20px 24px; margin-bottom: 36px;">
+        <div style="flex: 1; min-width: 260px;">
+          <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: #10b981; letter-spacing: 0.05em; margin-bottom: 4px;">Free Interactive Tool</div>
+          <div style="font-size: 1.15rem; font-weight: 700; color: #ffffff;">Calculate Your Freelance Hourly Rate (2026)</div>
+          <p style="color: #94a3b8; font-size: 0.92rem; margin: 4px 0 0; line-height: 1.5;">Simulate your exact expenses, tax reserves, and billable utilization curves instantly.</p>
+        </div>
+        <a href="../../" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 8px; white-space: nowrap; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);">
+          <span>Open Rate Calculator</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+
       <h2>Step 1: Determine Your Target Personal Net Income</h2>
       <p>
         The foundation of any realistic freelance rate is your <strong>Net Take-Home Target</strong>. This is not your corporate gross salary; this is the actual money you need deposited into your personal checking account after all business expenses and government taxes have been paid.
@@ -548,6 +615,60 @@
         <li><strong>Weekly Sprint Retainer (40 Hours):</strong> $161 × 40 × 0.85 (15% bulk commitment discount) = <strong>$5,470 / week</strong>.</li>
         <li><strong>Monthly Advisory Retainer (40 Hours dedicated capacity):</strong> <strong>$5,800 to $6,500 / month</strong>.</li>
       </ul>
+
+      <!-- FAQ Accordion Section -->
+      <h2 style="margin-top: 48px;">Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-accordion" style="margin-bottom: 40px;">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do you calculate a freelance hourly rate from an employee salary?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>To convert an employee salary into a sustainable freelance rate, take your target take-home pay, divide by (1 - your effective tax rate) to cover 15.3% self-employment taxes, add $10,000 to $18,000 in annual business overhead, add a 15% to 20% business profit cushion, and divide by 1,000 to 1,100 billable client hours per year. As a benchmark, an employee earning $100,000 requires a freelance rate of roughly $130 to $155 per hour.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Why can't you divide your annual salary target by 2,080 hours?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>The standard corporate figure of 2,080 hours (40 hours × 52 weeks) includes paid sick leave, paid holidays, and non-billable meetings that are subsidized by an employer. Freelancers spend 40% to 45% of their working hours on pitching, client onboarding, invoicing, and administrative tasks, meaning an independent professional realistically bills only 1,000 to 1,100 hours per year.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What percentage of a freelancer's time is actually billable?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Full-time freelancers average a 50% to 60% billable utilization rate, which equates to 20 to 24 billable client hours per week in a typical 40-hour work week. The remaining 16 to 20 hours represent unbillable operational overhead.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much should freelancers add for self-employment taxes and overhead?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>In the United States, independent contractors must cover the full 15.3% FICA self-employment tax plus state and federal income taxes (typically budgeting 25% to 30% total for taxes). Annual software, hardware, and legal overhead typically costs $8,000 to $16,000 depending on specialization.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Should freelancers quote hourly rates or convert to day rates?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Experienced freelancers use their hourly rate as an internal cost baseline, but quote clients in day rates (8 or 10-hour days) or weekly sprints. This eliminates nickel-and-dime time-tracking disputes, rewards efficiency, and provides predictable cash flow.</p>
+          </div>
+        </div>
+      </div>
 
       <h2>Try the Interactive Calculator</h2>
       <p>
@@ -665,7 +786,7 @@
       <div class="footer-bottom">
         <div>© 2026 RateCraft. Built for freelancers, independent consultants, and solopreneurs worldwide.</div>
         <ul class="footer-bottom-links">
-          <li><a href="../../es/guias/como-calcular-tarifa-por-hora/">Versión en Español (🇪🇸)</a></li>
+          <li><a href="../../es/guias/como-calcular-tarifa-por-hora/">Version en Espanol</a></li>
           <li><a href="../../sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
