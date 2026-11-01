@@ -4,3 +4,4 @@ node_modules/
 scratch/
 ratecraft.app-Coverage-*/
 ratecraft.app-Performance-*/
+*.code-workspace
