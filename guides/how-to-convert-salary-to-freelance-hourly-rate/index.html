@@ -260,42 +260,48 @@
       </nav>
 
       <div class="header-actions">
-        <!-- Currency Selector -->
-        <select id="currency-select" class="currency-selector" aria-label="Select currency">
-          <option value="$" selected>USD ($)</option>
-          <option value="€">EUR (€)</option>
-          <option value="£">GBP (£)</option>
-          <option value="CA$">CAD (CA$)</option>
-          <option value="A$">AUD (A$)</option>
-          <option value="MX$">MXN (MX$)</option>
-        </select>
-
         <!-- Language Switcher -->
         <nav class="lang-switch" aria-label="Language Selector">
           <a href="./" class="lang-btn active">EN</a>
-          <a href="../../es/" class="lang-btn">ES</a>
+          <a href="../../es/guias/como-calcular-tarifa-por-hora/" class="lang-btn">ES</a>
         </nav>
 
-        <!-- Mobile Drawer Hamburger Button -->
-        <button type="button" class="hamburger-btn" id="drawer-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
-  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+  <!-- Mobile Sidebar Drawer Overlay & Menu (High-Craft Edition, No Emojis) -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true" inert>
     <div class="drawer-header">
-      <a href="../../" class="brand-logo" title="RateCraft Freelance Tools">
+      <a href="../../" class="brand-logo" title="RateCraft">
         <svg class="brand-icon" viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true">
-          <rect width="32" height="32" rx="8" fill="#080d1a" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
-          <rect x="7" y="7" width="4.5" height="18" rx="2" fill="url(#rc-stem)"/>
-          <path d="M 11.5 7 L 18 7 C 21.31 7 24 9.69 24 13 C 24 16.31 21.31 19 18 19 L 11.5 19 Z M 15 11 L 15 15 L 18 15 C 19.1 15 20 14.1 20 13 C 20 11.9 19.1 11 18 11 Z" fill="url(#rc-loop)"/>
-          <path d="M 15 17 L 19.5 17 L 25 25 L 20.5 25 Z" fill="url(#rc-surge)"/>
-        </svg>
+        <defs>
+          <linearGradient id="rc-stem-m" x1="7" y1="7" x2="11.5" y2="25" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#818cf8"/>
+            <stop offset="100%" stop-color="#4f46e5"/>
+          </linearGradient>
+          <linearGradient id="rc-loop-m" x1="11.5" y1="7" x2="24" y2="19" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#6366f1"/>
+            <stop offset="50%" stop-color="#06b6d4"/>
+            <stop offset="100%" stop-color="#10b981"/>
+          </linearGradient>
+          <linearGradient id="rc-surge-m" x1="15" y1="17" x2="25" y2="25" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#38bdf8"/>
+            <stop offset="100%" stop-color="#10b981"/>
+          </linearGradient>
+        </defs>
+        <rect width="32" height="32" rx="8" fill="#080d1a" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+        <rect x="7" y="7" width="4.5" height="18" rx="2" fill="url(#rc-stem-m)"/>
+        <path d="M 11.5 7 L 18 7 C 21.31 7 24 9.69 24 13 C 24 16.31 21.31 19 18 19 L 11.5 19 Z M 15 11 L 15 15 L 18 15 C 19.1 15 20 14.1 20 13 C 20 11.9 19.1 11 18 11 Z" fill="url(#rc-loop-m)"/>
+        <path d="M 15 17 L 19.5 17 L 25 25 L 20.5 25 Z" fill="url(#rc-surge-m)"/>
+      </svg>
         <span>Rate<span class="highlight">Craft</span></span>
       </a>
       <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close navigation menu">
@@ -304,31 +310,182 @@
     </div>
 
     <div class="drawer-content">
+      <!-- Section 1: By Profession -->
       <div class="drawer-section">
         <div class="drawer-section-header">
           <span class="drawer-section-dot"></span>
           <span class="drawer-section-title">Calculators by Profession</span>
         </div>
         <div class="drawer-card-group">
-          <a href="../../developer-rate-calculator/" class="drawer-item"><div class="drawer-item-info"><span class="drawer-item-title">Software Developer</span><span class="drawer-item-desc">Web, mobile & cloud</span></div></a>
-          <a href="../../designer-rate-calculator/" class="drawer-item"><div class="drawer-item-info"><span class="drawer-item-title">Designer</span><span class="drawer-item-desc">UI/UX & brand</span></div></a>
-          <a href="../../copywriter-rate-calculator/" class="drawer-item"><div class="drawer-item-info"><span class="drawer-item-title">Copywriter</span><span class="drawer-item-desc">Content & SEO</span></div></a>
-          <a href="../../consultant-day-rate-calculator/" class="drawer-item"><div class="drawer-item-info"><span class="drawer-item-title">Consultant</span><span class="drawer-item-desc">Advisory day rates</span></div></a>
-          <a href="../../video-editor-rate-calculator/" class="drawer-item"><div class="drawer-item-info"><span class="drawer-item-title">Video Editor</span><span class="drawer-item-desc">YouTube, reels & post</span></div></a>
+          <a href="../../developer-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Software Developer</span>
+              <span class="drawer-item-desc">Web, mobile & cloud engineering</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../designer-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Designer</span>
+              <span class="drawer-item-desc">UI/UX, brand & product systems</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../copywriter-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Copywriter</span>
+              <span class="drawer-item-desc">SEO writing, sales copy & technical</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../virtual-assistant-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Virtual Assistant</span>
+              <span class="drawer-item-desc">Executive support & operations</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../video-editor-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Video Editor</span>
+              <span class="drawer-item-desc">YouTube, reels, motion & post</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../consultant-day-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Consultant</span>
+              <span class="drawer-item-desc">Advisory & corporate day rates</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../social-media-manager-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Social Media Manager</span>
+              <span class="drawer-item-desc">Content, community & retainers</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
         </div>
       </div>
 
+      <!-- Section 2: Regional & Tax Benchmarks -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-dot dot-cyan"></span>
+          <span class="drawer-section-title">Regional & Currency Models</span>
+        </div>
+        <div class="drawer-card-group">
+          <a href="../../" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">General Global</span>
+                <span class="drawer-tag">USD $</span>
+              </div>
+              <span class="drawer-item-desc">Universal hourly pricing formula</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../uk-freelance-day-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">UK Contractor</span>
+                <span class="drawer-tag">GBP £</span>
+              </div>
+              <span class="drawer-item-desc">IR35, VAT & National Insurance</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../canada-freelance-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">Canada Contractor</span>
+                <span class="drawer-tag">CAD C$</span>
+              </div>
+              <span class="drawer-item-desc">CRA self-employment, CPP & HST</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../australia-freelance-rate-calculator/" class="drawer-item">
+            <div class="drawer-item-info">
+              <div class="drawer-item-row">
+                <span class="drawer-item-title">Australia Contractor</span>
+                <span class="drawer-tag">AUD A$</span>
+              </div>
+              <span class="drawer-item-desc">GST, superannuation & Medicare</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 3: Pricing Guides -->
+      <div class="drawer-section">
+        <div class="drawer-section-header">
+          <span class="drawer-section-dot dot-indigo"></span>
+          <span class="drawer-section-title">Pricing Methodology</span>
+        </div>
+        <div class="drawer-card-group">
+          <a href="../../guides/" class="drawer-item drawer-item-action">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title text-cyan">All Pricing Guides</span>
+              <span class="drawer-item-desc">Benchmarks, retainers & strategies</span>
+            </div>
+            <span class="drawer-action-arrow">&rarr;</span>
+          </a>
+          <a href="../../guides/how-to-calculate-freelance-hourly-rate/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">The Rule of 220 Formula</span>
+              <span class="drawer-item-desc">Scientific billable hours model</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../guides/value-based-pricing-vs-hourly/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Value-Based vs Hourly</span>
+              <span class="drawer-item-desc">Moving beyond time billing</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../guides/freelance-retainer-agreements-guide/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Retainer Agreements</span>
+              <span class="drawer-item-desc">Predictable recurring revenue</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="../../guides/freelance-taxes-and-overhead-deductions/" class="drawer-item">
+            <div class="drawer-item-info">
+              <span class="drawer-item-title">Taxes & Overhead Deductions</span>
+              <span class="drawer-item-desc">Maximizing net take-home pay</span>
+            </div>
+            <svg class="drawer-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 4: Platform & Legal -->
       <div class="drawer-section">
         <div class="drawer-section-header">
           <span class="drawer-section-dot dot-slate"></span>
           <span class="drawer-section-title">Platform</span>
         </div>
         <div class="drawer-grid-links">
-          <a href="../../guides/" class="drawer-grid-link">All Guides</a>
-          <a href="../../about/" class="drawer-grid-link">About Us</a>
+          <a href="../../about/" class="drawer-grid-link">About RateCraft</a>
           <a href="../../contact/" class="drawer-grid-link">Contact</a>
           <a href="../../privacy/" class="drawer-grid-link">Privacy Policy</a>
           <a href="../../terms/" class="drawer-grid-link">Terms of Service</a>
+        </div>
+      </div>
+
+      <!-- Drawer Footer with Language -->
+      <div class="drawer-footer">
+        <div class="drawer-footer-inner">
+          <span class="drawer-footer-label">Language</span>
+          <div class="lang-switch">
+            <a href="./" class="lang-btn active">EN</a>
+            <a href="../../es/guias/como-calcular-tarifa-por-hora/" class="lang-btn">ES</a>
+          </div>
         </div>
       </div>
     </div>
