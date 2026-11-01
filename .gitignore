@@ -5,3 +5,7 @@ scratch/
 ratecraft.app-Coverage-*/
 ratecraft.app-Performance-*/
 *.code-workspace
+*serviceaccount*.json
+*service-account*.json
+ratecraft-seo*.json
+*.key.json
